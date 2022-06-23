@@ -227,9 +227,53 @@
         </div>
     </header>
 
+    <!--Wrapper-->
+    <nav class="wrapper">
+        <div class="slide-wrapper" data-slide="wrapper">
+            <button class="slide-nav-button slide-nav-previous fas fa-chevron-left" data-slide="nav-previous-button"></button>
+            <button class="slide-nav-button slide-nav-next fas fa-chevron-right" data-slide="nav-next-button"></button>
+            <div class="slide-list" data-slide="list">
+                <div class="slide-item" data-slide="item" data-index="0">
+                    <div class="slide-content">
+                        <img class="slide-image" src="./assets/imgs/Copacabana.jpg" alt="Copacabana" />
+                    </div>
+                </div>
+                <div class="slide-item" data-slide="item" data-index="1">
+                    <div class="slide-content">
+                        <img class="slide-image" src="./assets/imgs/Trancoso.jpg" alt="Trancoso" />
+                    </div>
+                </div>
+                <div class="slide-item" data-slide="item" data-index="2">
+                    <div class="slide-content">
+                        <img class="slide-image" src="./assets/imgs/Trancoso.jpg" alt="Porto seguro" />
+                    </div>
+                </div>
+            </div>
+            <div class="slide-controls" data-slide="controls-wrapper">
+            </div>
+        </div>
+    </nav>
+
+    <!--Product-->
+
+    <section>
+        <div class="product-content">
+            <h1>Rota do Vinho em Jundiaí</h1>
+
+            <h2>Duração: 8h</h2>
+
+            <p>Quem é amante de vinhos tem bons motivos para visitar Jundiaí. No final de semana, escapadas até a cidade permitem colher frutas do pé, caminhar por pomares e curtir refeições com harmonizações especiais.
+
+                São mais de 21 adegas distribuídas entre os bairros Caxambú, Colônia, Toca, Roseira e adjacências - onde os imigrantes italianos se instalaram quando chegaram ao local e hoje permanecem os descendentes. Na Rota, o visitante pode conhecer mais de 40 variedades de vinhos, entre tintos, brancos, rosés, secos, suaves, finos e frisante.
+                
+                A ideia é percorrer o roteiro e aproveitar não só os vinhos, mas também os restaurantes incríveis, alguns deles com degustações de doces e queijos maturados e, claro, curtir as belíssimas paisagens da região.
+                Aproveite esse delicioso passeio com a Check Point Tours. 
+            </p>
+
+        </div>
+    </section>
 
     <!--FOOTER-->
-
     <footer>
             <div class="row">
                 <div class="container-content">
@@ -265,6 +309,15 @@
             <p>© 2022, Check Point Tours. Todos os direitos reservados.</p>
         </div>
     </footer>
+
+    <script src="./assets/js/slides.js"></script>
+    <script>
+        initSlider({
+            autoPlay: true,
+            startAtIndex: 0,
+            timeInterval: 3000
+        })
+    </script>
 
 </body>
 
