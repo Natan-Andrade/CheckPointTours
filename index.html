@@ -9,9 +9,35 @@
     <title>Check Point Tours</title>
 
     <link rel="stylesheet" href="./index.css"/>
+
+    <style>
+		.whatsapp-link {
+			position: fixed;
+			width: 60px;
+			height: 60px;
+			bottom: 40px;
+			right: 40px;
+			background-color: #25d366;
+			color: #fff;
+			border-radius: 50px;
+			text-align: center;
+			font-size: 30px;
+			box-shadow: 1px 1px 2px #888;
+			z-index: 1000;
+		}
+ 
+		.fa-whatsapp {
+			margin-top: 16px;
+		}
+	</style>
 </head>
 
 <body>
+
+    <a class="whatsapp-link" href="https://web.whatsapp.com/send?phone=5599111112222" target="_blank">
+		<i class="fa fa-whatsapp"></i>
+	</a>
+
     <!--Menu-->
     <header>
         <div class="container">
@@ -30,190 +56,76 @@
                         </li>
 
                         <li class="nav-link" style="--i: .85s">
-                            <a href="./tours.html">tours<i class="fas fa-caret-down"></i></a>
-
-                            <div class="dropdown">
-                                <ul>
-                                    <li class="dropdown-link">
-                                        <a href="#">São Paulo</a>
-                                    </li>
-
-                                    <li class="dropdown-link">
-                                        <a href="#">Florianópolis</a>
-                                    </li>
-
-                                    <li class="dropdown-link">
-                                        <a href="#">Hotéis<i class="fas fa-caret-down"></i></a>
-
-                                        <div class="dropdown second">
-                                            <ul>
-                                                <li class="dropdown-link">
-                                                    <a href="#">link 01</a>
-                                                </li>
-
-                                                <li class="dropdown-link">
-                                                    <a href="#">link 02</a>
-                                                </li>
-
-                                                <li class="dropdown-link">
-                                                    <a href="#">link 03</a>
-                                                </li>
-
-                                                <li class="dropdown-link">
-                                                    <a href="#">mais<i class="fas fa-caret-down"></i></a>
-
-                                                    <div class="dropdown second">
-                                                        <ul>
-                                                            <li class="dropdown-link">
-                                                                <a href="#">link 01</a>
-                                                            </li>
-
-                                                            <li class="dropdown-link">
-                                                                <a href="#">link 02</a>
-                                                            </li>
-
-                                                            <li class="dropdown-link">
-                                                                <a href="#">link 03</a>
-                                                            </li>
-                                                            <div class="arrow"></div>
-                                                        </ul>
-
-                                                    </div>
-                                                </li>
-                                                <div class="arrow"></div>
-                                            </ul>
-                                        </div>
-                                    </li>
-
-                                    <li class="dropdown-link">
-                                        <a href="#">Outros</a>
-                                    </li>
-                                    <div class="arrow"></div>
-                                </ul>
-                            </div>
-
+                            <a href="./tours.html">São Paulo</i></a>
                         </li>
 
                         <li class="nav-link" style="--i: 1.1s">
-                            <a href="#">Transfer<i class="fas fa-caret-down"></i></a>
-
-                            <div class="dropdown">
-                                <ul>
-                                    <li class="dropdown-link">
-                                        <a href="#">link 01</a>
-                                    </li>
-
-                                    <li class="dropdown-link">
-                                        <a href="#">link 02</a>
-                                    </li>
-
-                                    <li class="dropdown-link">
-                                        <a href="#">mais<i class="fas fa-caret-down"></i></a>
-
-                                        <div class="dropdown second">
-                                            <ul>
-                                                <li class="dropdown-link">
-                                                    <a href="#">link 01</a>
-                                                </li>
-
-                                                <li class="dropdown-link">
-                                                    <a href="#">link 02</a>
-                                                </li>
-
-                                                <li class="dropdown-link">
-                                                    <a href="#">link 03</a>
-                                                </li>
-
-                                                <li class="dropdown-link">
-                                                    <a href="#">mais<i class="fas fa-caret-down"></i></a>
-
-                                                    <div class="dropdown second">
-                                                        <ul>
-                                                            <li class="dropdown-link">
-                                                                <a href="#">link 01</a>
-                                                            </li>
-
-                                                            <li class="dropdown-link">
-                                                                <a href="#">link 02</a>
-                                                            </li>
-
-                                                            <li class="dropdown-link">
-                                                                <a href="#">link 03</a>
-                                                            </li>
-                                                            <div class="arrow"></div>
-                                                        </ul>
-
-                                                    </div>
-                                                </li>
-                                                <div class="arrow"></div>
-                                            </ul>
-                                        </div>
-                                    </li>
-
-                                    <li class="dropdown-link">
-                                        <a href="#">link 04</a>
-                                    </li>
-                                    <div class="arrow"></div>
-                                </ul>
-                            </div>
-
+                            <a href="#">Tours</i></a>
                         </li>
 
                         <li class="nav-link" style="--i: 1.1s">
-                            <a href="#">Contato<i class="fas fa-caret-down"></i></a>
+                            <a href="#">Blog</i></a>
+                        </li>
 
+
+                        <li class="nav-link" style="--i: 1.1s">
+                            <a href="#">Contato</i></a>
+                        </li>
+
+                        <li class="nav-link" style="--i: 1.1s">
+                            <a href="#"><img src="./assets/icons/brasil.png" alt="security"><i class="fas fa-caret-down"></i></a>
+        
                             <div class="dropdown">
                                 <ul>
                                     <li class="dropdown-link">
-                                        <a href="#">E-Mail</a>
+                                        <a href="#"><img src="./assets/icons/estados-unidos.png" alt="security"></a><!-- pt-BR -->
+                                    </li>
+        
+                                    <li class="dropdown-link">
+                                        <a href="#"><img src="./assets/icons/espanha.png" alt="security"></a><!-- en-US -->
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="nav-link" style="--i: .6s">
+                            <a href="#"><img src="./assets/icons/instagram.png" alt="security"><i class="fas fa-caret-down"></i></a><!-- Instagram -->
+                            
+
+                            <div class="dropdown">
+                                
+                                <ul>
+                                    <li class="dropdown-link">
+                                        <a href="#"><img src="./assets/icons/facebook.png" alt="security"></a><!-- Facebook -->
+                                    </li>
+        
+                                    <li class="dropdown-link">
+                                        <a href="#"><img src="./assets/icons/twitter.png" alt="security"></a><!-- Twitter -->
                                     </li>
 
                                     <li class="dropdown-link">
-                                        <a href="#">Redes sociais<i class="fas fa-caret-down"></i></a>
-
-                                        <div class="dropdown second">
-                                            <ul>
-                                                <li class="dropdown-link">
-                                                    <a href="#">Instagram</a>
-                                                </li>
-
-                                                <li class="dropdown-link">
-                                                    <a href="#">Facebook</a>
-                                                </li>
-
-                                                <li class="dropdown-link">
-                                                    <a href="#">LinkedIn</a>
-                                                </li>
-
-                                                <li class="dropdown-link">
-                                                    <a href="#">Twitter</a>
-                                                </li>
-
-                                                <li class="dropdown-link">
-                                                    <a href="#">Youtube</a>
-                                                </li>
-
-                                                <li class="dropdown-link">
-                                                    <a href="#">Tripadvisor</a>
-                                                </li>
-
-                                                <div class="arrow"></div>
-                                            </ul>
-                                        </div>
+                                        <a href="#"><img src="./assets/icons/linkedin.png" alt="security"></a><!-- LinkedIn -->
+                                    </li>
+        
+                                    <li class="dropdown-link">
+                                        <a href="#"><img src="./assets/icons/youtube.png" alt="security"></a><!-- Youtube -->
                                     </li>
 
-                                    <div class="arrow"></div>
+                                    <li class="dropdown-link">
+                                        <a href="#"><img src="./assets/icons/tripadvisor.png" alt="security"></a><!-- TripAdvisor -->
+                                    </li>
                                 </ul>
                             </div>
-
+                            
                         </li>
                         
                     </ul>
                 </div>
 
-                <div class="log-sign" style="--i: 1.8s">
+
+                <!--<div class="log-sign" style="--i: 1.8s">
                     <a href="#" class="btn transparent">Agendar uma viagem</a>
-                </div>
+                </div>-->
 
             </div>
 
@@ -286,6 +198,12 @@
             </div>
         </div>
     </section>
+
+    <!--FROTA-->
+
+    
+
+    <!--BLOG-->
 
     <section class="blog">
 
