@@ -13,6 +13,8 @@
 body{
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
+    /*background: linear-gradient(169deg, #ffffff 16.62%, #c8d4eb 85.61%);*/
+    background-color: #f8f9fa;
 }
 
     body::-webkit-scrollbar {
@@ -711,10 +713,8 @@ header > section{
 
 */
 
-.title-slide {
-    text-align: center;
-    font-size: 30px;
-    padding: 50px;
+.carrossel {
+    margin-top: 140px;
 }
 
 .wrapper {
@@ -747,7 +747,6 @@ header > section{
 }
 
 .slide-image {
-    filter: brightness(0.85);
     box-shadow:rgba(0, 0, 0, 0.085) 10px 10px 20px;
     width: 100%;
 }
@@ -1264,6 +1263,23 @@ footer .container-bottom {
         }
 
 
+    }
+
+    /*AVALIACOES*/
+
+    .rate h1{
+       font-size: 40px;
+    }
+
+    .user{
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+    }
+
+    .star{
+        width: 30px;
+        height: 30px;
     }
 
     
