@@ -1040,10 +1040,47 @@ footer .container-bottom {
 
     /*Galeria*/
 
+    .container-title{
+        font-size: 25px;
+        margin: 30px 0px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
     .container-row{
         height: auto;
         width: 100%;
         margin: 70px 0px;
+    }
+
+    .row-content{
+        padding: 20px;
+        width: 70%;
+        height: auto;
+        bottom: 0;
+        font-size: 17px;
+        color: rgb(255, 255, 255);
+        text-shadow: rgb(0, 0, 0) 0px 0px 8px;
+        text-transform: uppercase;
+    }
+
+    .item_1 > .row-content{
+        padding: 20px;
+        width: 100%;
+        font-size: 17px;
+        color: rgb(255, 255, 255);
+        text-shadow: rgb(0, 0, 0) 0px 0px 8px;
+    }
+
+    .f1-img{
+        width: 200px;
+        color: white;
+    }
+
+
+    .row-content a{
+        color: rgb(0, 251, 255);
+        text-shadow: rgb(0, 251, 255) 0px 0px 8px;
     }
 
     .row-items{
@@ -1059,28 +1096,87 @@ footer .container-bottom {
     }
 
     .sideitem{
-        background-image: url(./pic5.jpg);
+        background-image: url(./Guarujá.jpg);
         background-position: 50% 35%;
         background-size: cover;
         border-radius: 7px;
         width: 685px;
         height: 300px;
         margin: 0 auto 10px;
+        box-shadow: rgba(0, 0, 0, 0.537) 5px 5px 30px;
+
+        display: flex;
+        align-items: flex-end;
     }
 
+    .sideitem-2{
+        background-image: url(./f1.jfif);
+        background-position: 50% 65%;
+        background-size: cover;
+        border-radius: 7px;
+        width: 1040px;
+        height: 400px;
+        margin: 0 auto;
+        box-shadow: rgba(0, 0, 0, 0.537) 5px 5px 30px;
 
+        display: flex;
+        align-items: flex-end;
+    }
 
     .item_1, .item_2, .item_3, .item_4{
         margin: 0 auto 10px;
         border-radius: 7px;
         width: 333px;
         height: 300px;
+        box-shadow: rgba(0, 0, 0, 0.537) 5px 5px 30px;
+
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .sideitem:hover{
+        width: 695px;
+        height: 310px;
+        transition: 0.5s;
+        opacity: 0.95;
+    }
+
+    .sideitem-2:hover{
+        width: 1045px;
+        height: 405px;
+        transition: 0.5s;
+        
+    }
+
+    .item_1:hover{
+        width: 343px;
+        height: 310px;
+        transition: 0.5s;
+        opacity: 0.95;
+    }
+
+    .item_2:hover{
+        width: 343px;
+        height: 310px;
+        transition: 0.5s;
+    }
+
+    .item_3:hover{
+        width: 343px;
+        height: 310px;
+        transition: 0.3s;
+    }
+
+    .item_4:hover{
+        width: 343px;
+        height: 310px;
+        transition: 0.5s;
     }
 
     .item_1{
-        background-image: url(./pic1.jpg);
-        background-position: 50%;
-        background-size: cover;
+        background-image: url(./pic5.jpg);
+        background-position: 60% 10%;
+        background-size: 180%;
     }
 
     .item_2{
@@ -1101,18 +1197,76 @@ footer .container-bottom {
         background-size: cover;
     }
 
+    .item_2, .item_3, .item_4{
+        display: none;
+    }
+
     @media (max-width: 1200px){
 
         .sideitem{
-            width: 720px !important;
+            width: 800px !important;
+            height: 300px;
+        }
+
+        .sideitem-2{
+            width: 800px !important;
             height: 300px;
         }
     
         .item_1, .item_2, .item_3, .item_4{
-            width: 720px !important;
+            width: 800px !important;
             height: 300px;
         }
+
+        .item_1{
+            background-position: 50%;
+            background-size: cover;
+        }
+
+        .item_2, .item_3, .item_4{
+            display: none;
+        }
+
+        .sideitem-2:hover{
+            width: 695px;
+            height: 310px;
+        }
     }
+
+    @media (max-width: 550px){
+
+        .item_1 > .row-content{
+            font-size: 15px;
+        }
+
+        .row-content{
+            width: 100%;
+            font-size: 15px;
+        }
+
+        .margin-items{
+            padding: 0px 10px;
+        }
+
+        .sideitem{
+            width: 100% !important;
+            height: 200px;
+        }
+
+        .sideitem-2{
+            width: 100% !important;
+            height: 200px;
+        }
+    
+        .item_1, .item_2, .item_3, .item_4{
+            width: 100% !important;
+            height: 200px;
+        }
+
+
+    }
+
+    
 
     /*blog*/
 
