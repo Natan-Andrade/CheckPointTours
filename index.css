@@ -425,7 +425,6 @@ header > section{
         width: 100%;
         padding: 1.5rem 1.9rem;
         justify-content: center;
-        opacity: 0;
         transform: translateY(15px);
     }
 
@@ -1101,6 +1100,25 @@ footer .container-bottom {
         text-shadow: rgb(0, 0, 0) 0px 0px 8px;
     }
 
+    .item_1:hover{
+        width: 343px;
+        height: 310px;
+        transition: 0.5s;
+        opacity: 0.95;
+    }
+
+    .item_2:hover{
+        width: 343px;
+        height: 310px;
+        transition: 0.5s;
+    }
+
+    .item_3:hover{
+        width: 343px;
+        height: 310px;
+        transition: 0.3s;
+    }
+
     .f1-img{
         width: 200px;
         color: white;
@@ -1158,7 +1176,6 @@ footer .container-bottom {
         width: 333px;
         height: 300px;
         box-shadow: rgba(0, 0, 0, 0.537) 5px 5px 30px;
-
         display: flex;
         align-items: flex-end;
     }
@@ -1226,7 +1243,15 @@ footer .container-bottom {
         background-size: cover;
     }
 
-    .item_2, .item_3, .item_4{
+    .grid .item_2{
+        display: none;
+    }
+
+    .grid .item_3{
+        display: none;
+    }
+
+    .grid .item_4{
         display: none;
     }
 
@@ -1252,9 +1277,11 @@ footer .container-bottom {
             background-size: cover;
         }
 
-        .item_2, .item_3, .item_4{
+        .grid .item_3, .item_4{
             display: none;
         }
+
+        
 
         .sideitem-2:hover{
             width: 695px;
@@ -1294,6 +1321,193 @@ footer .container-bottom {
 
 
     }
+
+    /* TRAVELS */
+
+    .side-container{
+        width: 100%;
+        height: auto;
+        display: grid;
+        justify-content: center;
+        grid-template-areas: 
+        "item1 item2 item3 item4 item5";
+    }
+
+    .travels{
+        width: 100%;
+    }
+
+    .travels-text{
+        padding: 10px;
+        background: linear-gradient(180deg, #ffffff00 16.62%, #000000ce 85.61%);
+        backdrop-filter: blur(0.5px);
+        width: 100%;
+    }
+
+    .travels-text a{
+        color: rgb(196, 237, 250);
+    }
+
+
+    .travels-content-1{
+       background-image: url("./assets/imgs/holambra.jpg");
+       background-size: cover;
+        background-position: 50%;
+        width: 250px;
+        height: 250px;
+        display: flex;
+        align-items: flex-end;
+        grid-area: "item1";
+    }
+
+    .travels-content-2{
+        background-image: url("./assets/imgs/campos-do-lordão.jfif");
+        background-size: cover;
+        background-position: 50%;
+        width: 250px;
+        height: 250px;
+        display: flex;
+        align-items: flex-end;
+        grid-area: "item2";
+     }
+
+     .travels-content-3{
+        background-image: url("./assets/imgs/holambra.jpg");
+        background-size: cover;
+        background-position: 50%;
+        width: 250px;
+        height: 250px;
+        display: flex;
+        align-items: flex-end;
+        grid-area: "item3";
+     }
+
+     .travels-content-4{
+        background-image: url("./assets/imgs/holambra.jpg");
+        background-size: cover;
+        background-position: 50%;
+        width: 250px;
+        height: 250px;
+        display: flex;
+        align-items: flex-end;
+        grid-area: "item4";
+     }
+
+     .travels-content-5{
+        background-image: url("./assets/imgs/holambra.jpg");
+        background-size: cover;
+        background-position: 50%;
+        width: 250px;
+        height: 250px;
+        display: flex;
+        align-items: flex-end;
+        grid-area: "item5";
+     }
+
+    @media (max-width: 920px){
+        .side-container{
+        grid-template-areas: 
+        "item1 item2 item3 item4";
+        }
+
+        
+
+        .travels-content-5{
+            display: none;
+        }
+    }
+
+
+    /*full-container*/
+
+    .full-container .item_1, .item_2, .item_3, .item_4{
+         width: 390px;
+        height: 370px;
+    }
+
+    @media (max-width: 820px) {
+        .full-container .item_1, .item_2, .item_3, .item_4{
+            width: 700px !important;
+           height: 370px;
+       }
+    }
+
+    @media (max-width: 720px) {
+        .full-container .item_1, .item_2, .item_3, .item_4{
+            width: 600px !important;
+           height: 300px;
+       }
+    }
+
+    
+
+    @media (max-width: 620px) {
+        .full-container .item_1, .item_2, .item_3, .item_4{
+            width: 350px !important;
+           height: 300px;
+       }
+    }
+
+    .full-container .item_1:hover{
+        width: 395px;
+       height: 375px;
+   }
+
+    .full-container .item_2:hover{
+        width: 395px;
+       height: 375px;
+   }
+
+   .full-container .item_3:hover{
+    width: 395px;
+   height: 375px;
+}
+
+    .full-item{
+        width: 100%;
+        height: 500px;
+        background-image: url("./F1/pexels-maria-geller-2127038.jpg");
+        background-position: 50%;
+        background-size: cover;
+    }
+
+    .full-item .button{
+        width: 100%;
+        height: 100%;
+        display: flex;
+    }
+
+    .button .btn {
+        display: inline-block;
+        font-size: 2rem;
+        border: 2px solid #fff;
+        color: #fff;
+        background-color: rgba(0, 0, 0, 0.267);
+        backdrop-filter: blur(1px) !important;
+        border-radius: 2rem;
+        line-height: 1;
+        margin: 0 0.2rem;
+        transition: .3s;
+        text-transform: uppercase;
+    }
+
+    .button .btn.transparent:hover {
+        background-color: #fff;
+        box-shadow: 0px 0px 20px rgba(255, 0, 68, 0.62);
+        color: #23232e;
+    }
+
+    .full-container .row-items {
+        max-width: 1200px;
+    }
+
+    .full-container .margin-items{
+        padding: 0px;
+        justify-content: center;
+    }
+
+
+
 
     /*AVALIACOES*/
 
