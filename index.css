@@ -430,7 +430,7 @@ header > section{
 
     /*Nav*/
     .bg-banner {
-        max-height: 500px;
+        max-height: 720px;
     }
 
     /*bg*/
@@ -1325,15 +1325,29 @@ footer .container-bottom {
     /* TRAVELS */
 
     .side-container{
-        width: 100%;
         height: auto;
-        display: grid;
-        justify-content: center;
-        grid-template-areas: 
-        "item1 item2 item3 item4 item5";
+        display: flex;
+        margin: 0 auto;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        width: 100%;
+        max-width: 2500px;
     }
 
+    .side-container::-webkit-scrollbar {
+        background-color: rgb(212, 212, 212);
+         width: 10px; 
+         height: 8px; 
+        }
+    .side-container::-webkit-scrollbar-thumb:horizontal { 
+        border-radius: 10px;
+        background-color: #0084ff; 
+
+    }
+
+
     .travels{
+        justify-content: center;
         width: 100%;
     }
 
@@ -1348,30 +1362,7 @@ footer .container-bottom {
         color: rgb(196, 237, 250);
     }
 
-
-    .travels-content-1{
-       background-image: url("./assets/imgs/holambra.jpg");
-       background-size: cover;
-        background-position: 50%;
-        width: 250px;
-        height: 250px;
-        display: flex;
-        align-items: flex-end;
-        grid-area: "item1";
-    }
-
-    .travels-content-2{
-        background-image: url("./assets/imgs/campos-do-lordão.jfif");
-        background-size: cover;
-        background-position: 50%;
-        width: 250px;
-        height: 250px;
-        display: flex;
-        align-items: flex-end;
-        grid-area: "item2";
-     }
-
-     .travels-content-3{
+    .travels-content{
         background-image: url("./assets/imgs/holambra.jpg");
         background-size: cover;
         background-position: 50%;
@@ -1379,41 +1370,15 @@ footer .container-bottom {
         height: 250px;
         display: flex;
         align-items: flex-end;
-        grid-area: "item3";
      }
 
-     .travels-content-4{
-        background-image: url("./assets/imgs/holambra.jpg");
-        background-size: cover;
-        background-position: 50%;
-        width: 250px;
-        height: 250px;
-        display: flex;
-        align-items: flex-end;
-        grid-area: "item4";
-     }
 
-     .travels-content-5{
-        background-image: url("./assets/imgs/holambra.jpg");
-        background-size: cover;
-        background-position: 50%;
-        width: 250px;
-        height: 250px;
-        display: flex;
-        align-items: flex-end;
-        grid-area: "item5";
-     }
+    
 
     @media (max-width: 920px){
         .side-container{
         grid-template-areas: 
         "item1 item2 item3 item4";
-        }
-
-        
-
-        .travels-content-5{
-            display: none;
         }
     }
 
@@ -1443,24 +1408,28 @@ footer .container-bottom {
 
     @media (max-width: 620px) {
         .full-container .item_1, .item_2, .item_3, .item_4{
-            width: 350px !important;
+           width: 350px !important;
            height: 300px;
        }
+
+       .button .btn {
+        font-size: 1.5rem !important;
+    }
     }
 
     .full-container .item_1:hover{
         width: 395px;
-       height: 375px;
+        height: 375px;
    }
 
     .full-container .item_2:hover{
         width: 395px;
-       height: 375px;
+        height: 375px;
    }
 
    .full-container .item_3:hover{
     width: 395px;
-   height: 375px;
+    height: 375px;
 }
 
     .full-item{
@@ -1493,7 +1462,7 @@ footer .container-bottom {
 
     .button .btn.transparent:hover {
         background-color: #fff;
-        box-shadow: 0px 0px 20px rgba(255, 0, 68, 0.62);
+        box-shadow: 0px 0px 20px rgba(128, 0, 0, 0.5);
         color: #23232e;
     }
 
