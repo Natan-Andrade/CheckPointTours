@@ -1041,7 +1041,8 @@ section .container-content > h3 {
 
 footer {
     margin-top: 70px;
-    background-color: rgb(243 243 243);
+    background-color: rgb(11 38 67);
+    color: #fff;
 }
 
 .footer-content{
@@ -1054,7 +1055,6 @@ footer {
 .imgs-footer{
     max-width: 1500px;
     margin: 10px auto;
-    background-color: #025E87;
     border-radius: 5px;
 }
 
@@ -1072,14 +1072,14 @@ footer .container-content > h3 {
 }
 
 footer .row > p,a {
-    color: black;
+    color: rgb(255, 255, 255);
     text-align: left;
 }
 
 footer .container-bottom {
     padding: 15px 50px;
     color: #fff;
-    background-color: #23232e;
+    background-color: #071a2d;
 }
 
 
@@ -1810,9 +1810,9 @@ footer .container-bottom {
                 
 
       .section3{
-        background-image: url("./imgs-grid/onibus1.jpg");
-        background-position: 50% 80%;
-        background-size: cover;
+        background-image: url("./imgs-grid/onibus3.jpg");
+        background-position: 30% 50%;
+        background-size: 130%;
 
         grid-area: section3;
         width: 350px;
@@ -1826,9 +1826,9 @@ footer .container-bottom {
       .section4{
         background-image: 
         
-        url("./imgs-grid/van1.jpg");
-        background-position: 0% 50%;
-    background-size: 130%;
+        url("./imgs-grid/van\ master-minibus.jpg");
+        background-position: 50% 0%;
+        background-size: cover;
 
         grid-area: section4;
         width: 350px;
