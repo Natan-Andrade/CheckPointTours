@@ -1,0 +1,130 @@
+[23-Sep-2022 01:47:05 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[21S01]: Insert value list does not match column list: 1136 Column count doesn't match value count at row 1' in /home/hfduca0cbetg/public_html/checkpointtours.com.br/classes/Painel.php:121
+Stack trace:
+#0 /home/hfduca0cbetg/public_html/checkpointtours.com.br/classes/Painel.php(121): PDOStatement->execute(Array)
+#1 /home/hfduca0cbetg/public_html/checkpointtours.com.br/painel/pages/cadastrar-servico.php(9): Painel::insert(Array)
+#2 /home/hfduca0cbetg/public_html/checkpointtours.com.br/classes/Painel.php(43): include('/home/hfduca0cb...')
+#3 /home/hfduca0cbetg/public_html/checkpointtours.com.br/painel/main.php(79): Painel::carregarPagina()
+#4 /home/hfduca0cbetg/public_html/checkpointtours.com.br/painel/index.php(8): include('/home/hfduca0cb...')
+#5 {main}
+  thrown in /home/hfduca0cbetg/public_html/checkpointtours.com.br/classes/Painel.php on line 121
+[23-Sep-2022 02:05:19 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[21S01]: Insert value list does not match column list: 1136 Column count doesn't match value count at row 1' in /home/hfduca0cbetg/public_html/checkpointtours.com.br/classes/Painel.php:121
+Stack trace:
+#0 /home/hfduca0cbetg/public_html/checkpointtours.com.br/classes/Painel.php(121): PDOStatement->execute(Array)
+#1 /home/hfduca0cbetg/public_html/checkpointtours.com.br/painel/pages/cadastrar-depoimento.php(9): Painel::insert(Array)
+#2 /home/hfduca0cbetg/public_html/checkpointtours.com.br/classes/Painel.php(43): include('/home/hfduca0cb...')
+#3 /home/hfduca0cbetg/public_html/checkpointtours.com.br/painel/main.php(79): Painel::carregarPagina()
+#4 /home/hfduca0cbetg/public_html/checkpointtours.com.br/painel/index.php(8): include('/home/hfduca0cb...')
+#5 {main}
+  thrown in /home/hfduca0cbetg/public_html/checkpointtours.com.br/classes/Painel.php on line 121
+[23-Sep-2022 02:09:50 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'checkpointtours_db.tb_site.depoimentos' doesn't exist' in /home/hfduca0cbetg/public_html/checkpointtours.com.br/classes/Painel.php:121
+Stack trace:
+#0 /home/hfduca0cbetg/public_html/checkpointtours.com.br/classes/Painel.php(121): PDOStatement->execute(Array)
+#1 /home/hfduca0cbetg/public_html/checkpointtours.com.br/painel/pages/cadastrar-depoimento.php(9): Painel::insert(Array)
+#2 /home/hfduca0cbetg/public_html/checkpointtours.com.br/classes/Painel.php(43): include('/home/hfduca0cb...')
+#3 /home/hfduca0cbetg/public_html/checkpointtours.com.br/painel/main.php(79): Painel::carregarPagina()
+#4 /home/hfduca0cbetg/public_html/checkpointtours.com.br/painel/index.php(8): include('/home/hfduca0cb...')
+#5 {main}
+  thrown in /home/hfduca0cbetg/public_html/checkpointtours.com.br/classes/Painel.php on line 121
+[23-Sep-2022 02:14:38 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[21S01]: Insert value list does not match column list: 1136 Column count doesn't match value count at row 1' in /home/hfduca0cbetg/public_html/checkpointtours.com.br/classes/Painel.php:121
+Stack trace:
+#0 /home/hfduca0cbetg/public_html/checkpointtours.com.br/classes/Painel.php(121): PDOStatement->execute(Array)
+#1 /home/hfduca0cbetg/public_html/checkpointtours.com.br/painel/pages/cadastrar-depoimento.php(9): Painel::insert(Array)
+#2 /home/hfduca0cbetg/public_html/checkpointtours.com.br/classes/Painel.php(43): include('/home/hfduca0cb...')
+#3 /home/hfduca0cbetg/public_html/checkpointtours.com.br/painel/main.php(79): Painel::carregarPagina()
+#4 /home/hfduca0cbetg/public_html/checkpointtours.com.br/painel/index.php(8): include('/home/hfduca0cb...')
+#5 {main}
+  thrown in /home/hfduca0cbetg/public_html/checkpointtours.com.br/classes/Painel.php on line 121
+[23-Sep-2022 02:17:42 America/Sao_Paulo] PHP Notice:  Undefined index: data in /home/hfduca0cbetg/public_html/checkpointtours.com.br/painel/pages/listar-depoimentos.php on line 34
+[23-Sep-2022 02:17:42 America/Sao_Paulo] PHP Notice:  Undefined index: data in /home/hfduca0cbetg/public_html/checkpointtours.com.br/painel/pages/listar-depoimentos.php on line 34
+[23-Sep-2022 02:17:42 America/Sao_Paulo] PHP Notice:  Undefined index: data in /home/hfduca0cbetg/public_html/checkpointtours.com.br/painel/pages/listar-depoimentos.php on line 34
+[23-Sep-2022 02:17:42 America/Sao_Paulo] PHP Notice:  Undefined index: data in /home/hfduca0cbetg/public_html/checkpointtours.com.br/painel/pages/listar-depoimentos.php on line 34
+[23-Sep-2022 02:17:46 America/Sao_Paulo] PHP Notice:  Undefined index: data in /home/hfduca0cbetg/public_html/checkpointtours.com.br/painel/pages/listar-depoimentos.php on line 34
+[23-Sep-2022 02:17:46 America/Sao_Paulo] PHP Notice:  Undefined index: data in /home/hfduca0cbetg/public_html/checkpointtours.com.br/painel/pages/listar-depoimentos.php on line 34
+[23-Sep-2022 02:17:46 America/Sao_Paulo] PHP Notice:  Undefined index: data in /home/hfduca0cbetg/public_html/checkpointtours.com.br/painel/pages/listar-depoimentos.php on line 34
+[23-Sep-2022 02:17:46 America/Sao_Paulo] PHP Notice:  Undefined index: data in /home/hfduca0cbetg/public_html/checkpointtours.com.br/painel/pages/listar-depoimentos.php on line 34
+[23-Sep-2022 02:17:50 America/Sao_Paulo] PHP Notice:  Undefined index: data in /home/hfduca0cbetg/public_html/checkpointtours.com.br/painel/pages/editar-depoimento.php on line 38
+[23-Sep-2022 02:18:04 America/Sao_Paulo] PHP Notice:  Undefined index: data in /home/hfduca0cbetg/public_html/checkpointtours.com.br/painel/pages/listar-depoimentos.php on line 34
+[23-Sep-2022 02:18:04 America/Sao_Paulo] PHP Notice:  Undefined index: data in /home/hfduca0cbetg/public_html/checkpointtours.com.br/painel/pages/listar-depoimentos.php on line 34
+[23-Sep-2022 02:18:04 America/Sao_Paulo] PHP Notice:  Undefined index: data in /home/hfduca0cbetg/public_html/checkpointtours.com.br/painel/pages/listar-depoimentos.php on line 34
+[23-Sep-2022 02:18:04 America/Sao_Paulo] PHP Notice:  Undefined index: data in /home/hfduca0cbetg/public_html/checkpointtours.com.br/painel/pages/listar-depoimentos.php on line 34
+[23-Sep-2022 02:21:26 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected 'com' (T_STRING) in /home/hfduca0cbetg/public_html/checkpointtours.com.br/painel/pages/editar-depoimento.php on line 18
+[23-Sep-2022 02:21:33 America/Sao_Paulo] PHP Notice:  Undefined index: data in /home/hfduca0cbetg/public_html/checkpointtours.com.br/painel/pages/listar-depoimentos.php on line 34
+[23-Sep-2022 02:21:33 America/Sao_Paulo] PHP Notice:  Undefined index: data in /home/hfduca0cbetg/public_html/checkpointtours.com.br/painel/pages/listar-depoimentos.php on line 34
+[23-Sep-2022 02:21:33 America/Sao_Paulo] PHP Notice:  Undefined index: data in /home/hfduca0cbetg/public_html/checkpointtours.com.br/painel/pages/listar-depoimentos.php on line 34
+[23-Sep-2022 02:21:33 America/Sao_Paulo] PHP Notice:  Undefined index: data in /home/hfduca0cbetg/public_html/checkpointtours.com.br/painel/pages/listar-depoimentos.php on line 34
+[23-Sep-2022 02:21:36 America/Sao_Paulo] PHP Notice:  Undefined index: data in /home/hfduca0cbetg/public_html/checkpointtours.com.br/painel/pages/listar-depoimentos.php on line 34
+[23-Sep-2022 02:21:36 America/Sao_Paulo] PHP Notice:  Undefined index: data in /home/hfduca0cbetg/public_html/checkpointtours.com.br/painel/pages/listar-depoimentos.php on line 34
+[23-Sep-2022 02:21:36 America/Sao_Paulo] PHP Notice:  Undefined index: data in /home/hfduca0cbetg/public_html/checkpointtours.com.br/painel/pages/listar-depoimentos.php on line 34
+[23-Sep-2022 02:21:36 America/Sao_Paulo] PHP Notice:  Undefined index: data in /home/hfduca0cbetg/public_html/checkpointtours.com.br/painel/pages/listar-depoimentos.php on line 34
+[23-Sep-2022 02:21:39 America/Sao_Paulo] PHP Notice:  Undefined index: data in /home/hfduca0cbetg/public_html/checkpointtours.com.br/painel/pages/listar-depoimentos.php on line 34
+[23-Sep-2022 02:21:39 America/Sao_Paulo] PHP Notice:  Undefined index: data in /home/hfduca0cbetg/public_html/checkpointtours.com.br/painel/pages/listar-depoimentos.php on line 34
+[23-Sep-2022 02:21:39 America/Sao_Paulo] PHP Notice:  Undefined index: data in /home/hfduca0cbetg/public_html/checkpointtours.com.br/painel/pages/listar-depoimentos.php on line 34
+[23-Sep-2022 02:21:39 America/Sao_Paulo] PHP Notice:  Undefined index: data in /home/hfduca0cbetg/public_html/checkpointtours.com.br/painel/pages/listar-depoimentos.php on line 34
+[23-Sep-2022 02:21:40 America/Sao_Paulo] PHP Notice:  Undefined index: data in /home/hfduca0cbetg/public_html/checkpointtours.com.br/painel/pages/listar-depoimentos.php on line 34
+[23-Sep-2022 02:21:40 America/Sao_Paulo] PHP Notice:  Undefined index: data in /home/hfduca0cbetg/public_html/checkpointtours.com.br/painel/pages/listar-depoimentos.php on line 34
+[23-Sep-2022 02:21:40 America/Sao_Paulo] PHP Notice:  Undefined index: data in /home/hfduca0cbetg/public_html/checkpointtours.com.br/painel/pages/listar-depoimentos.php on line 34
+[23-Sep-2022 02:21:40 America/Sao_Paulo] PHP Notice:  Undefined index: data in /home/hfduca0cbetg/public_html/checkpointtours.com.br/painel/pages/listar-depoimentos.php on line 34
+[23-Sep-2022 02:21:42 America/Sao_Paulo] PHP Notice:  Undefined index: data in /home/hfduca0cbetg/public_html/checkpointtours.com.br/painel/pages/listar-depoimentos.php on line 34
+[23-Sep-2022 02:21:42 America/Sao_Paulo] PHP Notice:  Undefined index: data in /home/hfduca0cbetg/public_html/checkpointtours.com.br/painel/pages/listar-depoimentos.php on line 34
+[23-Sep-2022 02:21:42 America/Sao_Paulo] PHP Notice:  Undefined index: data in /home/hfduca0cbetg/public_html/checkpointtours.com.br/painel/pages/listar-depoimentos.php on line 34
+[23-Sep-2022 02:21:42 America/Sao_Paulo] PHP Notice:  Undefined index: data in /home/hfduca0cbetg/public_html/checkpointtours.com.br/painel/pages/listar-depoimentos.php on line 34
+[23-Sep-2022 02:21:43 America/Sao_Paulo] PHP Notice:  Undefined index: data in /home/hfduca0cbetg/public_html/checkpointtours.com.br/painel/pages/listar-depoimentos.php on line 34
+[23-Sep-2022 02:21:43 America/Sao_Paulo] PHP Notice:  Undefined index: data in /home/hfduca0cbetg/public_html/checkpointtours.com.br/painel/pages/listar-depoimentos.php on line 34
+[23-Sep-2022 02:21:43 America/Sao_Paulo] PHP Notice:  Undefined index: data in /home/hfduca0cbetg/public_html/checkpointtours.com.br/painel/pages/listar-depoimentos.php on line 34
+[23-Sep-2022 02:21:45 America/Sao_Paulo] PHP Notice:  Undefined index: data in /home/hfduca0cbetg/public_html/checkpointtours.com.br/painel/pages/listar-depoimentos.php on line 34
+[23-Sep-2022 02:21:45 America/Sao_Paulo] PHP Notice:  Undefined index: data in /home/hfduca0cbetg/public_html/checkpointtours.com.br/painel/pages/listar-depoimentos.php on line 34
+[23-Sep-2022 02:21:47 America/Sao_Paulo] PHP Notice:  Undefined index: data in /home/hfduca0cbetg/public_html/checkpointtours.com.br/painel/pages/listar-depoimentos.php on line 34
+[23-Sep-2022 02:27:09 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[21S01]: Insert value list does not match column list: 1136 Column count doesn't match value count at row 1' in /home/hfduca0cbetg/public_html/checkpointtours.com.br/classes/Painel.php:121
+Stack trace:
+#0 /home/hfduca0cbetg/public_html/checkpointtours.com.br/classes/Painel.php(121): PDOStatement->execute(Array)
+#1 /home/hfduca0cbetg/public_html/checkpointtours.com.br/painel/pages/cadastrar-servico.php(9): Painel::insert(Array)
+#2 /home/hfduca0cbetg/public_html/checkpointtours.com.br/classes/Painel.php(43): include('/home/hfduca0cb...')
+#3 /home/hfduca0cbetg/public_html/checkpointtours.com.br/painel/main.php(82): Painel::carregarPagina()
+#4 /home/hfduca0cbetg/public_html/checkpointtours.com.br/painel/index.php(8): include('/home/hfduca0cb...')
+#5 {main}
+  thrown in /home/hfduca0cbetg/public_html/checkpointtours.com.br/classes/Painel.php on line 121
+[23-Sep-2022 02:46:14 America/Sao_Paulo] PHP Notice:  Undefined index: data in /home/hfduca0cbetg/public_html/checkpointtours.com.br/painel/pages/listar-depoimentos.php on line 34
+[23-Sep-2022 02:46:16 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected 'com' (T_STRING) in /home/hfduca0cbetg/public_html/checkpointtours.com.br/painel/pages/editar-depoimento.php on line 18
+[23-Sep-2022 02:46:22 America/Sao_Paulo] PHP Notice:  Undefined index: data in /home/hfduca0cbetg/public_html/checkpointtours.com.br/painel/pages/listar-depoimentos.php on line 34
+[23-Sep-2022 02:46:24 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected 'com' (T_STRING) in /home/hfduca0cbetg/public_html/checkpointtours.com.br/painel/pages/editar-depoimento.php on line 18
+[23-Sep-2022 02:46:27 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected 'com' (T_STRING) in /home/hfduca0cbetg/public_html/checkpointtours.com.br/painel/pages/editar-depoimento.php on line 18
+[23-Sep-2022 02:46:29 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected 'com' (T_STRING) in /home/hfduca0cbetg/public_html/checkpointtours.com.br/painel/pages/editar-depoimento.php on line 18
+[23-Sep-2022 02:46:30 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected 'com' (T_STRING) in /home/hfduca0cbetg/public_html/checkpointtours.com.br/painel/pages/editar-depoimento.php on line 18
+[23-Sep-2022 02:46:34 America/Sao_Paulo] PHP Notice:  Undefined index: data in /home/hfduca0cbetg/public_html/checkpointtours.com.br/painel/pages/listar-depoimentos.php on line 34
+[23-Sep-2022 02:47:28 America/Sao_Paulo] PHP Notice:  Undefined index: data in /home/hfduca0cbetg/public_html/checkpointtours.com.br/painel/pages/listar-depoimentos.php on line 34
+[23-Sep-2022 02:47:32 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected 'com' (T_STRING) in /home/hfduca0cbetg/public_html/checkpointtours.com.br/painel/pages/editar-depoimento.php on line 18
+[23-Sep-2022 02:49:17 America/Sao_Paulo] PHP Notice:  Undefined index: data in /home/hfduca0cbetg/public_html/checkpointtours.com.br/painel/pages/listar-depoimentos.php on line 34
+[23-Sep-2022 02:49:19 America/Sao_Paulo] PHP Notice:  Undefined index: data in /home/hfduca0cbetg/public_html/checkpointtours.com.br/painel/pages/listar-depoimentos.php on line 34
+[23-Sep-2022 02:51:07 America/Sao_Paulo] PHP Notice:  Undefined index: data in /home/hfduca0cbetg/public_html/checkpointtours.com.br/painel/pages/listar-depoimentos.php on line 34
+[23-Sep-2022 02:51:58 America/Sao_Paulo] PHP Notice:  Undefined index: data in /home/hfduca0cbetg/public_html/checkpointtours.com.br/painel/pages/listar-depoimentos.php on line 34
+[23-Sep-2022 10:36:56 America/Sao_Paulo] PHP Notice:  Undefined index: data in /home/hfduca0cbetg/public_html/checkpointtours.com.br/painel/pages/listar-depoimentos.php on line 34
+[23-Sep-2022 10:37:46 America/Sao_Paulo] PHP Warning:  Missing argument 2 for Painel::alert(), called in /home/hfduca0cbetg/public_html/checkpointtours.com.br/painel/pages/editar-depoimento.php on line 18 and defined in /home/hfduca0cbetg/public_html/checkpointtours.com.br/classes/Painel.php on line 65
+[23-Sep-2022 10:42:38 America/Sao_Paulo] PHP Notice:  Undefined index: data in /home/hfduca0cbetg/public_html/checkpointtours.com.br/painel/pages/listar-depoimentos.php on line 34
+[23-Sep-2022 10:47:55 America/Sao_Paulo] PHP Notice:  Undefined index: data in /home/hfduca0cbetg/public_html/checkpointtours.com.br/painel/pages/listar-depoimentos.php on line 34
+[23-Sep-2022 10:48:01 America/Sao_Paulo] PHP Warning:  Missing argument 2 for Painel::alert(), called in /home/hfduca0cbetg/public_html/checkpointtours.com.br/painel/pages/editar-depoimento.php on line 18 and defined in /home/hfduca0cbetg/public_html/checkpointtours.com.br/classes/Painel.php on line 65
+[23-Sep-2022 10:48:12 America/Sao_Paulo] PHP Warning:  Missing argument 2 for Painel::alert(), called in /home/hfduca0cbetg/public_html/checkpointtours.com.br/painel/pages/editar-depoimento.php on line 18 and defined in /home/hfduca0cbetg/public_html/checkpointtours.com.br/classes/Painel.php on line 65
+[23-Sep-2022 10:48:24 America/Sao_Paulo] PHP Warning:  Missing argument 2 for Painel::alert(), called in /home/hfduca0cbetg/public_html/checkpointtours.com.br/painel/pages/editar-depoimento.php on line 18 and defined in /home/hfduca0cbetg/public_html/checkpointtours.com.br/classes/Painel.php on line 65
+[23-Sep-2022 11:16:29 America/Sao_Paulo] PHP Notice:  Undefined index: data in /home/hfduca0cbetg/public_html/checkpointtours.com.br/painel/pages/listar-depoimentos.php on line 34
+[23-Sep-2022 11:17:13 America/Sao_Paulo] PHP Notice:  Undefined index: data in /home/hfduca0cbetg/public_html/checkpointtours.com.br/painel/pages/listar-depoimentos.php on line 34
+[23-Sep-2022 11:17:25 America/Sao_Paulo] PHP Notice:  Undefined index: data in /home/hfduca0cbetg/public_html/checkpointtours.com.br/painel/pages/listar-depoimentos.php on line 34
+[23-Sep-2022 11:36:20 America/Sao_Paulo] PHP Warning:  Missing argument 2 for Painel::alert(), called in /home/hfduca0cbetg/public_html/checkpointtours.com.br/painel/pages/editar-depoimento.php on line 18 and defined in /home/hfduca0cbetg/public_html/checkpointtours.com.br/classes/Painel.php on line 65
+[23-Sep-2022 11:37:16 America/Sao_Paulo] PHP Warning:  Missing argument 2 for Painel::alert(), called in /home/hfduca0cbetg/public_html/checkpointtours.com.br/painel/pages/editar-depoimento.php on line 18 and defined in /home/hfduca0cbetg/public_html/checkpointtours.com.br/classes/Painel.php on line 65
+[23-Sep-2022 11:45:33 America/Sao_Paulo] PHP Warning:  Missing argument 2 for Painel::alert(), called in /home/hfduca0cbetg/public_html/checkpointtours.com.br/painel/pages/editar-depoimento.php on line 18 and defined in /home/hfduca0cbetg/public_html/checkpointtours.com.br/classes/Painel.php on line 65
+[23-Sep-2022 11:48:51 America/Sao_Paulo] PHP Warning:  Missing argument 2 for Painel::alert(), called in /home/hfduca0cbetg/public_html/checkpointtours.com.br/painel/pages/editar-depoimento.php on line 18 and defined in /home/hfduca0cbetg/public_html/checkpointtours.com.br/classes/Painel.php on line 65
+[23-Sep-2022 11:51:11 America/Sao_Paulo] PHP Warning:  Missing argument 2 for Painel::alert(), called in /home/hfduca0cbetg/public_html/checkpointtours.com.br/painel/pages/editar-depoimento.php on line 18 and defined in /home/hfduca0cbetg/public_html/checkpointtours.com.br/classes/Painel.php on line 65
+[27-Sep-2022 13:47:39 America/Sao_Paulo] PHP Notice:  Undefined index: user in /home/hfduca0cbetg/public_html/checkpointtours.com.br/painel/login.php on line 35
+[27-Sep-2022 13:47:39 America/Sao_Paulo] PHP Notice:  Undefined index: password in /home/hfduca0cbetg/public_html/checkpointtours.com.br/painel/login.php on line 36
+[28-Sep-2022 17:01:26 America/Sao_Paulo] PHP Notice:  Undefined variable: eng_requerimentoso in /home/hfduca0cbetg/public_html/checkpointtours.com.br/painel/pages/editar-noticia.php on line 143
+[28-Sep-2022 17:15:02 America/Sao_Paulo] PHP Notice:  Undefined index: eng_requirements in /home/hfduca0cbetg/public_html/checkpointtours.com.br/painel/pages/cadastrar-noticia.php on line 33
+[28-Sep-2022 17:15:43 America/Sao_Paulo] PHP Notice:  Undefined index: eng_requirements in /home/hfduca0cbetg/public_html/checkpointtours.com.br/painel/pages/cadastrar-noticia.php on line 33
+[04-Oct-2022 16:10:27 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected end of file in /home/hfduca0cbetg/public_html/checkpointtours.com.br/painel/pages/gerenciar-noticias.php on line 177
+[04-Oct-2022 16:10:31 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected end of file in /home/hfduca0cbetg/public_html/checkpointtours.com.br/painel/pages/gerenciar-noticias.php on line 177
+[04-Oct-2022 16:10:32 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected end of file in /home/hfduca0cbetg/public_html/checkpointtours.com.br/painel/pages/gerenciar-noticias.php on line 177
+[04-Oct-2022 16:10:33 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected end of file in /home/hfduca0cbetg/public_html/checkpointtours.com.br/painel/pages/gerenciar-noticias.php on line 177
+[04-Oct-2022 16:10:33 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected end of file in /home/hfduca0cbetg/public_html/checkpointtours.com.br/painel/pages/gerenciar-noticias.php on line 177
+[04-Oct-2022 16:10:34 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected end of file in /home/hfduca0cbetg/public_html/checkpointtours.com.br/painel/pages/gerenciar-noticias.php on line 177
+[04-Oct-2022 16:13:45 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected end of file in /home/hfduca0cbetg/public_html/checkpointtours.com.br/painel/pages/gerenciar-noticias.php on line 177
+[04-Oct-2022 16:14:31 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected end of file in /home/hfduca0cbetg/public_html/checkpointtours.com.br/painel/pages/gerenciar-noticias.php on line 177
+[04-Oct-2022 16:14:54 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected end of file in /home/hfduca0cbetg/public_html/checkpointtours.com.br/painel/pages/gerenciar-noticias.php on line 177
+[05-Oct-2022 14:15:26 America/Sao_Paulo] PHP Notice:  Undefined index: user in /home/hfduca0cbetg/public_html/checkpointtours.com.br/painel/login.php on line 35
+[05-Oct-2022 14:15:26 America/Sao_Paulo] PHP Notice:  Undefined index: password in /home/hfduca0cbetg/public_html/checkpointtours.com.br/painel/login.php on line 36
