@@ -518,7 +518,7 @@
                         <li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>PR">Foz do Iguaçu/PR</a></li>
                         <li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>oquefazernatal">Natal/RN</a></li>
                         <li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>SC">Florianópolis/SC</a></li>
-                        <li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>BA">Salvador/BA</a></li>
+                        <li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>oquefazersalvador">Salvador/BA</a></li>
                         <li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>AM">Manaus/AM</a></li>
                         <li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>CE">Fortaleza/CE</a></li>
                     </ul>

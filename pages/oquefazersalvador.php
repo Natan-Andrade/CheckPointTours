@@ -14,7 +14,7 @@
 </head>
 
 <body>
-<?php $cidade = "São Paulo"?>
+<?php $cidade = "Salvador";?>
 <?php
 	if(isset($_GET['excluir'])){
 		$idExcluir = intval($_GET['excluir']);
@@ -30,7 +30,7 @@
 	}
 
 	$paginaAtual = isset($_GET['pagina']) ? (int)$_GET['pagina'] : 1;
-	$porPagina = 1;
+	$porPagina = 6;
 	
 	$slides = Painel::selectAll('tb_site.slides',($paginaAtual - 1) * $porPagina,$porPagina);
 
@@ -50,125 +50,70 @@
 
     <?php } ?>
 
-    <section style="margin-top: 80px;">
-        <div class="center">
-            <h2 style="text-align: center; padding: 30px 0;"><i class="fa-solid fa-triangle-exclamation"></i> Site em Construção</h2>
-        </div>
-    </section>
-
     <!--Menu-->
     <header>
         <div class="container">
             <input type="checkbox" name="" id="check">
-                
-                <div class="logo-container">
-                    <a href="<?php echo INCLUDE_PATH; ?>oquefazersaopaulo"><img style="width: 70%;" class="logo" src="<?php echo INCLUDE_PATH; ?>/logos/logo.png"></a>
-                </div>
+
+            <div class="logo-container">
+
+            <a href="<?php echo INCLUDE_PATH; ?>oquefazersalvador"><img style="width: 70%;" class="logo" src="<?php echo INCLUDE_PATH; ?>/logos/logo.png"></a>
+
+            </div>
+
             <div class="nav-btn">
                 <div class="nav-links">
 
                     <ul>
                         <li class="nav-link" style="--i: .6s">
-                            <a href="<?php echo INCLUDE_PATH; ?>oquefazersaopaulo">Home</a>
+                            <a href="<?php echo INCLUDE_PATH; ?>oquefazersalvador">Home</a>
                         </li>
 
                         <li class="nav-link" style="--i: .6s">
-                            <a href="<?php echo INCLUDE_PATH; ?>oquefazersaopaulo">São Paulo<i class="fas fa-caret-down"></i></a>
+                            <a href="<?php echo INCLUDE_PATH; ?>oquefazersalvador"><?php echo $cidade; ?><i class="fas fa-caret-down"></i></a>
                             
-
                             <div class="dropdown">
                                 
                                 <ul>
                                     <li class="dropdown-link">
-                                        <a href="https://checkpointtours.com.br/tours/o-que-fazer-sao-paulo-tours-de-meio-dia">Tour De Meio Dia</a>
+                                        <a href="<?php echo INCLUDE_PATH; ?>oquefazersalvador">Home</a>
+                                    </li>
+
+                                    <li class="dropdown-link">
+                                        <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-salvador-">Tour De Meio Dia</a>
                                     </li>
         
                                     <li class="dropdown-link">
-                                         <a href="https://checkpointtours.com.br/tours/o-que-fazer-sao-paulo-tours-de-dia-inteiro-">Tour de Dia Inteiro</a>
+                                         <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-salvador-">Tour de Dia Inteiro</a>
                                     </li>
 
                                     <li class="dropdown-link">
-                                        <a href="https://checkpointtours.com.br/tours/o-que-fazer-sao-paulo-tours-de-meio-dia-city-tour-gastronomico-">City Tour Gastronômico</a>
-                                    </li>
-                                    <li class="dropdown-link">
-                                        <a href="https://checkpointtours.com.br/tours/o-que-fazer-sao-paulo-tours-de-meio-dia-tours-by-night">Vida Noturna</a>
+                                        <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-salvador-">Vida Noturna</a>
                                     </li>
         
                                     <li class="dropdown-link">
-                                        <a href="<?php echo INCLUDE_PATH; ?>tours">Eventos da Cidade</a>
+                                        <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-salvador-">Carnaval</a>
                                     </li>
 
                                     <li class="dropdown-link">
-                                        <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-sao-paulo-parques-tematicos-">Parques Temáticos</a>
-                                    </li>
-        
-                                    <li class="dropdown-link">
-                                        <a href="<?php echo INCLUDE_PATH; ?>transfers">Traslados</a>
+                                        <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-salvador-">Atrativos turísticos</a>
                                     </li>
 
                                     <li class="dropdown-link">
-                                        <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-sao-paulo-porto-de-santos">Porto de Santos</a>
+                                        <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-salvador-">Memorial irmã Dulce</a>
                                     </li>
 
                                     <li class="dropdown-link">
-                                        <a href="<?php echo INCLUDE_PATH; ?>visitadenegocios">Visitas de Negócios</a>
+                                        <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-salvador-">Praias</a>
                                     </li>
 
                                     <li class="dropdown-link">
-                                        <a href="#">mais<i class="fas fa-caret-down"></i></a>
-
-                                        <div class="dropdown second">
-                                            <ul>
-
-                                                <li class="dropdown-link">
-                                                    <a href="<?php echo INCLUDE_PATH; ?>tours">Hospedagem</a>
-                                                </li>
-
-                                                <li class="dropdown-link">
-                                                    <a href="<?php echo INCLUDE_PATH; ?>tours">Transportes</a>
-                                                </li>
-                    
-                                                <li class="dropdown-link">
-                                                    <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-sao-paulo-eco-turismo-">Ecoturismo</a>
-                                                </li>
-
-                                                <li class="dropdown-link">
-                                                    <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-sao-paulo-agro-turismo-">Agroturismo</a>
-                                                </li>
-                                                <li class="dropdown-link">
-                                                    <a href="<?php echo INCLUDE_PATH; ?>tours">Tours Natalinos</a>
-                                                </li>
-                    
-                                                <li class="dropdown-link">
-                                                    <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-sao-paulo-carnaval-">Carnaval SP</a>
-                                                </li>
-
-                                                <li class="dropdown-link">
-                                                    <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-sao-paulo-campos-do-jordao-">Campos do Jordão</a>
-                                                </li>
-                    
-                                                <li class="dropdown-link">
-                                                    <a href="https://checkpointtours.com.br/tours/o-que-fazer-sao-paulo-pacote-romantico">Pacote Romântico</a>
-                                                </li>
-
-                                                <li class="dropdown-link">
-                                                    <a href="<?php echo INCLUDE_PATH; ?>F1">GP São Paulo F1</a>
-                                                </li>
-
-                                                <li class="dropdown-link">
-                                                    <a href="<?php echo INCLUDE_PATH; ?>tours">Teatro</a>
-                                                </li>
-                    
-                                                <li class="dropdown-link">
-                                                    <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-sao-paulo-turismetro-">TurisMetrô</a>
-                                                </li>
-                                            </ul>
-
-                                        </div>
+                                        <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-salvador-">Morro de São Paulo</a>
                                     </li>
-                                    <div class="arrow"></div>
 
-                                    
+                                    <li class="dropdown-link">
+                                        <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-salvador-">Mangue seco</a>
+                                    </li>
                                 </ul>
                             </div>
                             
@@ -196,22 +141,21 @@
                             <div class="dropdown">
                                 <ul>
                                     <li class="dropdown-link">
-                                        <a href="<?php echo INCLUDE_PATH; ?>oquefazersaopaulo"><img src="<?php echo INCLUDE_PATH; ?>\pages\assets\icons\brasil.png" alt="pt-BR"><p>Português</p></a><!-- pt-BR -->
+                                        <a href="<?php echo INCLUDE_PATH; ?>oquefazersalvador"><img src="<?php echo INCLUDE_PATH; ?>\pages\assets\icons\brasil.png" alt="pt-BR"><p>Português</p></a><!-- pt-BR -->
                                     </li>
 
                                     <li class="dropdown-link">
-                                        <a href="<?php echo INCLUDE_PATH; ?>en-US/oquefazersaopaulo"><img src="<?php echo INCLUDE_PATH; ?>\pages\assets\icons\estados-unidos.png" alt="en-US"><p>English</p></a><!-- eng-US -->
+                                        <a href="<?php echo INCLUDE_PATH; ?>en-US/oquefazersalvador"><img src="<?php echo INCLUDE_PATH; ?>\pages\assets\icons\estados-unidos.png" alt="en-US"><p>English</p></a><!-- eng-US -->
                                     </li>
         
                                     <li class="dropdown-link">
-                                        <a href="<?php echo INCLUDE_PATH; ?>es-ES/oquefazersaopaulo"><img src="<?php echo INCLUDE_PATH; ?>\pages\assets\icons\espanha.png" alt="es-ES"><p>Espanõl</p></a><!-- en-US -->
+                                        <a href="<?php echo INCLUDE_PATH; ?>es-ES/oquefazersalvador"><img src="<?php echo INCLUDE_PATH; ?>\pages\assets\icons\espanha.png" alt="es-ES"><p>Espanõl</p></a><!-- en-US -->
                                     </li>
                                 </ul>
                             </div>
                         </li>
                     </ul>
                 </div>
-
             </div>
 
             <div class="hamburguer-menu-container">
@@ -223,7 +167,7 @@
         </div>
     </header>
 
-        <?php include('SP_content.php'); ?>
+    <?php include('BA_content.php'); ?>
 
     <!--FOOTER-->
     <footer>
@@ -233,82 +177,40 @@
                     <ul class="list-unstyled">
                         <h3><?php echo $cidade; ?></h3>
 
-                        <li>
-                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-sao-paulo-tours-de-meio-dia">Tour De Meio Dia</a>
+                        <li class="">
+                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-salvador-">Tour De Meio Dia</a>
                         </li>
 
-                        <li>
-                             <a href="https://checkpointtours.com.br/tours/o-que-fazer-sao-paulo-tours-de-dia-inteiro-">Tour de Dia Inteiro</a>
+                        <li class="">
+                                <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-salvador-">Tour de Dia Inteiro</a>
                         </li>
 
-                        <li>
-                            <a href="<?php echo INCLUDE_PATH; ?>tours">City Tour Gastronômico</a>
-                        </li>
-                        <li>
-                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-sao-paulo-vida-noturna-">Vida Noturna</a>
+                        <li class="">
+                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-salvador-">Vida Noturna</a>
                         </li>
 
-                        <li>
-                            <a href="<?php echo INCLUDE_PATH; ?>tours">Eventos da Cidade</a>
+                        <li class="">
+                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-salvador-">Carnaval</a>
                         </li>
 
-                        <li>
-                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-sao-paulo-parques-tematicos-">Parques Temáticos</a>
+                        <li class="">
+                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-salvador-">Atrativos turísticos</a>
                         </li>
 
-                        <li>
-                            <a href="<?php echo INCLUDE_PATH; ?>transfers">Traslados</a>
+                        <li class="">
+                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-salvador-">Memorial irmã Dulce</a>
                         </li>
 
-                        <li>
-                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-sao-paulo-porto-de-santos">Porto de Santos</a>
+                        <li class="">
+                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-salvador-">Praias</a>
                         </li>
 
-                        <li>
-                            <a href="<?php echo INCLUDE_PATH; ?>visitadenegocios">Visitas de Negócios</a>
+                        <li class="">
+                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-salvador-">Morro de São Paulo</a>
                         </li>
 
-                        <li>
-                            <a href="<?php echo INCLUDE_PATH; ?>tours">Hospedagem</a>
-                        </li>
-
-                        <li>
-                            <a href="<?php echo INCLUDE_PATH; ?>tours">Transportes</a>
-                        </li>
-
-                        <li>
-                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-sao-paulo-eco-turismo-">Ecoturismo</a>
-                        </li>
-
-                        <li>
-                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-sao-paulo-agro-turismo-">Agroturismo</a>
-                        </li>
-                        <li>
-                            <a href="<?php echo INCLUDE_PATH; ?>tours">Tours Natalinos</a>
-                        </li>
-
-                        <li>
-                            <a href="<?php echo INCLUDE_PATH; ?>tours">Carnaval SP</a>
-                        </li>
-
-                        <li>
-                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-sao-paulo-campos-do-jordao-">Campos do Jordão</a>
-                        </li>
-
-                        <li>
-                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-sao-paulo-pacote-romantico">Pacote Romântico</a>
-                        </li>
-
-                        <li>
-                            <a href="<?php echo INCLUDE_PATH; ?>F1">GP São Paulo F1</a>
-                        </li>
-
-                        <li>
-                            <a href="<?php echo INCLUDE_PATH; ?>tours">Teatro</a>
-                        </li>
-
-                        <li>
-                            <a href="<?php echo INCLUDE_PATH; ?>tours">TurisMetrô</a>
+                        <li class="">
+                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-salvador-">Mangue seco</a>
                         </li>
                     </ul>
                 </div>
@@ -391,12 +293,10 @@
     </footer>
 
     <script src="https://kit.fontawesome.com/8772d4e44f.js" crossorigin="anonymous"></script>
-
     <?php }else{ 
 	include('tour_single.php');
 	}
 	?>
-
 </body>
 
 </html>

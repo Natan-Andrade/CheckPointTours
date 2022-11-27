@@ -56,7 +56,7 @@
 
             <div class="logo-container">
 
-            <a href="<?php echo INCLUDE_PATH; ?>en-US/BA"><img style="width: 70%;" class="logo" src="<?php echo INCLUDE_PATH; ?>/logos/logo.png"></a>
+            <a href="<?php echo INCLUDE_PATH; ?>en-US/oquefazersalvador"><img style="width: 70%;" class="logo" src="<?php echo INCLUDE_PATH; ?>/logos/logo.png"></a>
 
             <!-- <img  style="width: 55%;" class="logo" src="./logo2.jpg">-->
             </div>
@@ -693,7 +693,7 @@
                         <li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>en-US/PR">Foz do Iguaçu/PR</a></li>
                         <li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>en-US/oquefazernatal">Natal/RN</a></li>
                         <li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>en-US/SC">Florianópolis/SC</a></li>
-                        <li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>en-US/BA">Salvador/BA</a></li>
+                        <li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>en-US/oquefazersalvador">Salvador/BA</a></li>
                         <li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>en-US/AM">Manaus/AM</a></li>
                         <li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>en-US/CE">Fortaleza/CE</a></li>
                     </ul>
