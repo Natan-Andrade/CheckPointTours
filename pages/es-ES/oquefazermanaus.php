@@ -14,6 +14,7 @@
 </head>
 
 <body>
+<?php $cidade = "Manaus";?>
 <?php
 	if(isset($_GET['excluir'])){
 		$idExcluir = intval($_GET['excluir']);
@@ -56,9 +57,8 @@
 
             <div class="logo-container">
 
-            <a href="<?php echo INCLUDE_PATH; ?>oquefazermanaus"><img style="width: 70%;" class="logo" src="<?php echo INCLUDE_PATH; ?>./logos/logo.png"></a>
+            <a href="<?php echo INCLUDE_PATH; ?>es-ES/oquefazermanaus"><img style="width: 70%;" class="logo" src="<?php echo INCLUDE_PATH; ?>./logos/logo.png"></a>
 
-            <!-- <img  style="width: 55%;" class="logo" src="./logo2.jpg">-->
             </div>
 
             <div class="nav-btn">
@@ -66,13 +66,12 @@
 
                     <ul>
                         <li class="nav-link" style="--i: .6s">
-                            <a href="<?php echo INCLUDE_PATH; ?>oquefazermanaus">Home</a>
+                            <a href="<?php echo INCLUDE_PATH; ?>es-ES/oquefazermanaus">Home</a>
                         </li>
 
                         <li class="nav-link" style="--i: .6s">
-                            <a href="<?php echo INCLUDE_PATH; ?>oquefazermanaus">Manaus<i class="fas fa-caret-down"></i></a>
+                            <a href="<?php echo INCLUDE_PATH; ?>es-ES/oquefazermanaus"><?php echo $cidade;?><i class="fas fa-caret-down"></i></a>
                             
-
                             <div class="dropdown">
                                 
                                 <ul>
@@ -80,113 +79,53 @@
                                         <a href="<?php echo INCLUDE_PATH; ?>es-ES/oquefazermanaus">Home</a>
                                     </li>
         
-                                   
-
                                     <li class="dropdown-link">
-                                         <a href="https://checkpointtours.com.br/tours/o-que-fazer-sao-paulo-tours-de-meio-dia">tour de medio dia</a>
+                                         <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-manaus">tour de medio dia</a>
                                     </li>
         
                                     <li class="dropdown-link">
-                                        <a href="https://checkpointtours.com.br/tours/o-que-fazer-sao-paulo-tours-de-dia-inteiro-">tour de día completo</a>
+                                        <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-manaus">tour de día completo</a>
                                     </li>
 
                                     <li class="dropdown-link">
-                                        <a href="#">City Tour Gastronómico</a>
-                                    </li>
-                                    <li class="dropdown-link">
-                                        <a href="https://checkpointtours.com.br/tours/o-que-fazer-sao-paulo-tours-de-meio-dia-tours-by-night">Vida nocturna</a>
-                                    </li>
-        
-                                    <li class="dropdown-link">
-                                        <a href="#">Eventos de la ciudad</a>
+                                        <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-manaus">Vida nocturna</a>
                                     </li>
 
                                     <li class="dropdown-link">
-                                        <a href="#">parques temáticos</a>
-                                    </li>
-        
-                                    <li class="dropdown-link">
-                                        <a href="#">transferencias</a>
+                                        <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-manaus">Puntos turisticos</a>
                                     </li>
 
                                     <li class="dropdown-link">
-                                        <a href="#">Puerto de Santos</a>
+                                        <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-manaus">compras</a>
                                     </li>
 
                                     <li class="dropdown-link">
-                                        <a href="<?php echo INCLUDE_PATH; ?>visitadenegocios">Visitas de Negocios</a>
+                                        <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-manaus">Parque Mindú</a>
                                     </li>
 
                                     <li class="dropdown-link">
-                                        <a href="#">más<i class="fas fa-caret-down"></i></a>
-
-                                        <div class="dropdown second">
-                                            <ul>
-
-                                                <li class="dropdown-link">
-                                                    <a href="#">alojamiento</a>
-                                                </li>
-
-                                                <li class="dropdown-link">
-                                                    <a href="#">Transportes</a>
-                                                </li>
-                    
-                                                <li class="dropdown-link">
-                                                    <a href="#">Ecoturismo</a>
-                                                </li>
-
-                                                <li class="dropdown-link">
-                                                    <a href="#">Agroturismo</a>
-                                                </li>
-                                                <li class="dropdown-link">
-                                                    <a href="#">Giras navideñas</a>
-                                                </li>
-                    
-                                                <li class="dropdown-link">
-                                                    <a href="<?php echo INCLUDE_PATH; ?>tours">Carnaval SP</a>
-                                                </li>
-
-                                                <li class="dropdown-link">
-                                                    <a href="<?php echo INCLUDE_PATH; ?>tours">Campos do Jordão</a>
-                                                </li>
-                    
-                                                <li class="dropdown-link">
-                                                    <a href="https://checkpointtours.com.br/tours/o-que-fazer-sao-paulo-pacote-romantico">Paquete Romántico</a>
-                                                </li>
-
-                                                <li class="dropdown-link">
-                                                    <a href="<?php echo INCLUDE_PATH; ?>F1">GP São Paulo F1</a>
-                                                </li>
-
-                                                <li class="dropdown-link">
-                                                    <a href="<?php echo INCLUDE_PATH; ?>tours">Teatro</a>
-                                                </li>
-                    
-                                                <li class="dropdown-link">
-                                                    <a href="<?php echo INCLUDE_PATH; ?>tours">TurisMetrô</a>
-                                                </li>
-                                            </ul>
-
-                                        </div>
+                                        <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-manaus">playas</a>
                                     </li>
-                                    <div class="arrow"></div>
 
-                                    
+                                    <li class="dropdown-link">
+                                        <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-manaus">Tour a las cascadas</a>
+                                    </li>
+
                                 </ul>
                             </div>
                             
                         </li>
 
                         <li class="nav-link" style="--i: 1.1s">
-                            <a href="<?php echo INCLUDE_PATH; ?>tours">Tours</a>
+                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-manaus">Tours</a>
                         </li>
 
                         <li class="nav-link" style="--i: 1.1s">
-                            <a href="<?php echo INCLUDE_PATH; ?>transfers">Transfers</i></a>
+                            <a href="<?php echo INCLUDE_PATH; ?>es-ES/transfers">Transfers</i></a>
                         </li>
 
                         <li class="nav-link" style="--i: 1.1s">
-                            <a href="<?php echo INCLUDE_PATH; ?>F1">GP São Paulo F1</i></a>
+                            <a href="<?php echo INCLUDE_PATH; ?>es-ES/F1">GP São Paulo F1</i></a>
                         </li>
 
                         <li class="nav-link" style="--i: 1.1s">
@@ -234,86 +173,38 @@
             <div class="itens-wrap">
                 <div class="container-content">
                     <ul class="list-unstyled">
-                        <h3>São Paulo</h3>
-
- 
+                        <h3><?php  echo $cidade; ?></h3>
 
                         <li>
-                             <a href="https://checkpointtours.com.br/tours/o-que-fazer-sao-paulo-tours-de-meio-dia">tour de medio dia</a>
+                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-manaus">Tour De Medio dia</a>
                         </li>
 
                         <li>
-                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-sao-paulo-tours-de-dia-inteiro-">tour de día completo</a>
+                             <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-manaus">Tour de día completo</a>
                         </li>
 
                         <li>
-                            <a href="#">City Tour Gastronómico</a>
-                        </li>
-                        <li>
-                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-sao-paulo-tours-de-meio-dia-tours-by-night">Vida nocturna</a>
+                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-manaus">Vida nocturna</a>
                         </li>
 
-                        <li>
-                            <a href="#">Eventos de la ciudad</a>
+                        <li class="">
+                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-manaus">Puntos turisticos</a>
                         </li>
 
-                        <li>
-                            <a href="#">parques temáticos</a>
+                        <li class="">
+                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-manaus">compras</a>
                         </li>
 
-                        <li>
-                            <a href="#">transferencias</a>
+                        <li class="">
+                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-manaus">Parque Mindú</a>
                         </li>
 
-                        <li>
-                            <a href="#">Puerto de Santos</a>
+                        <li class="">
+                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-manaus">Playas</a>
                         </li>
 
-                        <li>
-                            <a href="<?php echo INCLUDE_PATH; ?>visitadenegocios">Visitas de Negocios</a>
-                        </li>
-
-                        <li>
-                            <a href="#">alojamiento</a>
-                        </li>
-
-                        <li>
-                            <a href="#">Transportes</a>
-                        </li>
-
-                        <li>
-                            <a href="#">Ecoturismo</a>
-                        </li>
-
-                        <li>
-                            <a href="#">Agroturismo</a>
-                        </li>
-                        <li>
-                            <a href="#">Giras navideñas</a>
-                        </li>
-
-                        <li>
-                            <a href="<?php echo INCLUDE_PATH; ?>tours">Carnaval SP</a>
-                        </li>
-
-                        <li>
-                            <a href="<?php echo INCLUDE_PATH; ?>tours">Campos do Jordão</a>
-                        </li>
-
-                        <li>
-                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-sao-paulo-pacote-romantico">Paquete Romántico</a>
-                        </li>
-
-                        <li>
-                            <a href="<?php echo INCLUDE_PATH; ?>F1">GP São Paulo F1</a>
-                        </li>
-
-                        <li>
-                            <a href="<?php echo INCLUDE_PATH; ?>tours">Teatro</a>
-                        </li>
-
-                        <li>
-                            <a href="<?php echo INCLUDE_PATH; ?>tours">TurisMetrô</a>
+                        <li class="">
+                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-manaus">Tour a las cascadas</a>
                         </li>
                     </ul>
                 </div>

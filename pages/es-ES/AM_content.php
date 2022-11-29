@@ -60,25 +60,25 @@
                 </div>
 
                 <div class="margin-items">
-                    <div class="sideitem" style="background-image: url(<?php echo $infoSite['BA_bg1']; ?>);">
+                    <div class="sideitem" style="background-image: url(<?php echo $infoSite['AM_bg1']; ?>);">
                         <div class="row-content">
                             <h3>City Tours de día completo por la ciudad</h3>
-                            <a href="#" target="_blank">Ver más >></a>
+                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-manaus" target="_blank">Ver más >></a>
 
                         </div><!--row-content-->
                     </div><!--sideitem-->
 
-                    <div class="item_1" style="background-image: url(<?php echo $infoSite['BA_bg2']; ?>);">
+                    <div class="item_1" style="background-image: url(<?php echo $infoSite['AM_bg2']; ?>);">
                         <div class="row-content">
                             <h3>City tours de medio día</h3>
-                            <a href="#" target="_blank">Ver más >></a>
+                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-manaus" target="_blank">Ver más >></a>
 
                         </div><!--row-content-->
                     </div><!--sideitem-->
 
-                    <div class="sideitem-2" style="background-image: url(<?php echo INCLUDE_PATH ?>pages/assets/banners/esp_dance_banner.png);">
+                    <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-manaus" class="sideitem-2" style="background-image: url(<?php echo INCLUDE_PATH ?>pages/assets/banners/manausbg-esp.png);">
                         
-                    </div><!--sideitem-->
+                    </a><!--sideitem-->
 
                 </div>
             </div><!--row-items-->
@@ -90,18 +90,18 @@
     <?php
 		$porPagina = 7;
 		if(!isset($_POST['parametro'])){
-		if($categoria['nome'] == ''){
+		if($categoria['nome'] == 'O que fazer em Manaus'){
 			echo '<h2></h2>';
 		}else{
-			echo '<h2>Visualizando Posts em <span>'.$categoria['nome'].'</span></h2>';
+			echo '';
 		}
 		}else{
-			echo '<h2><i class="fa fa-check"></i> Busca realizada com sucesso!</h2>';
+			echo '';
 		}
 
 		$query = "SELECT * FROM `tb_site.tours` ";
-		if($categoria['nome'] != ''){
-			$categoria['id'] = (int)$categoria['id'];
+		if($categoria['nome'] != 'O que fazer em Manaus'){
+			$categoria['id'] = 40;
 			$query.="WHERE categoria_id = $categoria[id]";
 		}
 		if(isset($_POST['parametro'])){
@@ -114,8 +114,8 @@
 			}
 		}
 		$query2 = "SELECT * FROM `tb_site.tours` "; 
-		if($categoria['nome'] != ''){
-				$categoria['id'] = (int)$categoria['id'];
+		if($categoria['nome'] != 'O que fazer em Manaus'){
+				$categoria['id'] = 40;
 				$query2.="WHERE categoria_id = $categoria[id]";
 		}
 		if(isset($_POST['parametro'])){
@@ -152,7 +152,6 @@
 		$tours = $sql->fetchAll();
 	?>
 
-
 	<section class="side-container">
 
 	<?php
@@ -165,7 +164,7 @@
 		<div class="travels">
 			<div class="travels-content" style="background-image: url(' <?php echo INCLUDE_PATH_PAINEL ?>uploads/<?php echo $value['capa']; ?> ');">
 				<div class="travels-text">
-					<a href="<?php echo INCLUDE_PATH; ?>tours/<?php echo $categoriaNome; ?>/<?php echo $value['slug']; ?>">
+					<a href="<?php echo INCLUDE_PATH; ?>tours/<?php echo $categoriaNome; ?>">
 						<h2><?php echo substr(strip_tags($value['esp_titulo']),0,20).'...'; ?></h2>
 					</a>
 				</div>
@@ -229,6 +228,7 @@
         </div>  
     </section>  
 
+    <?php include('f1-painel.php'); ?>
 
     <section class="rate">
             <div class="box-align">

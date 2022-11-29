@@ -62,7 +62,7 @@
                         <div class="row-content">
                             <h3>full day city tours</h3>
                             
-                            <a href="http://localhost/checkpointtours.com.br/tours/o-que-fazer-em-manaus" target="_blank">See more >></a>
+                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-manaus" target="_blank">See more >></a>
 
                         </div><!--row-content-->
                     </div><!--sideitem-->
@@ -71,12 +71,12 @@
                         <div class="row-content">
                             <h3>half day tours</h3>
                             
-                            <a href="http://localhost/checkpointtours.com.br/tours/o-que-fazer-em-manaus" target="_blank">See more >></a>
+                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-manaus" target="_blank">See more >></a>
 
                         </div><!--row-content-->
                     </div><!--sideitem-->
 
-                    <a href="http://localhost/checkpointtours.com.br/tours/o-que-fazer-em-manaus" class="sideitem-2" style="background-image: url(<?php echo INCLUDE_PATH ?>pages/assets/banners/manausbg-eng.png);">
+                    <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-manaus" class="sideitem-2" style="background-image: url(<?php echo INCLUDE_PATH ?>pages/assets/banners/manausbg-eng.png);">
                     </a><!--sideitem-->
 
                 </div>
