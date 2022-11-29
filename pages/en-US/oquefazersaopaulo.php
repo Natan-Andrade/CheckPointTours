@@ -325,7 +325,7 @@
                         <li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>en-US/oquefazernatal">Natal/RN</a></li>
                         <li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>en-US/SC">Florianópolis/SC</a></li>
                         <li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>en-US/oquefazersalvador">Salvador/BA</a></li>
-                        <li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>en-US/AM">Manaus/AM</a></li>
+                        <li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>en-US/oquefazermanaus">Manaus/AM</a></li>
                         <li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>en-US/CE">Fortaleza/CE</a></li>
                     </ul>
                 </div>

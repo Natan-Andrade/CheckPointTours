@@ -1,6 +1,5 @@
-<nav>
+    <nav>
         <div class="bg-banner" style="background-image: url(' <?php echo INCLUDE_PATH_PAINEL ?>uploads/<?php echo $value['slide']; ?> ');">
-            
         </div>
 
         <section class="descricao-autor">
@@ -50,8 +49,6 @@
         </div>
     </section>
 
- 
-
     <section class="grid">
         <div class="container-row">
     
@@ -61,25 +58,25 @@
                 </div>
 
                 <div class="margin-items">
-                    <div class="sideitem" style="background-image: url(<?php echo $infoSite['RJ_bg1']; ?>);">
+                    <div class="sideitem" style="background-image: url(<?php echo $infoSite['AM_bg1']; ?>);">
                         <div class="row-content">
                             <h3>full day city tours</h3>
                             
-                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-rio-de-janeiro" target="_blank">See more >></a>
+                            <a href="http://localhost/checkpointtours.com.br/tours/o-que-fazer-em-manaus" target="_blank">See more >></a>
 
                         </div><!--row-content-->
                     </div><!--sideitem-->
 
-                    <div class="item_1" style="background-image: url(<?php echo $infoSite['RJ_bg2']; ?>);">
+                    <div class="item_1" style="background-image: url(<?php echo $infoSite['AM_bg2']; ?>);">
                         <div class="row-content">
                             <h3>half day tours</h3>
                             
-                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-rio-de-janeiro" target="_blank">See more >></a>
+                            <a href="http://localhost/checkpointtours.com.br/tours/o-que-fazer-em-manaus" target="_blank">See more >></a>
 
                         </div><!--row-content-->
                     </div><!--sideitem-->
 
-                    <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-rio-de-janeiro" target="_blank" class="sideitem-2" style="background-image: url(<?php echo INCLUDE_PATH ?>pages/assets/banners/rjbg-eng.png);">
+                    <a href="http://localhost/checkpointtours.com.br/tours/o-que-fazer-em-manaus" class="sideitem-2" style="background-image: url(<?php echo INCLUDE_PATH ?>pages/assets/banners/manausbg-eng.png);">
                     </a><!--sideitem-->
 
                 </div>
@@ -92,7 +89,7 @@
     <?php
 		$porPagina = 7;
 		if(!isset($_POST['parametro'])){
-		if($categoria['nome'] == 'O que fazer em Rio de Janeiro'){
+		if($categoria['nome'] == 'O que fazer em Manaus'){
 			echo '<h2></h2>';
 		}else{
 			echo '';
@@ -102,8 +99,8 @@
 		}
 
 		$query = "SELECT * FROM `tb_site.tours` ";
-		if($categoria['nome'] != 'O que fazer em Rio de Janeiro'){
-			$categoria['id'] = 35;
+		if($categoria['nome'] != 'O que fazer em Manaus'){
+			$categoria['id'] = 40;
 			$query.="WHERE categoria_id = $categoria[id]";
 		}
 		if(isset($_POST['parametro'])){
@@ -116,8 +113,8 @@
 			}
 		}
 		$query2 = "SELECT * FROM `tb_site.tours` "; 
-		if($categoria['nome'] != 'O que fazer em Rio de Janeiro'){
-				$categoria['id'] = 35;
+		if($categoria['nome'] != 'O que fazer em Manaus'){
+				$categoria['id'] = 40;
 				$query2.="WHERE categoria_id = $categoria[id]";
 		}
 		if(isset($_POST['parametro'])){
@@ -231,28 +228,7 @@
         </div>  
     </section>  
 
-        <div class="full-item" style="background-image: url(<?php echo INCLUDE_PATH ?>pages/assets/F1/5.jpg);">
-
-            <div class="button">
-                <div class="log-sign" style="--i: 1.8s">
-                    <a href="<?php echo INCLUDE_PATH; ?>en-US/F1" class="btn transparent">GP São Paulo F1</a>
-                </div>
-            </div>
-
-            <div class="full-item-content">
-                <div class="full-gradiant">
-                    <div class="full-ul">
-                        <ul>
-                            <li><a href="<?php echo INCLUDE_PATH; ?>en-US/ingressos">Tickets</a></li>
-                            <li><a href="<?php echo INCLUDE_PATH; ?>en-US/transfers">Transfers</a></li>
-                            <li><a href="<?php echo INCLUDE_PATH; ?>en-US/transfers">Transport rental</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-    </section>
+    <?php include('f1-painel.php'); ?>
 
     <section class="rate">
             <div class="box-align">

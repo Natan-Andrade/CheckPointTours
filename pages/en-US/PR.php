@@ -452,7 +452,7 @@
                 </section>
         
                 <section class="section2">
-                    <a href="#" class="buttonClass">All transfers</a>
+                    <a href="<?php echo INCLUDE_PATH; ?>en-US/transfers" class="buttonClass">All transfers</a>
                 </section>
 
                 <section class="section3" style="background-image: url(<?php echo INCLUDE_PATH ?>pages/assets/imgs/imgs-grid/onibus1.jpg);">
@@ -694,7 +694,7 @@
                         <li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>en-US/oquefazernatal">Natal/RN</a></li>
                         <li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>en-US/SC">Florianópolis/SC</a></li>
                         <li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>en-US/oquefazersalvador">Salvador/BA</a></li>
-                        <li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>en-US/AM">Manaus/AM</a></li>
+                        <li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>en-US/oquefazermanaus">Manaus/AM</a></li>
                         <li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>en-US/CE">Fortaleza/CE</a></li>
                     </ul>
                 </div>

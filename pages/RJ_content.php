@@ -153,7 +153,6 @@
 		$tours = $sql->fetchAll();
 	?>
 
-
 	<section class="side-container">
 
         <?php

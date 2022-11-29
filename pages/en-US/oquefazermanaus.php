@@ -14,7 +14,7 @@
 </head>
 
 <body>
-<?php $cidade = "Rio de Janeiro"?>
+    <?php $cidade = "Manaus";?>
 <?php
 	if(isset($_GET['excluir'])){
 		$idExcluir = intval($_GET['excluir']);
@@ -30,7 +30,7 @@
 	}
 
 	$paginaAtual = isset($_GET['pagina']) ? (int)$_GET['pagina'] : 1;
-	$porPagina = 2;
+	$porPagina = 7;
 	
 	$slides = Painel::selectAll('tb_site.slides',($paginaAtual - 1) * $porPagina,$porPagina);
 
@@ -57,7 +57,8 @@
 
             <div class="logo-container">
 
-            <a href="<?php echo INCLUDE_PATH; ?>en-US/oquefazerriodejaneiro"><img style="width: 70%;" class="logo" src="<?php echo INCLUDE_PATH; ?>/logos/logo.png"></a>
+            <a href="<?php echo INCLUDE_PATH; ?>en-US/oquefazermanaus"><img style="width: 70%;" class="logo" src="<?php echo INCLUDE_PATH; ?>/logos/logo.png"></a>
+
             </div>
 
             <div class="nav-btn">
@@ -65,57 +66,50 @@
 
                     <ul>
                         <li class="nav-link" style="--i: .6s">
-                            <a href="<?php echo INCLUDE_PATH; ?>en-US/oquefazerriodejaneiro">Home</a>
+                            <a href="<?php echo INCLUDE_PATH; ?>en-US/oquefazermanaus">Home</a>
                         </li>
 
                         <li class="nav-link" style="--i: .6s">
-                            <a href="<?php echo INCLUDE_PATH; ?>en-US/oquefazerriodejaneiro">Rio de Janeiro<i class="fas fa-caret-down"></i></a>
+                        <a href="<?php echo INCLUDE_PATH; ?>en-US/oquefazermanaus">Manaus<i class="fas fa-caret-down"></i></a>
                             
+
                             <div class="dropdown">
                                 
                                 <ul>
                                     <li class="dropdown-link">
-                                        <a href="<?php echo INCLUDE_PATH; ?>en-US/oquefazerriodejaneiro">Home</a>
-                                    </li>
-                                   
-                                    <li class="dropdown-link">
-                                        <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-rio-de-janeiro">Half Day Tour</a>
+                                        <a href="<?php echo INCLUDE_PATH; ?>en-US/oquefazermanaus">Home</a>
                                     </li>
         
                                     <li class="dropdown-link">
-                                         <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-rio-de-janeiro">Full Day Tour</a>
-                                    </li>
-
-                                    <li class="dropdown-link">
-                                        <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-rio-de-janeiro">Night life</a>
+                                        <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-manaus">half day tour</a>
                                     </li>
         
                                     <li class="dropdown-link">
-                                        <a href="<?php echo INCLUDE_PATH; ?>en-US/transfers">Transfers</a>
+                                        <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-manaus">full day tour</a>
                                     </li>
 
                                     <li class="dropdown-link">
-                                        <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-rio-de-janeiro">Helicopter tour</a>
+                                        <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-manaus">Night life</a>
                                     </li>
 
                                     <li class="dropdown-link">
-                                        <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-rio-de-janeiro">Petrópolis</a>
-                                    </li>
-        
-                                    <li class="dropdown-link">
-                                        <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-rio-de-janeiro">Búzios</a>
+                                        <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-manaus">attractions</a>
                                     </li>
 
                                     <li class="dropdown-link">
-                                        <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-rio-de-janeiro">tropical islands</a>
+                                        <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-manaus">Shopping</a>
                                     </li>
 
                                     <li class="dropdown-link">
-                                        <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-rio-de-janeiro">Angra dos Reis</a>
+                                        <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-manaus">Mindu Park</a>
                                     </li>
 
                                     <li class="dropdown-link">
-                                        <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-rio-de-janeiro">Football</a>
+                                        <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-manaus">Beaches</a>
+                                    </li>
+
+                                    <li class="dropdown-link">
+                                        <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-manaus">tour to the waterfalls</a>
                                     </li>
                                 </ul>
                             </div>
@@ -123,7 +117,7 @@
                         </li>
 
                         <li class="nav-link" style="--i: 1.1s">
-                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-rio-de-janeiro">Tours</a>
+                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-manaus">Tours</a>
                         </li>
 
                         <li class="nav-link" style="--i: 1.1s">
@@ -131,7 +125,7 @@
                         </li>
 
                         <li class="nav-link" style="--i: 1.1s">
-                            <a href="<?php echo INCLUDE_PATH; ?>F1">GP São Paulo F1</i></a>
+                            <a href="<?php echo INCLUDE_PATH; ?>en-US/F1">GP São Paulo F1</i></a>
                         </li>
 
                         <li class="nav-link" style="--i: 1.1s">
@@ -144,21 +138,22 @@
                             <div class="dropdown">
                                 <ul>
                                     <li class="dropdown-link">
-                                        <a href="<?php echo INCLUDE_PATH; ?>oquefazerriodejaneiro"><img src="<?php echo INCLUDE_PATH; ?>\pages\assets\icons\brasil.png" alt="pt-BR"><p>Português</p></a><!-- pt-BR -->
+                                        <a href="<?php echo INCLUDE_PATH; ?>oquefazermanaus"><img src="<?php echo INCLUDE_PATH; ?>\pages\assets\icons\brasil.png" alt="pt-BR"><p>Português</p></a><!-- pt-BR -->
                                     </li>
 
                                     <li class="dropdown-link">
-                                        <a href="<?php echo INCLUDE_PATH; ?>en-US/oquefazerriodejaneiro"><img src="<?php echo INCLUDE_PATH; ?>\pages\assets\icons\estados-unidos.png" alt="en-US"><p>English</p></a><!-- eng-US -->
+                                        <a href="<?php echo INCLUDE_PATH; ?>en-US/oquefazermanaus"><img src="<?php echo INCLUDE_PATH; ?>\pages\assets\icons\estados-unidos.png" alt="en-US"><p>English</p></a><!-- eng-US -->
                                     </li>
         
                                     <li class="dropdown-link">
-                                        <a href="<?php echo INCLUDE_PATH; ?>es-ES/oquefazerriodejaneiro"><img src="<?php echo INCLUDE_PATH; ?>\pages\assets\icons\espanha.png" alt="es-ES"><p>Espanõl</p></a><!-- en-US -->
+                                        <a href="<?php echo INCLUDE_PATH; ?>es-ES/oquefazermanaus"><img src="<?php echo INCLUDE_PATH; ?>\pages\assets\icons\espanha.png" alt="es-ES"><p>Espanõl</p></a><!-- en-US -->
                                     </li>
                                 </ul>
                             </div>
                         </li>
                     </ul>
                 </div>
+
 
             </div>
 
@@ -169,10 +164,10 @@
             </div>
 
         </div>
-    </header>            
+    </header>	
 
-        <?php include('RJ_content.php'); ?>
-    
+        <?php include('AM_content.php'); ?>
+
     <!--FOOTER-->
     <footer>
         <div class="footer-content">
@@ -180,49 +175,39 @@
                 <div class="container-content">
                     <ul class="list-unstyled">
                         <h3><?php echo $cidade; ?></h3>
-                            <li class="">
-                                <a href="<?php echo INCLUDE_PATH; ?>en-US/oquefazerriodejaneiro">Home</a>
-                            </li>
-                            
-                            <li class="">
-                                <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-rio-de-janeiro">Half Day Tour</a>
-                            </li>
+   
+                        <li>
+                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-manaus">half day tour</a>
+                        </li>
 
-                            <li class="">
-                                    <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-rio-de-janeiro">Full Day Tour</a>
-                            </li>
+                        <li>
+                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-manaus">full day tour</a>
+                        </li>
 
-                            <li class="">
-                                <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-rio-de-janeiro">Night life</a>
-                            </li>
+                        <li>
+                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-manaus">Night life</a>
+                        </li>
 
-                            <li class="">
-                                <a href="<?php echo INCLUDE_PATH; ?>en-US/transfers">Transfers</a>
-                            </li>
+                        <li class="">
+                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-manaus">attractions</a>
+                        </li>
 
-                            <li class="">
-                                <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-rio-de-janeiro">Helicopter tour</a>
-                            </li>
+                        <li class="">
+                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-manaus">Shopping</a>
+                        </li>
 
-                            <li class="">
-                                <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-rio-de-janeiro">Petrópolis</a>
-                            </li>
+                        <li class="">
+                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-manaus">Mindu Park</a>
+                        </li>
 
-                            <li class="">
-                                <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-rio-de-janeiro">Búzios</a>
-                            </li>
+                        <li class="">
+                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-manaus">Beaches</a>
+                        </li>
 
-                            <li class="">
-                                <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-rio-de-janeiro">tropical islands</a>
-                            </li>
+                        <li class="">
+                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-manaus">tour to the waterfalls</a>
+                        </li>
 
-                            <li class="">
-                                <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-rio-de-janeiro">Angra dos Reis</a>
-                            </li>
-
-                            <li class="">
-                                <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-rio-de-janeiro">Football</a>
-                            </li>
                     </ul>
                 </div>
 
