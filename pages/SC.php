@@ -465,78 +465,9 @@
         </div>  
     </section>  
 
-        <div class="full-item" style="background-image: url(<?php echo INCLUDE_PATH ?>pages/assets/F1/5.jpg);">
-
-            <div class="button">
-                <div class="log-sign" style="--i: 1.8s">
-                    <a href="<?php echo INCLUDE_PATH; ?>F1" class="btn transparent">GP São Paulo F1</a>
-                </div>
-            </div>
-
-            <div class="full-item-content">
-                <div class="full-gradiant">
-                    <div class="full-ul">
-                        <ul>
-                            <li><a href="#">Ingressos</a></li>
-                            <li><a href="<?php echo INCLUDE_PATH; ?>transfers">Transfers</a></li>
-                            <li><a href="#">Locação de transporte</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-    </section>
-
-    <!--<section class="grid">
-        <div class="title-slide">
-            <p>CONHEÇA NOSSOS DESTAQUES</p>
-            <h2>Descubra seu próximo destino</h2>
-        </div>
+<?php include('f1-painel.php'); ?>
 
 
-        <div class="container-grid">
-            <div class="sidenav" onclick="window.location.href='./tours.html'">
-                <div class="container-content">
-                    <h1>teste</h1>
-                    <p></p>
-                </div>
-            </div>
-
-            <div class="footer-1" onclick="window.location.href='./tours.html'">
-                <div class="container-content">
-                    <h1>teste</h1>
-                    <p></p>
-                </div>
-            </div>
-            
-            <div class="item-1" onclick="window.location.href='./tours.html'">
-                <div class="container-content">
-                    <h1>teste</h1>
-                    <p></p>
-                </div>
-            </div>
-            <div class="item-2" onclick="window.location.href='./tours.html'">
-                <div class="container-content">
-                    <h1>teste</h1>
-                    <p></p>
-                </div>
-            </div>
-            
-            <div class="footer-2" onclick="window.location.href='./tours.html'">
-                <div class="container-content">
-                    <h1>teste</h1>
-                    <p></p>
-                </div>
-            </div>
-        </div>
-
-        <div class="btn-grid">
-            <div class="log-btn" style="--i: 1.8s">
-                <a href="./tours.html" class="btn-banner transparent">Ver mais</a>
-            </div>
-        </div>
-    </section>-->
 
     <section class="rate">
             <div class="box-align">
@@ -551,48 +482,7 @@
         </div>
     </section>
 
-    <!--BLOG
 
-        <section class="blog">
-
-            <div class="news">
-                <div class="blog-title">
-                    <h2>O que fazer em São Paulo?</h2>
-                    <a href="https://www.oquefazersaopaulo.com.br/" target="_blank">ver mais artigos no blog >></a> 
-                </div>
-
-                <div class="new">
-                    <div class="bg-n1"></div>
-                        <div class="news-content">
-                        <h4>10 praias paradisíacas para curtir no Litoral de São Paulo</h4>
-                        <p>Se você está em busca de faixas de areia super preservadas e com belezas naturais super autênticas, então o Litoral Norte de São Paulo sem dúvidas vai te surpreender...</p>
-                        <a href="https://oquefazersaopaulo.com.br/10-praias-paradisiacas-para-curtir-no-litoral-de-sao-paulo/" target="_blank">continuar lendo >></a>
-                    </div>
-                </div>
-
-                <div class="new">
-                    <div class="bg-n2"></div>
-                        <div class="news-content">
-                        <h4>São Paulo: 4 roteiros alternativos para explorar a cidade</h4>
-                        <p>4 super roteiros alternativos para você descobrir redutos da natureza, ouvir histórias, degustar uma boa comida e ainda viajar no tempo; tudo isso em meio à agitada metrópole....</p>
-                        <a href="https://oquefazersaopaulo.com.br/sao-paulo-4-roteiros-alternativos-para-explorar-a-cidade/" target="_blank">continuar lendo >></a>
-                    </div>
-                </div>
-
-                <div class="new">
-                    <div class="bg-n3"></div>
-                        <div class="news-content">
-                        <h4>4 destinos incríveis que a Check Point te leva para conhecer!</h4>
-                        <p>Quem faz turismo no Brasil sabe bem que o que não faltam por aqui são belezas naturais abundantes, incrível diversidade cultural e um povo que adora receber bem. Abaixo, listamos quatro destinos nacionais que a Check Point Tours leva você para conhecer, com toda segurança que o momento exige....</p>
-                        <a href="https://oquefazersaopaulo.com.br/pensando-em-viajar-conheca-4-destinos-incriveis-que-a-check-point-te-leva-para-conhecer/" target="_blank">continuar lendo >></a>
-                    </div>
-                </div>
-
-            </div>
-
-        </section>
-
-    -->
 
     <!--FOOTER-->
 
@@ -695,7 +585,7 @@
                         <li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>SC">Florianópolis/SC</a></li>
                         <li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>oquefazersalvador">Salvador/BA</a></li>
                         <li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>oquefazermanaus">Manaus/AM</a></li>
-                        <li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>CE">Fortaleza/CE</a></li>
+                        <li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>oquefazerfortaleza">Fortaleza/CE</a></li>
                     </ul>
                 </div>
     

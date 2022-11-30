@@ -121,7 +121,7 @@
                         </li>
 
                         <li class="nav-link" style="--i: 1.1s">
-                            <a href="http://localhost/checkpointtours.com.br/tours/o-que-fazer-em-salvador-">Tours</a>
+                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-salvador-">Tours</a>
                         </li>
 
                         <li class="nav-link" style="--i: 1.1s">
@@ -226,7 +226,7 @@
                         <li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>en-US/SC">Florianópolis/SC</a></li>
                         <li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>en-US/oquefazersalvador">Salvador/BA</a></li>
                         <li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>en-US/oquefazermanaus">Manaus/AM</a></li>
-                        <li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>en-US/CE">Fortaleza/CE</a></li>
+                        <li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>en-US/oquefazerfortaleza">Fortaleza/CE</a></li>
                     </ul>
                 </div>
     

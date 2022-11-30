@@ -321,7 +321,7 @@
 
         <form target="_blank" action="https://formsubmit.co/atendimento@checkpointtours.com.br" method="POST">
             <input type="hidden" name="_captcha" value="false">
-            <input type="hidden" name="_next" value="http://localhost/Checkpointtours/enviado">
+            <input type="hidden" name="_next" value="https://checkpointtours.com.br/Enviado">
 
             <div>
                 <label>Veículo:</label>

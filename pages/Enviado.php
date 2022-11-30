@@ -94,7 +94,7 @@
         }
 
         $paginaAtual = isset($_GET['pagina']) ? (int)$_GET['pagina'] : 1;
-        $porPagina = 4;
+        $porPagina = 1;
         
         $slides = Painel::selectAll('tb_site.slides',($paginaAtual - 1) * $porPagina,$porPagina);
 

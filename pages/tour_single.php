@@ -299,7 +299,7 @@
 
                     <form target="_blank" action="https://formsubmit.co/atendimento@checkpointtours.com.br" method="POST">
                         <input type="hidden" name="_captcha" value="false">
-                        <input type="hidden" name="_next" value="http://localhost/Checkpointtours/enviado">
+                        <input type="hidden" name="_next" value="https://checkpointtours.com.br/Enviado">
 
                         <div style="display: none;">
                             <input type="select" id="titulo" name="<?php echo $post['titulo']; ?>">
@@ -520,7 +520,7 @@
                         <li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>SC">Florianópolis/SC</a></li>
                         <li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>oquefazersalvador">Salvador/BA</a></li>
                         <li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>oquefazermanaus">Manaus/AM</a></li>
-                        <li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>CE">Fortaleza/CE</a></li>
+                        <li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>oquefazerfortaleza">Fortaleza/CE</a></li>
                     </ul>
                     </div>
         
