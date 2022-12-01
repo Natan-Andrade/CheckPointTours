@@ -59,39 +59,36 @@
                 </div>
 
                 <div class="margin-items">
-                    <div class="sideitem" style="background-image: url(<?php echo $infoSite['CE_bg1']; ?>);">
+                    <div class="sideitem" style="background-image: url(<?php echo $infoSite['SC_bg1']; ?>);">
                         <div class="row-content">
                             <h3>City Tours de Dia Inteiro</h3>
                             
-                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-fortaleza" target="_blank">Ver mais >></a>
+                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-florianopolis-" target="_blank">Ver mais >></a>
 
                         </div><!--row-content-->
                     </div><!--sideitem-->
 
-                    <div class="item_1" style="background-image: url(<?php echo $infoSite['CE_bg2']; ?>);">
+                    <div class="item_1" style="background-image: url(<?php echo $infoSite['SC_bg2']; ?>);">
                         <div class="row-content">
                             <h3>City Tours de meio dia</h3>
                             
-                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-fortaleza" target="_blank">Ver mais >></a>
+                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-florianopolis-" target="_blank">Ver mais >></a>
 
                         </div><!--row-content-->
                     </div><!--sideitem-->
 
-                    <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-fortaleza" class="sideitem-2" style="background-image: url(<?php echo INCLUDE_PATH ?>pages/assets/banners/fortalezabg.png);">
-                        
+                    <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-florianopolis-" class="sideitem-2" style="background-image: url(<?php echo INCLUDE_PATH ?>pages/assets/banners/florianopolisbg.png);">
                     </a><!--sideitem-->
 
                 </div>
             </div><!--row-items-->
         </div>
-
-
     </section>
 
     <?php
 		$porPagina = 7;
 		if(!isset($_POST['parametro'])){
-		if($categoria['nome'] == 'O que fazer em Fortaleza'){
+		if($categoria['nome'] == 'O que fazer em Florianópolis '){
 			echo '';
 		}else{
 			echo '';
@@ -101,8 +98,8 @@
 		}
 
 		$query = "SELECT * FROM `tb_site.tours` ";
-		if($categoria['nome'] != 'O que fazer em Fortaleza'){
-			$categoria['id'] = 37;
+		if($categoria['nome'] != 'O que fazer em Florianópolis '){
+			$categoria['id'] = 41;
 			$query.="WHERE categoria_id = $categoria[id]";
 		}
 		if(isset($_POST['parametro'])){
@@ -115,8 +112,8 @@
 			}
 		}
 		$query2 = "SELECT * FROM `tb_site.tours` "; 
-		if($categoria['nome'] != 'O que fazer em Fortaleza'){
-				$categoria['id'] = 37;
+		if($categoria['nome'] != 'O que fazer em Florianópolis '){
+				$categoria['id'] = 41;
 				$query2.="WHERE categoria_id = $categoria[id]";
 		}
 		if(isset($_POST['parametro'])){
@@ -155,25 +152,24 @@
 
 	<section class="side-container">
 
-	<?php
-		foreach($tours as $key=>$value){
-		$sql = MySql::conectar()->prepare("SELECT `slug` FROM `tb_site.categorias` WHERE id = ?");
-		$sql->execute(array($value['categoria_id']));
-		$categoriaNome = $sql->fetch()['slug'];
-	?>
+        <?php
+            foreach($tours as $key=>$value){
+            $sql = MySql::conectar()->prepare("SELECT `slug` FROM `tb_site.categorias` WHERE id = ?");
+            $sql->execute(array($value['categoria_id']));
+            $categoriaNome = $sql->fetch()['slug'];
+        ?>
+            
+            <div class="travels">
+                <div class="travels-content" style="background-image: url(' <?php echo INCLUDE_PATH_PAINEL ?>uploads/<?php echo $value['capa']; ?> ');">
+                    <div class="travels-text">
+                        <a href="<?php echo INCLUDE_PATH; ?>tours/<?php echo $categoriaNome; ?>">
+                            <h2><?php echo substr(strip_tags($value['titulo']),0,20).'...'; ?></h2>
+                        </a>
+                    </div>
+                </div>
+            </div>
 
-        
-		<div class="travels">
-			<div class="travels-content" style="background-image: url(' <?php echo INCLUDE_PATH_PAINEL ?>uploads/<?php echo $value['capa']; ?> ');">
-				<div class="travels-text">
-					<a href="<?php echo INCLUDE_PATH; ?>tours/<?php echo $categoriaNome; ?>">
-						<h2><?php echo substr(strip_tags($value['titulo']),0,20).'...'; ?></h2>
-					</a>
-				</div>
-			</div>
-		</div>
-
-	<?php } ?>
+        <?php } ?>
 	</section>
 
 
@@ -244,5 +240,3 @@
             <div id="TA_selfserveprop291" class="TA_selfserveprop"><ul id="Rs3gFohrT1X" class="TA_links ZqY1KQ"><li id="slw9dfSuzCG" class="XhmmSAy1Ezqk"><a target="_blank" href="https://www.tripadvisor.com.br/Attraction_Review-g303631-d4289356-Reviews-Check_Point_Receptive_Service-Sao_Paulo_State_of_Sao_Paulo.html"><img src="https://www.tripadvisor.com.br/img/cdsi/img2/branding/v2/Tripadvisor_lockup_horizontal_secondary_registered-11900-2.svg" alt="TripAdvisor"/></a></li></ul></div><script async src="https://www.jscache.com/wejs?wtype=selfserveprop&amp;uniq=291&amp;locationId=4289356&amp;lang=pt&amp;rating=true&amp;nreviews=4&amp;writereviewlink=true&amp;popIdx=false&amp;iswide=true&amp;border=true&amp;display_version=2" data-loadtrk onload="this.loadtrk=true"></script>
         </div>
     </section>
-
-

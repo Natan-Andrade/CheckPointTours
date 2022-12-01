@@ -462,28 +462,7 @@
         </div>  
     </section>  
 
-        <div class="full-item" style="background-image: url(<?php echo INCLUDE_PATH ?>pages/assets/F1/5.jpg);">
-
-            <div class="button">
-                <div class="log-sign" style="--i: 1.8s">
-                    <a href="<?php echo INCLUDE_PATH; ?>es-ES/f1" class="btn transparent">GP São Paulo F1</a>
-                </div>
-            </div>
-
-            <div class="full-item-content">
-                <div class="full-gradiant">
-                    <div class="full-ul">
-                        <ul>
-                            <li><a href="#">Entradas</a></li>
-                            <li><a href="<?php echo INCLUDE_PATH; ?>es-ES/f1">Transferencias</a></li>
-                            <li><a href="<?php echo INCLUDE_PATH; ?>es-ES/f1">Alquiler de transporte</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-    </section>
+        <?php include('f1-painel.php'); ?>
 
 
 
@@ -600,7 +579,7 @@
                         <li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>es-ES/oquefazerriodejaneiro">Rio de Janeiro/RJ</a></li>
                         <li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>es-ES/PR">Foz do Iguaçu/PR</a></li>
                         <li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>es-ES/oquefazernatal">Natal/RN</a></li>
-                        <li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>es-ES/SC">Florianópolis/SC</a></li>
+                        <li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>es-ES/oquefazerflorianopolis">Florianópolis/SC</a></li>
                         <li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>es-ES/oquefazersalvador">Salvador/BA</a></li>
                         <li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>es-ES/oquefazermanaus">Manaus/AM</a></li>
                         <li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>es-ES/oquefazerfortaleza">Fortaleza/CE</a></li>
@@ -617,7 +596,7 @@
                         <li><a class="text-muted" target="_blank" href="">Política de privacidad</a></li>
                         <li><a class="text-muted" target="_blank" href="">política de cancelación</a></li>
                         <li><a class="text-muted" target="_blank" href="">Blog</a></li>
-                        <li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>contato">Contacto</a></li>
+                        <li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>es-ES/contato">Contacto</a></li>
                     </ul>
                 </div>
 

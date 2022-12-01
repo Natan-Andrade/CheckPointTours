@@ -10,11 +10,10 @@
     <title>Check Point Tours</title>
 
     <link rel="stylesheet" href="<?php echo INCLUDE_PATH; ?>estilo/home.css">
-
 </head>
 
 <body>
-<?php $cidade = "Fortaleza";?>
+<?php $cidade = "Florianópolis";?>
 <?php
 	if(isset($_GET['excluir'])){
 		$idExcluir = intval($_GET['excluir']);
@@ -30,7 +29,7 @@
 	}
 
 	$paginaAtual = isset($_GET['pagina']) ? (int)$_GET['pagina'] : 1;
-	$porPagina = 8;
+	$porPagina = 5;
 	
 	$slides = Painel::selectAll('tb_site.slides',($paginaAtual - 1) * $porPagina,$porPagina);
 
@@ -47,6 +46,7 @@
 	<?php
 			foreach ($slides as $key => $value) {
 		?>
+
     <?php } ?>
 
     <!--Menu-->
@@ -56,7 +56,7 @@
 
             <div class="logo-container">
 
-            <a href="<?php echo INCLUDE_PATH; ?>oquefazerfortaleza"><img style="width: 70%;" class="logo" src="<?php echo INCLUDE_PATH; ?>/logos/logo.png"></a>
+            <a href="<?php echo INCLUDE_PATH; ?>oquefazerflorianopolis"><img style="width: 70%;" class="logo" src="<?php echo INCLUDE_PATH; ?>/logos/logo.png"></a>
 
             </div>
 
@@ -65,59 +65,69 @@
 
                     <ul>
                         <li class="nav-link" style="--i: .6s">
-                            <a href="<?php echo INCLUDE_PATH; ?>oquefazerfortaleza">Home</a>
+                            <a href="<?php echo INCLUDE_PATH; ?>oquefazerflorianopolis">Home</a>
                         </li>
 
                         <li class="nav-link" style="--i: .6s">
-                            <a href="<?php echo INCLUDE_PATH; ?>oquefazerfortaleza">Fortaleza<i class="fas fa-caret-down"></i></a>
+                            <a href="<?php echo INCLUDE_PATH; ?>oquefazerflorianopolis">Florianópolis<i class="fas fa-caret-down"></i></a>
                             
                             <div class="dropdown">
+                                
                                 <ul>
                                     <li class="dropdown-link">
-                                        <a href="<?php echo INCLUDE_PATH; ?>oquefazerfortaleza">Home</a>
-                                    </li>
-
-                                    <li class="dropdown-link">
-                                        <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-fortaleza">Tour De Meio Dia</a>
+                                        <a href="<?php echo INCLUDE_PATH; ?>oquefazerflorianopolis">Home</a>
                                     </li>
         
                                     <li class="dropdown-link">
-                                         <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-fortaleza">Tour de Dia Inteiro</a>
+                                        <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-florianopolis-">Tour De Meio Dia</a>
+                                    </li>
+        
+                                    <li class="dropdown-link">
+                                         <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-florianopolis-">Tour de Dia Inteiro</a>
                                     </li>
 
                                     <li class="dropdown-link">
-                                        <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-fortaleza">Vida Noturna</a>
+                                        <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-florianopolis-">Vida Noturna</a>
                                     </li>
 
                                     <li class="dropdown-link">
-                                        <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-fortaleza">Atrativos turísticos</a>
+                                        <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-florianopolis-">Pontos turísticos</a>
                                     </li>
 
                                     <li class="dropdown-link">
-                                        <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-fortaleza">Praias</a>
+                                        <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-florianopolis-">Praias</a>
                                     </li>
 
                                     <li class="dropdown-link">
-                                        <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-fortaleza">Canoa quebrada</a>
+                                        <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-florianopolis-">Compras</a>
+                                    </li>
+        
+                                    <li class="dropdown-link">
+                                        <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-florianopolis-">Beto Carrero World</a>
                                     </li>
 
                                     <li class="dropdown-link">
-                                        <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-fortaleza">Beach Park</a>
+                                        <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-florianopolis-">Blumenau</a>
                                     </li>
 
                                     <li class="dropdown-link">
-                                        <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-fortaleza">Ipark - Museu da Cachaça</a>
+                                        <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-florianopolis-">Camboriú</a>
                                     </li>
 
                                     <li class="dropdown-link">
-                                        <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-fortaleza">Praia de Lagoinha</a>
+                                        <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-florianopolis-">Guarda do Embaú</a>
+                                    </li>
+
+                                    <li class="dropdown-link">
+                                        <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-florianopolis-">Oktoberfest</a>
                                     </li>
                                 </ul>
                             </div>
+                            
                         </li>
 
                         <li class="nav-link" style="--i: 1.1s">
-                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-fortaleza">Tours</a>
+                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-florianopolis-">Tours</a>
                         </li>
 
                         <li class="nav-link" style="--i: 1.1s">
@@ -138,15 +148,15 @@
                             <div class="dropdown">
                                 <ul>
                                     <li class="dropdown-link">
-                                        <a href="<?php echo INCLUDE_PATH; ?>oquefazerfortaleza"><img src="<?php echo INCLUDE_PATH; ?>\pages\assets\icons\brasil.png" alt="pt-BR"><p>Português</p></a><!-- pt-BR -->
+                                        <a href="<?php echo INCLUDE_PATH; ?>oquefazerflorianopolis"><img src="<?php echo INCLUDE_PATH; ?>\pages\assets\icons\brasil.png" alt="pt-BR"><p>Português</p></a><!-- pt-BR -->
                                     </li>
 
                                     <li class="dropdown-link">
-                                        <a href="<?php echo INCLUDE_PATH; ?>en-US/oquefazerfortaleza"><img src="<?php echo INCLUDE_PATH; ?>\pages\assets\icons\estados-unidos.png" alt="en-US"><p>English</p></a><!-- eng-US -->
+                                        <a href="<?php echo INCLUDE_PATH; ?>en-US/oquefazerflorianopolis"><img src="<?php echo INCLUDE_PATH; ?>\pages\assets\icons\estados-unidos.png" alt="en-US"><p>English</p></a><!-- eng-US -->
                                     </li>
         
                                     <li class="dropdown-link">
-                                        <a href="<?php echo INCLUDE_PATH; ?>es-ES/oquefazerfortaleza"><img src="<?php echo INCLUDE_PATH; ?>\pages\assets\icons\espanha.png" alt="es-ES"><p>Espanõl</p></a><!-- en-US -->
+                                        <a href="<?php echo INCLUDE_PATH; ?>es-ES/oquefazerflorianopolis"><img src="<?php echo INCLUDE_PATH; ?>\pages\assets\icons\espanha.png" alt="es-ES"><p>Espanõl</p></a><!-- en-US -->
                                     </li>
                                 </ul>
                             </div>
@@ -165,54 +175,62 @@
         </div>
     </header>
 
-        <?php include('CE_content.php'); ?>
-    
+        <?php include('SC_content.php'); ?>
+
     <!--FOOTER-->
     <footer>
         <div class="footer-content">
             <div class="itens-wrap">
                 <div class="container-content">
                     <ul class="list-unstyled">
-                        <h3><?php echo $cidade; ?></h3>
+                        <h3><?php echo $cidade;?></h3>
 
                         <li class="">
-                            <a href="<?php echo INCLUDE_PATH; ?>oquefazerfortaleza">Home</a>
+                            <a href="<?php echo INCLUDE_PATH; ?>oquefazerflorianopolis">Home</a>
                         </li>
 
                         <li class="">
-                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-fortaleza">Tour De Meio Dia</a>
+                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-florianopolis-">Tour De Meio Dia</a>
                         </li>
 
                         <li class="">
-                                <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-fortaleza">Tour de Dia Inteiro</a>
+                                <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-florianopolis-">Tour de Dia Inteiro</a>
                         </li>
 
                         <li class="">
-                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-fortaleza">Vida Noturna</a>
+                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-florianopolis-">Vida Noturna</a>
                         </li>
 
                         <li class="">
-                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-fortaleza">Atrativos turísticos</a>
+                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-florianopolis-">Pontos turísticos</a>
                         </li>
 
                         <li class="">
-                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-fortaleza">Praias</a>
+                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-florianopolis-">Praias</a>
                         </li>
 
                         <li class="">
-                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-fortaleza">Canoa quebrada</a>
+                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-florianopolis-">Compras</a>
                         </li>
 
                         <li class="">
-                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-fortaleza">Beach Park</a>
+                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-florianopolis-">Beto Carrero World</a>
                         </li>
 
                         <li class="">
-                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-fortaleza">Ipark - Museu da Cachaça</a>
+                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-florianopolis-">Blumenau</a>
                         </li>
 
                         <li class="">
-                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-fortaleza">Praia de Lagoinha</a>
+                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-florianopolis-">Camboriú</a>
+                        </li>
+
+                        <li class="">
+                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-florianopolis-">Guarda do Embaú</a>
+                        </li>
+
+                        <li class="">
+                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-florianopolis-">Oktoberfest</a>
                         </li>
                     </ul>
                 </div>
@@ -295,7 +313,7 @@
     </footer>
 
     <script src="https://kit.fontawesome.com/8772d4e44f.js" crossorigin="anonymous"></script>
-    
+
     <?php }else{ 
 	include('tour_single.php');
 	}
@@ -304,3 +322,5 @@
 </body>
 
 </html>
+
+

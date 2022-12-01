@@ -424,7 +424,7 @@
                             <li><a class="text-muted" target="_blank" href="">Privacy Policy</a></li>
                             <li><a class="text-muted" target="_blank" href="">Cancellation policy</a></li>
                             <li><a class="text-muted" target="_blank" href="">Blog</a></li>
-                            <li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>contato">Contact</a></li>
+                            <li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>en-US/contato">Contact</a></li>
                         </ul>
                     </div>
 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -14,7 +14,7 @@
 </head>
 
 <body>
-<?php $cidade = "Fortaleza";?>
+<?php $cidade = "Florianópolis";?>
 <?php
 	if(isset($_GET['excluir'])){
 		$idExcluir = intval($_GET['excluir']);
@@ -30,7 +30,7 @@
 	}
 
 	$paginaAtual = isset($_GET['pagina']) ? (int)$_GET['pagina'] : 1;
-	$porPagina = 8;
+	$porPagina = 5;
 	
 	$slides = Painel::selectAll('tb_site.slides',($paginaAtual - 1) * $porPagina,$porPagina);
 
@@ -47,6 +47,7 @@
 	<?php
 			foreach ($slides as $key => $value) {
 		?>
+
     <?php } ?>
 
     <!--Menu-->
@@ -56,7 +57,7 @@
 
             <div class="logo-container">
 
-            <a href="<?php echo INCLUDE_PATH; ?>oquefazerfortaleza"><img style="width: 70%;" class="logo" src="<?php echo INCLUDE_PATH; ?>/logos/logo.png"></a>
+                <a href="<?php echo INCLUDE_PATH; ?>es-ES/oquefazerflorianopolis"><img style="width: 70%;" class="logo" src="<?php echo INCLUDE_PATH; ?>./logos/logo.png"></a>
 
             </div>
 
@@ -65,67 +66,79 @@
 
                     <ul>
                         <li class="nav-link" style="--i: .6s">
-                            <a href="<?php echo INCLUDE_PATH; ?>oquefazerfortaleza">Home</a>
+                            <a href="<?php echo INCLUDE_PATH; ?>es-ES/oquefazerflorianopolis">Home</a>
                         </li>
 
                         <li class="nav-link" style="--i: .6s">
-                            <a href="<?php echo INCLUDE_PATH; ?>oquefazerfortaleza">Fortaleza<i class="fas fa-caret-down"></i></a>
+                            <a href="<?php echo INCLUDE_PATH; ?>es-ES/oquefazerflorianopolis">Florianópolis<i class="fas fa-caret-down"></i></a>
                             
+
                             <div class="dropdown">
+                                
                                 <ul>
                                     <li class="dropdown-link">
-                                        <a href="<?php echo INCLUDE_PATH; ?>oquefazerfortaleza">Home</a>
-                                    </li>
-
-                                    <li class="dropdown-link">
-                                        <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-fortaleza">Tour De Meio Dia</a>
+                                        <a href="<?php echo INCLUDE_PATH; ?>es-ES/oquefazerflorianopolis">Home</a>
                                     </li>
         
                                     <li class="dropdown-link">
-                                         <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-fortaleza">Tour de Dia Inteiro</a>
+                                        <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-florianopolis-">Tour de medio dia</a>
+                                    </li>
+        
+                                    <li class="dropdown-link">
+                                         <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-florianopolis-">Tour de dia completo</a>
                                     </li>
 
                                     <li class="dropdown-link">
-                                        <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-fortaleza">Vida Noturna</a>
+                                        <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-florianopolis-">Vida nocturna</a>
                                     </li>
 
                                     <li class="dropdown-link">
-                                        <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-fortaleza">Atrativos turísticos</a>
+                                        <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-florianopolis-">Puntos turisticos</a>
                                     </li>
 
                                     <li class="dropdown-link">
-                                        <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-fortaleza">Praias</a>
+                                        <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-florianopolis-">Playas</a>
                                     </li>
 
                                     <li class="dropdown-link">
-                                        <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-fortaleza">Canoa quebrada</a>
+                                        <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-florianopolis-">compras</a>
+                                    </li>
+        
+                                    <li class="dropdown-link">
+                                        <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-florianopolis-">Beto Carrero World</a>
                                     </li>
 
                                     <li class="dropdown-link">
-                                        <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-fortaleza">Beach Park</a>
+                                        <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-florianopolis-">Blumenau</a>
                                     </li>
 
                                     <li class="dropdown-link">
-                                        <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-fortaleza">Ipark - Museu da Cachaça</a>
+                                        <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-florianopolis-">Camboriú</a>
                                     </li>
 
                                     <li class="dropdown-link">
-                                        <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-fortaleza">Praia de Lagoinha</a>
+                                        <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-florianopolis-">Guarda do Embaú</a>
                                     </li>
+
+                                    <li class="dropdown-link">
+                                        <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-florianopolis-">Oktoberfest</a>
+                                    </li>
+                                   
                                 </ul>
                             </div>
+                            
                         </li>
 
                         <li class="nav-link" style="--i: 1.1s">
-                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-fortaleza">Tours</a>
+                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-florianopolis-">Tours</a>
                         </li>
 
                         <li class="nav-link" style="--i: 1.1s">
-                            <a href="<?php echo INCLUDE_PATH; ?>transfers">Transfers</i></a>
+                            <a href="<?php echo INCLUDE_PATH; ?>es-ES/transfers">Transfers</i></a>
                         </li>
 
                         <li class="nav-link" style="--i: 1.1s">
-                            <a href="<?php echo INCLUDE_PATH; ?>F1">GP São Paulo F1</i></a>
+                            <a href="<?php echo INCLUDE_PATH; ?>es-ES/F1">GP São Paulo F1</i></a>
                         </li>
 
                         <li class="nav-link" style="--i: 1.1s">
@@ -138,15 +151,15 @@
                             <div class="dropdown">
                                 <ul>
                                     <li class="dropdown-link">
-                                        <a href="<?php echo INCLUDE_PATH; ?>oquefazerfortaleza"><img src="<?php echo INCLUDE_PATH; ?>\pages\assets\icons\brasil.png" alt="pt-BR"><p>Português</p></a><!-- pt-BR -->
+                                        <a href="<?php echo INCLUDE_PATH; ?>oquefazerflorianopolis"><img src="<?php echo INCLUDE_PATH; ?>\pages\assets\icons\brasil.png" alt="pt-BR"><p>Português</p></a><!-- pt-BR -->
                                     </li>
 
                                     <li class="dropdown-link">
-                                        <a href="<?php echo INCLUDE_PATH; ?>en-US/oquefazerfortaleza"><img src="<?php echo INCLUDE_PATH; ?>\pages\assets\icons\estados-unidos.png" alt="en-US"><p>English</p></a><!-- eng-US -->
+                                        <a href="<?php echo INCLUDE_PATH; ?>en-US/oquefazerflorianopolis"><img src="<?php echo INCLUDE_PATH; ?>\pages\assets\icons\estados-unidos.png" alt="en-US"><p>English</p></a><!-- eng-US -->
                                     </li>
         
                                     <li class="dropdown-link">
-                                        <a href="<?php echo INCLUDE_PATH; ?>es-ES/oquefazerfortaleza"><img src="<?php echo INCLUDE_PATH; ?>\pages\assets\icons\espanha.png" alt="es-ES"><p>Espanõl</p></a><!-- en-US -->
+                                        <a href="<?php echo INCLUDE_PATH; ?>es-ES/oquefazerflorianopolis"><img src="<?php echo INCLUDE_PATH; ?>\pages\assets\icons\espanha.png" alt="es-ES"><p>Espanõl</p></a><!-- en-US -->
                                     </li>
                                 </ul>
                             </div>
@@ -165,7 +178,7 @@
         </div>
     </header>
 
-        <?php include('CE_content.php'); ?>
+        <?php include('SC_content.php'); ?>
     
     <!--FOOTER-->
     <footer>
@@ -173,91 +186,98 @@
             <div class="itens-wrap">
                 <div class="container-content">
                     <ul class="list-unstyled">
-                        <h3><?php echo $cidade; ?></h3>
-
+                        <h3><?php echo $cidade;?></h3>
                         <li class="">
-                            <a href="<?php echo INCLUDE_PATH; ?>oquefazerfortaleza">Home</a>
+                            <a href="<?php echo INCLUDE_PATH; ?>es-ES/oquefazerflorianopolis">Home</a>
                         </li>
 
                         <li class="">
-                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-fortaleza">Tour De Meio Dia</a>
+                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-florianopolis-">Tour de medio dia</a>
                         </li>
 
                         <li class="">
-                                <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-fortaleza">Tour de Dia Inteiro</a>
+                                <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-florianopolis-">Tour de dia completo</a>
                         </li>
 
                         <li class="">
-                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-fortaleza">Vida Noturna</a>
+                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-florianopolis-">Vida nocturna</a>
                         </li>
 
                         <li class="">
-                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-fortaleza">Atrativos turísticos</a>
+                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-florianopolis-">Puntos turisticos</a>
                         </li>
 
                         <li class="">
-                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-fortaleza">Praias</a>
+                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-florianopolis-">Playas</a>
                         </li>
 
                         <li class="">
-                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-fortaleza">Canoa quebrada</a>
+                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-florianopolis-">compras</a>
                         </li>
 
                         <li class="">
-                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-fortaleza">Beach Park</a>
+                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-florianopolis-">Beto Carrero World</a>
                         </li>
 
                         <li class="">
-                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-fortaleza">Ipark - Museu da Cachaça</a>
+                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-florianopolis-">Blumenau</a>
                         </li>
 
                         <li class="">
-                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-fortaleza">Praia de Lagoinha</a>
+                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-florianopolis-">Camboriú</a>
+                        </li>
+
+                        <li class="">
+                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-florianopolis-">Guarda do Embaú</a>
+                        </li>
+
+                        <li class="">
+                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-florianopolis-">Oktoberfest</a>
                         </li>
                     </ul>
                 </div>
 
                 <div class="container-content">
                     <ul class="list-unstyled">
-                        <h3>Outras Cidades</h3>
-                        <li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>oquefazersaopaulo">São Paulo/SP</a></li>
-                        <li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>oquefazerriodejaneiro">Rio de Janeiro/RJ</a></li>
-                        <li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>PR">Foz do Iguaçu/PR</a></li>
-                        <li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>oquefazernatal">Natal/RN</a></li>
-                        <li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>oquefazerflorianopolis">Florianópolis/SC</a></li>
-                        <li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>oquefazersalvador">Salvador/BA</a></li>
-                        <li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>oquefazermanaus">Manaus/AM</a></li>
-                        <li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>oquefazerfortaleza">Fortaleza/CE</a></li>
+                        <h3>Otras ciudades</h3>
+                        <li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>es-ES/oquefazersaopaulo">São Paulo/SP</a></li>
+                        <li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>es-ES/oquefazerriodejaneiro">Rio de Janeiro/RJ</a></li>
+                        <li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>es-ES/PR">Foz do Iguaçu/PR</a></li>
+                        <li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>es-ES/oquefazernatal">Natal/RN</a></li>
+                        <li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>es-ES/oquefazerflorianopolis">Florianópolis/SC</a></li>
+                        <li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>es-ES/oquefazersalvador">Salvador/BA</a></li>
+                        <li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>es-ES/oquefazermanaus">Manaus/AM</a></li>
+                        <li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>es-ES/oquefazerfortaleza">Fortaleza/CE</a></li>
                     </ul>
                 </div>
-    
-    
+
+
                 <div class="container-content">
                     <ul class="list-unstyled">
                         <h3>Empresa</h3>
-                        <li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>sobrenos">Sobre nós</a></li>
-                        <li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>sobrenos">Nossa Equipe</a></li>
-                        <li><a class="text-muted" target="_blank" href="">Termos de uso do serviço</a></li>
-                        <li><a class="text-muted" target="_blank" href="">Política de privacidade</a></li>
-                        <li><a class="text-muted" target="_blank" href="">Política de cancelamento</a></li>
+                        <li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>sobrenos">Sobre nosotros</a></a></li>
+                        <li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>sobrenos">Nuestro equipo</a></li>
+                        <li><a class="text-muted" target="_blank" href="">Condiciones de uso del servicio</a></li>
+                        <li><a class="text-muted" target="_blank" href="">Política de privacidad</a></li>
+                        <li><a class="text-muted" target="_blank" href="">política de cancelación</a></li>
                         <li><a class="text-muted" target="_blank" href="">Blog</a></li>
-                        <li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>contato">Contato</a></li>
+                        <li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>es-ES/contato">Contacto</a></li>
                     </ul>
                 </div>
 
                 <div class="container-content">
                     <ul class="list-unstyled">
-                        <h3>Canais</h3>
-                        <li><a class="text-muted" target="_blank" href="">Previsão do Tempo</a></li>
-                        <li><a class="text-muted" target="_blank" href="">Datas Comemorativas</a></li>
-                        <li><a class="text-muted" target="_blank" href="">Dicas e Endereços</a></li>
-                        <li><a class="text-muted" target="_blank" href="">Cotação do Dólar</a></li>
+                        <h3>Canales</h3>
+                        <li><a class="text-muted" target="_blank" href="">Pronóstico del tiempo</a></li>
+                        <li><a class="text-muted" target="_blank" href="">Fechas conmemorativas</a></li>
+                        <li><a class="text-muted" target="_blank" href="">Consejos y direcciones</a></li>
+                        <li><a class="text-muted" target="_blank" href="">Cotación del dolar</a></li>
                     </ul>
                 </div>
     
                 <div class="container-content">
                     <ul class="list-unstyled">
-                        <h3>Formas de Pagamento</h3>
+                        <h3>Formas de pago</h3>
                         <li><a class="text-muted" target="_blank" href="">Boleto</a></li>
                         <li><a class="text-muted" target="_blank" href="">Pix</a></li>
                         <li><a class="text-muted" target="_blank" href="">Pay Pal</a></li>
@@ -266,11 +286,11 @@
 
                 <div class="container-content">
                     <h3><strong>CHECK POINT Receptive Service</strong></h3>
-                        <p>Rua Jacques Du Cerceau, 84 - 03624-120 - São Paulo - SP - BRASIL</p>
+                        <p>La carretera Jacques Du Cerceau, 84 - 03624-120 - São Paulo - SP - BRASIL</p>
 
-                        <p>2ª a 6ª feira das 9hrs às 18hrs</p>
+                        <p>Lunes a Viernes de 9 am a 6 pm</p>
                         
-                        <p>PABX: <strong>(11) 2791-1316 </strong> Após esse horário ligar para <strong>(11) 99187-1393</strong></p>
+                        <p>PABX: <strong>(11) 2791-1316 </strong> Después de este tiempo, llame <strong>(11) 99187-1393</strong></p>
             </div>
             </div>
 
@@ -290,12 +310,14 @@
             
         </div>
         <div class="container-bottom">
-            <p>© 2022, Check Point Tours. Todos os direitos reservados.</p>
+            <p>© 2022, Check Point Tours. Todos los derechos reservados.</p>
         </div>
     </footer>
 
     <script src="https://kit.fontawesome.com/8772d4e44f.js" crossorigin="anonymous"></script>
+
     
+
     <?php }else{ 
 	include('tour_single.php');
 	}
@@ -304,3 +326,4 @@
 </body>
 
 </html>
+

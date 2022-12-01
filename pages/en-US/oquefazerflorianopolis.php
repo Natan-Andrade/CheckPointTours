@@ -10,11 +10,10 @@
     <title>Check Point Tours</title>
 
     <link rel="stylesheet" href="<?php echo INCLUDE_PATH; ?>estilo/home.css">
-
 </head>
 
 <body>
-    <?php $cidade = "Manaus";?>
+<?php $cidade = "Florianópolis" ;?>
 <?php
 	if(isset($_GET['excluir'])){
 		$idExcluir = intval($_GET['excluir']);
@@ -30,7 +29,7 @@
 	}
 
 	$paginaAtual = isset($_GET['pagina']) ? (int)$_GET['pagina'] : 1;
-	$porPagina = 7;
+	$porPagina = 5;
 	
 	$slides = Painel::selectAll('tb_site.slides',($paginaAtual - 1) * $porPagina,$porPagina);
 
@@ -57,8 +56,7 @@
 
             <div class="logo-container">
 
-            <a href="<?php echo INCLUDE_PATH; ?>en-US/oquefazermanaus"><img style="width: 70%;" class="logo" src="<?php echo INCLUDE_PATH; ?>/logos/logo.png"></a>
-
+            <a href="<?php echo INCLUDE_PATH; ?>en-US/oquefazerflorianopolis"><img style="width: 70%;" class="logo" src="<?php echo INCLUDE_PATH; ?>/logos/logo.png"></a>
             </div>
 
             <div class="nav-btn">
@@ -66,58 +64,69 @@
 
                     <ul>
                         <li class="nav-link" style="--i: .6s">
-                            <a href="<?php echo INCLUDE_PATH; ?>en-US/oquefazermanaus">Home</a>
+                            <a href="<?php echo INCLUDE_PATH; ?>en-US/oquefazerflorianopolis">Home</a>
                         </li>
 
                         <li class="nav-link" style="--i: .6s">
-                        <a href="<?php echo INCLUDE_PATH; ?>en-US/oquefazermanaus">Manaus<i class="fas fa-caret-down"></i></a>
+                        <a href="<?php echo INCLUDE_PATH; ?>en-US/oquefazerflorianopolis">Florianópolis<i class="fas fa-caret-down"></i></a>
                             
 
                             <div class="dropdown">
                                 
                                 <ul>
                                     <li class="dropdown-link">
-                                        <a href="<?php echo INCLUDE_PATH; ?>en-US/oquefazermanaus">Home</a>
+                                        <a href="<?php echo INCLUDE_PATH; ?>oquefazerflorianopolis">Home</a>
                                     </li>
         
                                     <li class="dropdown-link">
-                                        <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-manaus">half day tour</a>
+                                        <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-florianopolis-">Tour De Meio Dia</a>
                                     </li>
         
                                     <li class="dropdown-link">
-                                        <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-manaus">full day tour</a>
+                                         <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-florianopolis-">Tour de Dia Inteiro</a>
                                     </li>
 
                                     <li class="dropdown-link">
-                                        <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-manaus">Night life</a>
+                                        <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-florianopolis-">Vida Noturna</a>
                                     </li>
 
                                     <li class="dropdown-link">
-                                        <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-manaus">attractions</a>
+                                        <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-florianopolis-">Pontos turísticos</a>
                                     </li>
 
                                     <li class="dropdown-link">
-                                        <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-manaus">Shopping</a>
+                                        <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-florianopolis-">Praias</a>
                                     </li>
 
                                     <li class="dropdown-link">
-                                        <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-manaus">Mindu Park</a>
+                                        <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-florianopolis-">Compras</a>
+                                    </li>
+        
+                                    <li class="dropdown-link">
+                                        <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-florianopolis-">Beto Carrero World</a>
                                     </li>
 
                                     <li class="dropdown-link">
-                                        <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-manaus">Beaches</a>
+                                        <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-florianopolis-">Blumenau</a>
                                     </li>
 
                                     <li class="dropdown-link">
-                                        <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-manaus">tour to the waterfalls</a>
+                                        <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-florianopolis-">Camboriú</a>
+                                    </li>
+
+                                    <li class="dropdown-link">
+                                        <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-florianopolis-">Guarda do Embaú</a>
+                                    </li>
+
+                                    <li class="dropdown-link">
+                                        <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-florianopolis-">Oktoberfest</a>
                                     </li>
                                 </ul>
                             </div>
-                            
                         </li>
 
                         <li class="nav-link" style="--i: 1.1s">
-                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-manaus">Tours</a>
+                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-florianopolis-">Tours</a>
                         </li>
 
                         <li class="nav-link" style="--i: 1.1s">
@@ -138,22 +147,21 @@
                             <div class="dropdown">
                                 <ul>
                                     <li class="dropdown-link">
-                                        <a href="<?php echo INCLUDE_PATH; ?>oquefazermanaus"><img src="<?php echo INCLUDE_PATH; ?>\pages\assets\icons\brasil.png" alt="pt-BR"><p>Português</p></a><!-- pt-BR -->
+                                        <a href="<?php echo INCLUDE_PATH; ?>oquefazerflorianopolis"><img src="<?php echo INCLUDE_PATH; ?>\pages\assets\icons\brasil.png" alt="pt-BR"><p>Português</p></a><!-- pt-BR -->
                                     </li>
 
                                     <li class="dropdown-link">
-                                        <a href="<?php echo INCLUDE_PATH; ?>en-US/oquefazermanaus"><img src="<?php echo INCLUDE_PATH; ?>\pages\assets\icons\estados-unidos.png" alt="en-US"><p>English</p></a><!-- eng-US -->
+                                        <a href="<?php echo INCLUDE_PATH; ?>en-US/oquefazerflorianopolis"><img src="<?php echo INCLUDE_PATH; ?>\pages\assets\icons\estados-unidos.png" alt="en-US"><p>English</p></a><!-- eng-US -->
                                     </li>
         
                                     <li class="dropdown-link">
-                                        <a href="<?php echo INCLUDE_PATH; ?>es-ES/oquefazermanaus"><img src="<?php echo INCLUDE_PATH; ?>\pages\assets\icons\espanha.png" alt="es-ES"><p>Espanõl</p></a><!-- en-US -->
+                                        <a href="<?php echo INCLUDE_PATH; ?>es-ES/oquefazerflorianopolis"><img src="<?php echo INCLUDE_PATH; ?>\pages\assets\icons\espanha.png" alt="es-ES"><p>Espanõl</p></a><!-- en-US -->
                                     </li>
                                 </ul>
                             </div>
                         </li>
                     </ul>
                 </div>
-
 
             </div>
 
@@ -164,9 +172,9 @@
             </div>
 
         </div>
-    </header>	
+    </header>
 
-        <?php include('AM_content.php'); ?>
+        <?php include('SC_content.php'); ?>
 
     <!--FOOTER-->
     <footer>
@@ -174,40 +182,54 @@
             <div class="itens-wrap">
                 <div class="container-content">
                     <ul class="list-unstyled">
-                        <h3><?php echo $cidade; ?></h3>
-   
-                        <li>
-                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-manaus">half day tour</a>
-                        </li>
-
-                        <li>
-                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-manaus">full day tour</a>
-                        </li>
-
-                        <li>
-                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-manaus">Night life</a>
+                        <h3><?php echo $cidade;?></h3>
+                        <li class="">
+                            <a href="<?php echo INCLUDE_PATH; ?>oquefazerflorianopolis">Home</a>
                         </li>
 
                         <li class="">
-                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-manaus">attractions</a>
+                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-florianopolis-">Tour De Meio Dia</a>
                         </li>
 
                         <li class="">
-                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-manaus">Shopping</a>
+                                <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-florianopolis-">Tour de Dia Inteiro</a>
                         </li>
 
                         <li class="">
-                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-manaus">Mindu Park</a>
+                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-florianopolis-">Vida Noturna</a>
                         </li>
 
                         <li class="">
-                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-manaus">Beaches</a>
+                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-florianopolis-">Pontos turísticos</a>
                         </li>
 
                         <li class="">
-                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-manaus">tour to the waterfalls</a>
+                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-florianopolis-">Praias</a>
                         </li>
 
+                        <li class="">
+                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-florianopolis-">Compras</a>
+                        </li>
+
+                        <li class="">
+                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-florianopolis-">Beto Carrero World</a>
+                        </li>
+
+                        <li class="">
+                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-florianopolis-">Blumenau</a>
+                        </li>
+
+                        <li class="">
+                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-florianopolis-">Camboriú</a>
+                        </li>
+
+                        <li class="">
+                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-florianopolis-">Guarda do Embaú</a>
+                        </li>
+
+                        <li class="">
+                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-florianopolis-">Oktoberfest</a>
+                        </li>
                     </ul>
                 </div>
 
