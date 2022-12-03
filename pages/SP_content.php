@@ -154,24 +154,77 @@
 
 	<section class="side-container">
 
-        <?php
-            foreach($tours as $key=>$value){
-            $sql = MySql::conectar()->prepare("SELECT `slug` FROM `tb_site.categorias` WHERE id = ?");
-            $sql->execute(array($value['categoria_id']));
-            $categoriaNome = $sql->fetch()['slug'];
-        ?>
-
             <div class="travels">
-                <div class="travels-content" style="background-image: url(' <?php echo INCLUDE_PATH_PAINEL ?>uploads/<?php echo $value['capa']; ?> ');">
+                <div class="travels-content" style="background-image: url('https://checkpointtours.com.br/painel/uploads/63333acb34a44.jpeg');">
                     <div class="travels-text">
-                        <a href="<?php echo INCLUDE_PATH; ?>tours/<?php echo $categoriaNome; ?>/<?php echo $value['slug']; ?>">
-                            <h2><?php echo substr(strip_tags($value['titulo']),0,20).'...'; ?></h2>
+                        <a href="<?php echo INCLUDE_PATH; ?>tours">
+                            <h2>Campos do Jordão - festival de inverno</h2>
                         </a>
                     </div>
                 </div>
             </div>
 
-        <?php } ?>
+            <div class="travels">
+                <div class="travels-content" style="background-image: url('https://checkpointtours.com.br/painel/uploads/63333bae8a2b9.jpeg');">
+                    <div class="travels-text">
+                        <a href="<?php echo INCLUDE_PATH; ?>tours">
+                            <h2>Holambra - Expoflora</h2>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="travels">
+                <div class="travels-content" style="background-image: url('https://checkpointtours.com.br/painel/uploads/633dbe476f944.jpeg');">
+                    <div class="travels-text">
+                        <a href="<?php echo INCLUDE_PATH; ?>tours">
+                            <h2>Aparecida - Circuito religioso</h2>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="travels">
+                <div class="travels-content" style="background-image: url('https://checkpointtours.com.br/painel/uploads/Porto_de_Santos.jpg');">
+                    <div class="travels-text">
+                        <a href="<?php echo INCLUDE_PATH; ?>tours">
+                            <h2>Porto de Santos - serviço de transfer</h2>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="travels">
+                <div class="travels-content" style="background-image: url('https://images.pexels.com/photos/1624487/pexels-photo-1624487.jpeg?auto=compress&cs=tinysrgb&w=600);">
+                    <div class="travels-text">
+                        <a href="<?php echo INCLUDE_PATH; ?>tours">
+                            <h2>Tour Gastronômico - Feira livre</h2>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="travels">
+                <div class="travels-content" style="background-image: url('https://checkpointtours.com.br/painel/uploads/6338ff3ef336b.jpeg');">
+                    <div class="travels-text">
+                        <a href="<?php echo INCLUDE_PATH; ?>tours">
+                            <h2>Futebol tour - Estádios de Futebol</h2>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="travels">
+                <div class="travels-content" style="background-image: url('https://checkpointtours.com.br/painel/uploads/6333338c015ff.jpeg');">
+                    <div class="travels-text">
+                        <a href="<?php echo INCLUDE_PATH; ?>tours">
+                            <h2>Tour by nighty - Teatro e Jantar</h2>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
 	</section>
 
     <section class="grid-bg">

@@ -50,8 +50,6 @@
         </div>
     </section>
 
- 
-
     <section class="grid">
         <div class="container-row">
     
@@ -61,25 +59,25 @@
                 </div>
 
                 <div class="margin-items">
-                    <div class="sideitem" style="background-image: url(<?php echo $infoSite['CE_bg1']; ?>);">
+                    <div class="sideitem" style="background-image: url(<?php echo $infoSite['PR_bg1']; ?>);">
                         <div class="row-content">
                             <h3>full day city tours</h3>
                             
-                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-fortaleza" target="_blank">See more >></a>
+                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-foz-do-iguacu" target="_blank">See more >></a>
 
                         </div><!--row-content-->
                     </div><!--sideitem-->
 
-                    <div class="item_1" style="background-image: url(<?php echo $infoSite['CE_bg2']; ?>);">
+                    <div class="item_1" style="background-image: url(<?php echo $infoSite['PR_bg2']; ?>);">
                         <div class="row-content">
                             <h3>half day tours</h3>
                             
-                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-fortaleza" target="_blank">See more >></a>
+                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-foz-do-iguacu" target="_blank">See more >></a>
 
                         </div><!--row-content-->
                     </div><!--sideitem-->
 
-                    <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-fortaleza" class="sideitem-2" style="background-image: url(<?php echo INCLUDE_PATH ?>pages/assets/banners/fortalezabg-eng.png);">
+                    <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-foz-do-iguacu" class="sideitem-2" style="background-image: url(<?php echo INCLUDE_PATH ?>pages/assets/banners/fozdoiguacubg-eng.png);">
                         
                     </a><!--sideitem-->
 
@@ -93,7 +91,7 @@
     <?php
 		$porPagina = 7;
 		if(!isset($_POST['parametro'])){
-		if($categoria['nome'] == 'O que fazer em Fortaleza'){
+		if($categoria['nome'] == 'O que fazer em Foz do Iguaçu'){
 			echo '';
 		}else{
 			echo '';
@@ -103,8 +101,8 @@
 		}
 
 		$query = "SELECT * FROM `tb_site.tours` ";
-		if($categoria['nome'] != 'O que fazer em Fortaleza'){
-			$categoria['id'] = 37;
+		if($categoria['nome'] != 'O que fazer em Foz do Iguaçu'){
+			$categoria['id'] = 38;
 			$query.="WHERE categoria_id = $categoria[id]";
 		}
 		if(isset($_POST['parametro'])){
@@ -117,8 +115,8 @@
 			}
 		}
 		$query2 = "SELECT * FROM `tb_site.tours` "; 
-		if($categoria['nome'] != 'O que fazer em Fortaleza'){
-				$categoria['id'] = 37;
+		if($categoria['nome'] != 'O que fazer em Foz do Iguaçu'){
+				$categoria['id'] = 38;
 				$query2.="WHERE categoria_id = $categoria[id]";
 		}
 		if(isset($_POST['parametro'])){
@@ -163,7 +161,6 @@
 		$sql->execute(array($value['categoria_id']));
 		$categoriaNome = $sql->fetch()['slug'];
 	?>
-
         
 		<div class="travels">
 			<div class="travels-content" style="background-image: url(' <?php echo INCLUDE_PATH_PAINEL ?>uploads/<?php echo $value['capa']; ?> ');">
@@ -232,7 +229,7 @@
         </div>  
     </section>  
 
-        <?php include('f1-painel.php'); ?>
+    <?php include('f1-painel.php'); ?>
 
     <section class="rate">
             <div class="box-align">

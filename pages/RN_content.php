@@ -78,9 +78,9 @@
                         </div><!--row-content-->
                     </div><!--sideitem-->
 
-                    <div class="sideitem-2" style="background-image: url(<?php echo INCLUDE_PATH ?>pages/assets/banners/natalbg.png);">
+                    <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-natal-" class="sideitem-2" style="background-image: url(<?php echo INCLUDE_PATH ?>pages/assets/banners/natalbg.png);">
                         
-                    </div><!--sideitem-->
+                    </a><!--sideitem-->
 
                 </div>
             </div><!--row-items-->

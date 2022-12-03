@@ -63,7 +63,7 @@
                     <div class="sideitem" style="background-image: url(<?php echo $infoSite['CE_bg1']; ?>);">
                         <div class="row-content">
                             <h3>City Tours de día completo por la ciudad</h3>
-                            <a href="#" target="_blank">Ver más >></a>
+                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-fortaleza" target="_blank">Ver más >></a>
 
                         </div><!--row-content-->
                     </div><!--sideitem-->
@@ -71,14 +71,14 @@
                     <div class="item_1" style="background-image: url(<?php echo $infoSite['CE_bg2']; ?>);">
                         <div class="row-content">
                             <h3>City tours de medio día</h3>
-                            <a href="#" target="_blank">Ver más >></a>
+                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-fortaleza" target="_blank">Ver más >></a>
 
                         </div><!--row-content-->
                     </div><!--sideitem-->
 
-                    <div class="sideitem-2" style="background-image: url(<?php echo INCLUDE_PATH ?>pages/assets/banners/fortalezabg-esp.png);">
+                    <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-fortaleza" class="sideitem-2" style="background-image: url(<?php echo INCLUDE_PATH ?>pages/assets/banners/fortalezabg-esp.png);">
                         
-                    </div><!--sideitem-->
+                    </a><!--sideitem-->
 
                 </div>
             </div><!--row-items-->

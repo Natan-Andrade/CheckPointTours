@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 
 <head>
     <meta charset="UTF-8">
@@ -10,11 +10,10 @@
     <title>Check Point Tours</title>
 
     <link rel="stylesheet" href="<?php echo INCLUDE_PATH; ?>estilo/home.css">
-
 </head>
 
 <body>
-    <?php $cidade = "Manaus";?>
+<?php $cidade = "Foz do Iguaçu";?>
 <?php
 	if(isset($_GET['excluir'])){
 		$idExcluir = intval($_GET['excluir']);
@@ -30,7 +29,7 @@
 	}
 
 	$paginaAtual = isset($_GET['pagina']) ? (int)$_GET['pagina'] : 1;
-	$porPagina = 7;
+	$porPagina = 4;
 	
 	$slides = Painel::selectAll('tb_site.slides',($paginaAtual - 1) * $porPagina,$porPagina);
 
@@ -45,8 +44,8 @@
 	
 ?>
 	<?php
-			foreach ($slides as $key => $value) {
-		?>
+        foreach ($slides as $key => $value) {
+    ?>
 
     <?php } ?>
 
@@ -56,9 +55,7 @@
             <input type="checkbox" name="" id="check">
 
             <div class="logo-container">
-
-            <a href="<?php echo INCLUDE_PATH; ?>en-US/oquefazermanaus"><img style="width: 70%;" class="logo" src="<?php echo INCLUDE_PATH; ?>/logos/logo.png"></a>
-
+                <a href="<?php echo INCLUDE_PATH; ?>oquefazerfozdoiguacu"><img style="width: 70%;" class="logo" src="<?php echo INCLUDE_PATH; ?>/logos/logo.png"></a>
             </div>
 
             <div class="nav-btn">
@@ -66,50 +63,37 @@
 
                     <ul>
                         <li class="nav-link" style="--i: .6s">
-                            <a href="<?php echo INCLUDE_PATH; ?>en-US/oquefazermanaus">Home</a>
+                            <a href="<?php echo INCLUDE_PATH; ?>oquefazerfozdoiguacu">Home</a>
                         </li>
 
                         <li class="nav-link" style="--i: .6s">
-                        <a href="<?php echo INCLUDE_PATH; ?>en-US/oquefazermanaus">Manaus<i class="fas fa-caret-down"></i></a>
+                            <a href="<?php echo INCLUDE_PATH; ?>oquefazerfozdoiguacu"><?php echo $cidade;?><i class="fas fa-caret-down"></i></a>
                             
-
                             <div class="dropdown">
                                 
                                 <ul>
                                     <li class="dropdown-link">
-                                        <a href="<?php echo INCLUDE_PATH; ?>en-US/oquefazermanaus">Home</a>
+                                        <a href="<?php echo INCLUDE_PATH; ?>oquefazerfozdoiguacu">Home</a>
                                     </li>
         
                                     <li class="dropdown-link">
-                                        <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-manaus">half day tour</a>
+                                        <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-foz-do-iguacu">Tour De Meio Dia</a>
                                     </li>
         
                                     <li class="dropdown-link">
-                                        <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-manaus">full day tour</a>
+                                         <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-foz-do-iguacu">Tour de Dia Inteiro</a>
                                     </li>
 
                                     <li class="dropdown-link">
-                                        <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-manaus">Night life</a>
+                                        <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-foz-do-iguacu">Parque das aves</a>
                                     </li>
 
                                     <li class="dropdown-link">
-                                        <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-manaus">attractions</a>
+                                        <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-foz-do-iguacu">Atrativos turísticos</a>
                                     </li>
 
                                     <li class="dropdown-link">
-                                        <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-manaus">Shopping</a>
-                                    </li>
-
-                                    <li class="dropdown-link">
-                                        <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-manaus">Mindu Park</a>
-                                    </li>
-
-                                    <li class="dropdown-link">
-                                        <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-manaus">Beaches</a>
-                                    </li>
-
-                                    <li class="dropdown-link">
-                                        <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-manaus">tour to the waterfalls</a>
+                                        <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-foz-do-iguacu">Macuco Safari</a>
                                     </li>
                                 </ul>
                             </div>
@@ -117,15 +101,15 @@
                         </li>
 
                         <li class="nav-link" style="--i: 1.1s">
-                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-manaus">Tours</a>
+                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-foz-do-iguacu">Tours</a>
                         </li>
 
                         <li class="nav-link" style="--i: 1.1s">
-                            <a href="<?php echo INCLUDE_PATH; ?>en-US/transfers">Transfers</i></a>
+                            <a href="<?php echo INCLUDE_PATH; ?>transfers">Transfers</i></a>
                         </li>
 
                         <li class="nav-link" style="--i: 1.1s">
-                            <a href="<?php echo INCLUDE_PATH; ?>en-US/F1">GP São Paulo F1</i></a>
+                            <a href="<?php echo INCLUDE_PATH; ?>F1">GP São Paulo F1</i></a>
                         </li>
 
                         <li class="nav-link" style="--i: 1.1s">
@@ -138,22 +122,21 @@
                             <div class="dropdown">
                                 <ul>
                                     <li class="dropdown-link">
-                                        <a href="<?php echo INCLUDE_PATH; ?>oquefazermanaus"><img src="<?php echo INCLUDE_PATH; ?>\pages\assets\icons\brasil.png" alt="pt-BR"><p>Português</p></a><!-- pt-BR -->
+                                        <a href="<?php echo INCLUDE_PATH; ?>oquefazerfozdoiguacu"><img src="<?php echo INCLUDE_PATH; ?>\pages\assets\icons\brasil.png" alt="pt-BR"><p>Português</p></a><!-- pt-BR -->
                                     </li>
 
                                     <li class="dropdown-link">
-                                        <a href="<?php echo INCLUDE_PATH; ?>en-US/oquefazermanaus"><img src="<?php echo INCLUDE_PATH; ?>\pages\assets\icons\estados-unidos.png" alt="en-US"><p>English</p></a><!-- eng-US -->
+                                        <a href="<?php echo INCLUDE_PATH; ?>en-US/oquefazerfozdoiguacu"><img src="<?php echo INCLUDE_PATH; ?>\pages\assets\icons\estados-unidos.png" alt="en-US"><p>English</p></a><!-- eng-US -->
                                     </li>
         
                                     <li class="dropdown-link">
-                                        <a href="<?php echo INCLUDE_PATH; ?>es-ES/oquefazermanaus"><img src="<?php echo INCLUDE_PATH; ?>\pages\assets\icons\espanha.png" alt="es-ES"><p>Espanõl</p></a><!-- en-US -->
+                                        <a href="<?php echo INCLUDE_PATH; ?>es-ES/oquefazerfozdoiguacu"><img src="<?php echo INCLUDE_PATH; ?>\pages\assets\icons\espanha.png" alt="es-ES"><p>Espanõl</p></a><!-- en-US -->
                                     </li>
                                 </ul>
                             </div>
                         </li>
                     </ul>
                 </div>
-
 
             </div>
 
@@ -164,9 +147,9 @@
             </div>
 
         </div>
-    </header>	
+    </header>
 
-        <?php include('AM_content.php'); ?>
+        <?php include('PR_content.php'); ?>
 
     <!--FOOTER-->
     <footer>
@@ -174,85 +157,72 @@
             <div class="itens-wrap">
                 <div class="container-content">
                     <ul class="list-unstyled">
-                        <h3><?php echo $cidade; ?></h3>
-   
-                        <li>
-                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-manaus">half day tour</a>
-                        </li>
+                        <h3><?php echo $cidade;?></h3>
 
-                        <li>
-                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-manaus">full day tour</a>
-                        </li>
-
-                        <li>
-                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-manaus">Night life</a>
+                        <li class="">
+                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-foz-do-iguacu">Tour De Meio Dia</a>
                         </li>
 
                         <li class="">
-                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-manaus">attractions</a>
+                                <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-foz-do-iguacu">Tour de Dia Inteiro</a>
                         </li>
 
                         <li class="">
-                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-manaus">Shopping</a>
+                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-foz-do-iguacu">Parque das aves</a>
                         </li>
 
                         <li class="">
-                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-manaus">Mindu Park</a>
+                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-foz-do-iguacu">Atrativos turísticos</a>
                         </li>
 
                         <li class="">
-                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-manaus">Beaches</a>
+                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-foz-do-iguacu">Macuco Safari</a>
                         </li>
-
-                        <li class="">
-                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-manaus">tour to the waterfalls</a>
-                        </li>
-
                     </ul>
                 </div>
 
                 <div class="container-content">
                     <ul class="list-unstyled">
-                        <h3>Other cities</h3>
-                        <li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>en-US/oquefazersaopaulo">São Paulo/SP</a></li>
-                        <li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>en-US/oquefazerriodejaneiro">Rio de Janeiro/RJ</a></li>
-                        <li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>en-US/oquefazerfozdoiguacu">Foz do Iguaçu/PR</a></li>
-                        <li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>en-US/oquefazernatal">Natal/RN</a></li>
-                        <li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>en-US/oquefazerflorianopolis">Florianópolis/SC</a></li>
-                        <li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>en-US/oquefazersalvador">Salvador/BA</a></li>
-                        <li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>en-US/oquefazermanaus">Manaus/AM</a></li>
-                        <li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>en-US/oquefazerfortaleza">Fortaleza/CE</a></li>
+                        <h3>Outras Cidades</h3>
+                        <li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>oquefazersaopaulo">São Paulo/SP</a></li>
+                        <li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>oquefazerriodejaneiro">Rio de Janeiro/RJ</a></li>
+                        <li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>oquefazerfozdoiguacu">Foz do Iguaçu/PR</a></li>
+                        <li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>oquefazernatal">Natal/RN</a></li>
+                        <li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>oquefazerflorianopolis">Florianópolis/SC</a></li>
+                        <li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>oquefazersalvador">Salvador/BA</a></li>
+                        <li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>oquefazermanaus">Manaus/AM</a></li>
+                        <li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>oquefazerfortaleza">Fortaleza/CE</a></li>
                     </ul>
                 </div>
     
     
                 <div class="container-content">
                     <ul class="list-unstyled">
-                        <h3>Company</h3>
-                        <li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>sobrenos">About Us</a></li>
-                        <li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>sobrenos">Our team</a></li>
-                        <li><a class="text-muted" target="_blank" href="">Service Terms of Use</a></li>
-                        <li><a class="text-muted" target="_blank" href="">Privacy Policy</a></li>
-                        <li><a class="text-muted" target="_blank" href="">Cancellation policy</a></li>
+                        <h3>Empresa</h3>
+                        <li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>sobrenos">Sobre nós</a></li>
+                        <li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>sobrenos">Nossa Equipe</a></li>
+                        <li><a class="text-muted" target="_blank" href="">Termos de uso do serviço</a></li>
+                        <li><a class="text-muted" target="_blank" href="">Política de privacidade</a></li>
+                        <li><a class="text-muted" target="_blank" href="">Política de cancelamento</a></li>
                         <li><a class="text-muted" target="_blank" href="">Blog</a></li>
-                        <li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>en-US/contato">Contact</a></li>
+                        <li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>contato">Contato</a></li>
                     </ul>
                 </div>
 
                 <div class="container-content">
                     <ul class="list-unstyled">
-                        <h3>Channels</h3>
-                        <li><a class="text-muted" target="_blank" href="">Weather forecast</a></li>
-                        <li><a class="text-muted" target="_blank" href="">Commemorative dates</a></li>
-                        <li><a class="text-muted" target="_blank" href="">Tips and Addresses</a></li>
-                        <li><a class="text-muted" target="_blank" href="">Dollar quotation</a></li>
+                        <h3>Canais</h3>
+                        <li><a class="text-muted" target="_blank" href="">Previsão do Tempo</a></li>
+                        <li><a class="text-muted" target="_blank" href="">Datas Comemorativas</a></li>
+                        <li><a class="text-muted" target="_blank" href="">Dicas e Endereços</a></li>
+                        <li><a class="text-muted" target="_blank" href="">Cotação do Dólar</a></li>
                     </ul>
                 </div>
     
                 <div class="container-content">
                     <ul class="list-unstyled">
-                        <h3>Payment methods</h3>
-                        <li><a class="text-muted" target="_blank" href="">Ticket</a></li>
+                        <h3>Formas de Pagamento</h3>
+                        <li><a class="text-muted" target="_blank" href="">Boleto</a></li>
                         <li><a class="text-muted" target="_blank" href="">Pix</a></li>
                         <li><a class="text-muted" target="_blank" href="">Pay Pal</a></li>
                     </ul>
@@ -262,9 +232,9 @@
                     <h3><strong>CHECK POINT Receptive Service</strong></h3>
                         <p>Rua Jacques Du Cerceau, 84 - 03624-120 - São Paulo - SP - BRASIL</p>
 
-                        <p>Monday to Friday from 9am to 6pm</p>
+                        <p>2ª a 6ª feira das 9hrs às 18hrs</p>
                         
-                        <p>PABX: <strong>(11) 2791-1316 </strong> After this time, call <strong>(11) 99187-1393</strong></p>
+                        <p>PABX: <strong>(11) 2791-1316 </strong> Após esse horário ligar para <strong>(11) 99187-1393</strong></p>
             </div>
             </div>
 
@@ -284,14 +254,11 @@
             
         </div>
         <div class="container-bottom">
-            <p>© 2022, Check Point Tours. All rights reserved.</p>
+            <p>© 2022, Check Point Tours. Todos os direitos reservados.</p>
         </div>
     </footer>
 
     <script src="https://kit.fontawesome.com/8772d4e44f.js" crossorigin="anonymous"></script>
-
-    
-
     <?php }else{ 
 	include('tour_single.php');
 	}
@@ -300,3 +267,4 @@
 </body>
 
 </html>
+

@@ -63,7 +63,7 @@
                     <div class="sideitem" style="background-image: url(<?php echo $infoSite['SC_bg1']; ?>);">
                         <div class="row-content">
                             <h3>City Tours de día completo por la ciudad</h3>
-                            <a href="http://localhost/checkpointtours.com.br/tours/o-que-fazer-em-florianopolis-" target="_blank">Ver más >></a>
+                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-florianopolis-" target="_blank">Ver más >></a>
 
                         </div><!--row-content-->
                     </div><!--sideitem-->
@@ -71,7 +71,7 @@
                     <div class="item_1" style="background-image: url(<?php echo $infoSite['SC_bg2']; ?>);">
                         <div class="row-content">
                             <h3>City tours de medio día</h3>
-                            <a href="http://localhost/checkpointtours.com.br/tours/o-que-fazer-em-florianopolis-" target="_blank">Ver más >></a>
+                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-florianopolis-" target="_blank">Ver más >></a>
 
                         </div><!--row-content-->
                     </div><!--sideitem-->
