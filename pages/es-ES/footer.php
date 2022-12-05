@@ -1,69 +1,9 @@
-<!DOCTYPE html>
-<html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
-    <link rel="shortcut icon" href="./home/favico.jpg" />
-    <title>Check Point Tours</title>
-
-    <link rel="stylesheet" href="<?php echo INCLUDE_PATH; ?>estilo/home.css">
-
-</head>
-
-<body>
-    <?php $cidade = "São Paulo"?>
-    <?php
-        if(isset($_GET['excluir'])){
-            $idExcluir = intval($_GET['excluir']);
-            $selectImagem = MySql::conectar()->prepare("SELECT slide FROM `tb_site.slides` WHERE id = ?");
-            $selectImagem->execute(array($_GET['excluir']));
-
-            $imagem = $selectImagem->fetch()['slide'];
-            Painel::deleteFile($imagem);
-            Painel::deletar('tb_site.slides',$idExcluir);
-            Painel::redirect(INCLUDE_PATH_PAINEL.'listar-slides');
-        }else if(isset($_GET['order']) && isset($_GET['id'])){
-            Painel::orderItem('tb_site.slides',$_GET['order'],$_GET['id']);
-        }
-
-        $paginaAtual = isset($_GET['pagina']) ? (int)$_GET['pagina'] : 1;
-        $porPagina = 1;
-        
-        $slides = Painel::selectAll('tb_site.slides',($paginaAtual - 1) * $porPagina,$porPagina);
-
-
-        error_reporting(E_ERROR | E_PARSE);
-        $url = explode('/',$_GET['url']);
-        if(!isset($url[2]))
-        {
-        $categoria = MySql::conectar()->prepare("SELECT * FROM `tb_site.categorias` WHERE slug = ?");
-        $categoria->execute(array(@$url[1]));
-        $categoria = $categoria->fetch();
-        
-    ?>
-	<?php
-			foreach ($slides as $key => $value) {
-		?>
-
-    <?php } ?>
-
-    <!--Menu-->
-    <?php $page = "oquefazersaopaulo"; ?>
-    <?php include('header.php'); ?>
-
-        <?php include('SP_content.php'); ?>
-
-    <!--FOOTER-->
-
-    <footer>
+    <footer id="footer">
         <div class="footer-content">
             <div class="itens-wrap">
                 <div class="container-content">
                     <ul class="list-unstyled">
-                    <h3><?php echo $cidade; ?></h3>
+                    <h3>São Paulo</h3>
 
                         <li class="">
                             <a href="<?php echo INCLUDE_PATH; ?>es-ES/oquefazersaopaulo">Home</a>
@@ -231,17 +171,6 @@
                 </ul>
             </div>
 
-<p>© 2022, Check Point Tours. Todos los derechos reservados.</p>
+            <p>© 2022, Check Point Tours. Todos los derechos reservados.</p>
         </div>
     </footer>
-
-    <script src="https://kit.fontawesome.com/8772d4e44f.js" crossorigin="anonymous"></script>
-
-    <?php }else{ 
-	include('tour_single.php');
-	}
-	?>
-
-</body>
-
-</html>

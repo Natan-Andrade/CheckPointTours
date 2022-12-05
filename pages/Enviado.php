@@ -13,11 +13,14 @@
 
         <style>
             *{
+                width: 100%;
+                max-height:100vh;
                 text-align: center;  
             }
 
             .bg-banner{
                 width: 100%;
+                max-height:100vh;
                 background-position: center;
                 background-size: cover;
             }
@@ -112,10 +115,10 @@
                                 <h2><i class="fa-solid fa-circle-check"></i></h2>
                                 <h3 id="translate1">Já recebemos sua Solicitação, por favor aguarde o contato pelo E-mail que você escolheu.</h3>
 
-                                <a href="<?php echo INCLUDE_PATH ?>home"><h4 id="translate2">Voltar</h4></a>
+                                <a id="translate2" href="<?php echo INCLUDE_PATH ?>oquefazersaopaulo"><h4>Voltar</h4></a>
 
                                 <button onclick="en()">English</button>
-                                <button onclick="es()">Espanhol</button>
+                                <button onclick="es()">Español</button>
                                 <button onclick="pt()">Português</button>
                             <div class="center">
                         </div>
@@ -129,17 +132,17 @@
         <script>
             function en(){
                 document.getElementById("translate1").innerHTML="We have already received your Request, please wait for the contact via the E-mail you chose.";
-                document.getElementById("translate2").innerHTML="Come back";
+                document.getElementById("translate2").innerHTML=`<a id="translate2" href="<?php echo INCLUDE_PATH ?>en-US/oquefazersaopaulo"><h4>Come back</h4></a>`;
             }
 
             function es(){
                 document.getElementById("translate1").innerHTML="Ya recibimos tu Solicitud, por favor espera el contacto a través del E-mail que elegiste.";
-                document.getElementById("translate2").innerHTML="Regresar";
+                document.getElementById("translate2").innerHTML=`<a id="translate2" href="<?php echo INCLUDE_PATH ?>es-ES/oquefazersaopaulo"><h4>Regresar</h4></a>`;
             }
 
             function pt(){
                 document.getElementById("translate1").innerHTML="Já recebemos sua Solicitação, por favor aguarde o contato pelo E-mail que você escolheu.";
-                document.getElementById("translate2").innerHTML="Voltar";
+                document.getElementById("translate2").innerHTML=`<a id="translate2" href="<?php echo INCLUDE_PATH ?>oquefazersaopaulo"><h4>Voltar</h4></a>`;
             }
         </script>
     </body>

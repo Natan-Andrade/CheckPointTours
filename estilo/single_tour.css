@@ -36,6 +36,16 @@ body{
 	display: none !important;	
 }
 
+.goog-te-gadget {
+    font-family: arial;
+    font-size: 11px;
+    color: #666;
+    white-space: nowrap;
+    background-color: #fff !important;
+    padding: 10px;
+    margin: 0 auto !important;
+}
+
 
 header{
     position: fixed;
@@ -210,9 +220,9 @@ header > section{
     position: relative;
 }
 
-.dropdown.second{
-    top: -420px;
-    left: 100%;
+.dropdown.second {
+    top: -290px;
+    left: 98%;
     padding-left: 0.2rem;
     cursor: pointer;
     transform: translateX(5px);

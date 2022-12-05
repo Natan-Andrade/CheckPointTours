@@ -1,68 +1,9 @@
-<!DOCTYPE html>
-<html lang="pt">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
-    <link rel="shortcut icon" href="./home/favico.jpg" />
-    <title>Check Point Tours</title>
-
-    <link rel="stylesheet" href="<?php echo INCLUDE_PATH; ?>estilo/home.css">
-
-</head>
-
-<body>
-<?php $cidade = "São Paulo"?>
-<?php
-	if(isset($_GET['excluir'])){
-		$idExcluir = intval($_GET['excluir']);
-		$selectImagem = MySql::conectar()->prepare("SELECT slide FROM `tb_site.slides` WHERE id = ?");
-		$selectImagem->execute(array($_GET['excluir']));
-
-		$imagem = $selectImagem->fetch()['slide'];
-		Painel::deleteFile($imagem);
-		Painel::deletar('tb_site.slides',$idExcluir);
-		Painel::redirect(INCLUDE_PATH_PAINEL.'listar-slides');
-	}else if(isset($_GET['order']) && isset($_GET['id'])){
-		Painel::orderItem('tb_site.slides',$_GET['order'],$_GET['id']);
-	}
-
-	$paginaAtual = isset($_GET['pagina']) ? (int)$_GET['pagina'] : 1;
-	$porPagina = 1;
-	
-	$slides = Painel::selectAll('tb_site.slides',($paginaAtual - 1) * $porPagina,$porPagina);
-
-
-	error_reporting(E_ERROR | E_PARSE);
-	$url = explode('/',$_GET['url']);
-	if(!isset($url[2]))
-	{
-	$categoria = MySql::conectar()->prepare("SELECT * FROM `tb_site.categorias` WHERE slug = ?");
-	$categoria->execute(array(@$url[1]));
-	$categoria = $categoria->fetch();
-	
-?>
-	<?php
-			foreach ($slides as $key => $value) {
-		?>
-
-    <?php } ?>
-
-    <!--Menu-->
-    <?php $page = "oquefazersaopaulo"; ?>
-    <?php include('header.php'); ?>
-
-        <?php include('SP_content.php'); ?>
-
-    <!--FOOTER-->
-    <footer>
+    <footer id="footer">
         <div class="footer-content">
             <div class="itens-wrap">
                 <div class="container-content">
                     <ul class="list-unstyled">
-                        <h3><?php echo $cidade; ?></h3>
+                        <h3>São Paulo</h3>
 
                         <li>
                             <a href="https://checkpointtours.com.br/tours/o-que-fazer-sao-paulo-tours-de-meio-dia">Tour De Meio Dia</a>
@@ -192,6 +133,15 @@
                 </div>
 
                 <div class="container-content">
+                    <ul class="list-unstyled">
+                        <h3>Atribuições</h3>
+                        <li><a href="https://www.flaticon.com/br/icones-gratis/brasil" title="brasil ícones">Brasil ícones criados por Freepik - Flaticon</a></li>
+                        <li><a href="https://www.flaticon.com/br/icones-gratis/estados-unidos" title="estados unidos ícones">Estados unidos ícones criados por Freepik - Flaticon</a></li>
+                        <li><a href="https://www.flaticon.com/br/icones-gratis/espanha" title="espanha ícones">Espanha ícones criados por Freepik - Flaticon</a></li>
+                    </ul>
+                </div>
+
+                <div class="container-content">
                     <h3><strong>CHECK POINT Receptive Service</strong></h3>
                         <p>Rua Jacques Du Cerceau, 84 - 03624-120 - São Paulo - SP - BRASIL</p>
 
@@ -201,7 +151,6 @@
             </div>
             </div>
 
-            
             <div class="imgs-footer">
                 
                 <img class="img-footer" src="<?php echo INCLUDE_PATH; ?>/images/footer-images/logo_ministerio_turismo.png" />
@@ -216,6 +165,7 @@
             </div>
             
         </div>
+
         <div class="container-bottom">
             <div class="container-content">
                 <ul class="list-unstyled" style="font-size:10px;">
@@ -226,17 +176,6 @@
                 </ul>
             </div>
 
-<p>© 2022, Check Point Tours. Todos os direitos reservados.</p>
+            <p>© 2022, Check Point Tours. Todos os direitos reservados.</p>
         </div>
     </footer>
-
-    <script src="https://kit.fontawesome.com/8772d4e44f.js" crossorigin="anonymous"></script>
-
-    <?php }else{ 
-	include('tour_single.php');
-	}
-	?>
-
-</body>
-
-</html>

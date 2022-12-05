@@ -299,7 +299,16 @@
             
         </div>
         <div class="container-bottom">
-            <p>© 2022, Check Point Tours. Todos os direitos reservados.</p>
+            <div class="container-content">
+                <ul class="list-unstyled" style="font-size:10px;">
+                    <h3>Atribuições</h3>
+                    <li><a href="https://www.flaticon.com/br/icones-gratis/brasil" title="brasil ícones">Brasil ícones criados por Freepik - Flaticon</a></li>
+                    <li><a href="https://www.flaticon.com/br/icones-gratis/estados-unidos" title="estados unidos ícones">Estados unidos ícones criados por Freepik - Flaticon</a></li>
+                    <li><a href="https://www.flaticon.com/br/icones-gratis/espanha" title="espanha ícones">Espanha ícones criados por Freepik - Flaticon</a></li>
+                </ul>
+            </div>
+
+<p>© 2022, Check Point Tours. Todos os direitos reservados.</p>
         </div>
     </footer>
 

@@ -17,148 +17,140 @@
 
 
 	<header id="header">
-        <div class="container">
-            <input type="checkbox" name="" id="check">
+		<div class="container">
+				<input type="checkbox" name="" id="check">
+					
+					<div class="logo-container">
+						<a href="<?php echo INCLUDE_PATH; ?>oquefazersaopaulo"><img style="width: 70%;" class="logo" src="<?php echo INCLUDE_PATH; ?>/logos/logo.png"></a>
+					</div>
+				<div class="nav-btn">
+					<div class="nav-links">
 
-            <div class="logo-container">
+						<ul>
+							<li class="nav-link" style="--i: .6s">
+								<a href="<?php echo INCLUDE_PATH; ?>oquefazersaopaulo">Home</a>
+							</li>
 
-            <a href="<?php echo INCLUDE_PATH; ?>oquefazersaopaulo"><img style="width: 70%;" class="logo" src="<?php echo INCLUDE_PATH; ?>/logos/logo.png"></a>
+							<li class="nav-link" style="--i: .6s">
+								<a href="<?php echo INCLUDE_PATH; ?>oquefazersaopaulo">São Paulo<i class="fas fa-caret-down"></i></a>
+								
 
-               <!-- <img  style="width: 55%;" class="logo" src="./logo2.jpg">-->
-            </div>
+								<div class="dropdown">
+									
+									<ul>
+										<li class="dropdown-link">
+											<a href="https://checkpointtours.com.br/tours/o-que-fazer-sao-paulo-tours-de-meio-dia">Tour De Meio Dia</a>
+										</li>
+			
+										<li class="dropdown-link">
+											<a href="https://checkpointtours.com.br/tours/o-que-fazer-sao-paulo-tours-de-dia-inteiro-">Tour de Dia Inteiro</a>
+										</li>
 
-            <div class="nav-btn">
-                <div class="nav-links">
+										<li class="dropdown-link">
+											<a href="https://checkpointtours.com.br/tours/o-que-fazer-sao-paulo-tours-de-meio-dia-city-tour-gastronomico-">City Tour Gastronômico</a>
+										</li>
+										<li class="dropdown-link">
+											<a href="https://checkpointtours.com.br/tours/o-que-fazer-sao-paulo-tours-de-meio-dia-tours-by-night">Vida Noturna</a>
+										</li>
+			
+										<li class="dropdown-link">
+											<a href="<?php echo INCLUDE_PATH; ?>tours">Eventos da Cidade</a>
+										</li>
 
-                    <ul>
-                        <li class="nav-link" style="--i: .6s">
-                            <a href="<?php echo INCLUDE_PATH; ?>oquefazersaopaulo">Home</a>
-                        </li>
+										<li class="dropdown-link">
+											<a href="https://checkpointtours.com.br/tours/o-que-fazer-em-sao-paulo-parques-tematicos-">Parques Temáticos</a>
+										</li>
+			
+										<li class="dropdown-link">
+											<a href="<?php echo INCLUDE_PATH; ?>transfers">Traslados</a>
+										</li>
 
-                        <li class="nav-link" style="--i: .6s">
-                            <a href="#">São Paulo<i class="fas fa-caret-down"></i></a>
-                            
+										<li class="dropdown-link">
+											<a href="https://checkpointtours.com.br/tours/o-que-fazer-em-sao-paulo-porto-de-santos">Porto de Santos</a>
+										</li>
 
-                            <div class="dropdown">
-                                
-                                <ul>
-                                    <li class="dropdown-link">
-                                        <a href="<?php echo INCLUDE_PATH; ?>oquefazersaopaulo">Home</a>
-                                    </li>
-        
-                                    <li class="dropdown-link">
-                                        <a href="https://checkpointtours.com.br/tours/o-que-fazer-sao-paulo-tours-de-meio-dia">Tour De Meio Dia</a>
-                                    </li>
-        
-                                    <li class="dropdown-link">
-                                        <a href="https://checkpointtours.com.br/tours/o-que-fazer-sao-paulo-tours-de-dia-inteiro-">Tour de Dia Inteiro</a>
-                                    </li>
+										<li class="dropdown-link">
+											<a href="<?php echo INCLUDE_PATH; ?>visitadenegocios">Visitas de Negócios</a>
+										</li>
 
-                                    <li class="dropdown-link">
-                                        <a href="#">City Tour Gastronômico</a>
-                                    </li>
-                                    <li class="dropdown-link">
-                                        <a href="https://checkpointtours.com.br/tours/o-que-fazer-sao-paulo-tours-de-meio-dia-tours-by-night">Vida Nortuna</a>
-                                    </li>
-        
-                                    <li class="dropdown-link">
-                                        <a href="#">Eventos da Cidade</a>
-                                    </li>
+										<li class="dropdown-link">
+											<a href="#">mais<i class="fas fa-caret-down"></i></a>
 
-                                    <li class="dropdown-link">
-                                        <a href="#">Parques Temáticos</a>
-                                    </li>
-        
-                                    <li class="dropdown-link">
-                                        <a href="#">Traslados</a>
-                                    </li>
+											<div class="dropdown second">
+												<ul>
 
-                                    <li class="dropdown-link">
-                                        <a href="#">Porto de Santos</a>
-                                    </li>
+													<li class="dropdown-link">
+														<a href="<?php echo INCLUDE_PATH; ?>tours">Hospedagem</a>
+													</li>
 
-                                    <li class="dropdown-link">
-                                        <a href="<?php echo INCLUDE_PATH; ?>visitadenegocios">Visitas de Negócios</a>
-                                    </li>
+													<li class="dropdown-link">
+														<a href="<?php echo INCLUDE_PATH; ?>tours">Transportes</a>
+													</li>
+						
+													<li class="dropdown-link">
+														<a href="https://checkpointtours.com.br/tours/o-que-fazer-em-sao-paulo-eco-turismo-">Ecoturismo</a>
+													</li>
 
-                                    <li class="dropdown-link">
-                                        <a href="#">mais<i class="fas fa-caret-down"></i></a>
+													<li class="dropdown-link">
+														<a href="https://checkpointtours.com.br/tours/o-que-fazer-em-sao-paulo-agro-turismo-">Agroturismo</a>
+													</li>
+													<li class="dropdown-link">
+														<a href="<?php echo INCLUDE_PATH; ?>tours">Tours Natalinos</a>
+													</li>
+						
+													<li class="dropdown-link">
+														<a href="https://checkpointtours.com.br/tours/o-que-fazer-em-sao-paulo-carnaval-">Carnaval SP</a>
+													</li>
 
-                                        <div class="dropdown second">
-                                            <ul>
+													<li class="dropdown-link">
+														<a href="https://checkpointtours.com.br/tours/o-que-fazer-em-sao-paulo-campos-do-jordao-">Campos do Jordão</a>
+													</li>
+						
+													<li class="dropdown-link">
+														<a href="https://checkpointtours.com.br/tours/o-que-fazer-sao-paulo-pacote-romantico">Pacote Romântico</a>
+													</li>
 
-                                                <li class="dropdown-link">
-                                                    <a href="#">Hospedagem</a>
-                                                </li>
+													<li class="dropdown-link">
+														<a href="<?php echo INCLUDE_PATH; ?>F1">GP São Paulo F1</a>
+													</li>
 
-                                                <li class="dropdown-link">
-                                                    <a href="#">Transportes</a>
-                                                </li>
-                    
-                                                <li class="dropdown-link">
-                                                    <a href="#">Ecoturismo</a>
-                                                </li>
+													<li class="dropdown-link">
+														<a href="<?php echo INCLUDE_PATH; ?>tours">Teatro</a>
+													</li>
+						
+													<li class="dropdown-link">
+														<a href="https://checkpointtours.com.br/tours/o-que-fazer-em-sao-paulo-turismetro-">TurisMetrô</a>
+													</li>
+												</ul>
 
-                                                <li class="dropdown-link">
-                                                    <a href="#">Agroturismo</a>
-                                                </li>
-                                                <li class="dropdown-link">
-                                                    <a href="#">Tours Natalinos</a>
-                                                </li>
-                    
-                                                <li class="dropdown-link">
-                                                    <a href="#">Carnaval SP</a>
-                                                </li>
+											</div>
+										</li>
+										<div class="arrow"></div>
 
-                                                <li class="dropdown-link">
-                                                    <a href="#">Campos do Jordão</a>
-                                                </li>
-                    
-                                                <li class="dropdown-link">
-                                                    <a href="https://checkpointtours.com.br/tours/o-que-fazer-sao-paulo-pacote-romantico">Pacote Romântico</a>
-                                                </li>
+										
+									</ul>
+								</div>
+								
+							</li>
 
-                                                <li class="dropdown-link">
-                                                    <a href="<?php echo INCLUDE_PATH; ?>F1">GP São Paulo F1</a>
-                                                </li>
+							<li class="nav-link" style="--i: 1.1s">
+								<a href="<?php echo INCLUDE_PATH; ?>tours">Tours</a>
+							</li>
 
-                                                <li class="dropdown-link">
-                                                    <a href="<?php echo INCLUDE_PATH; ?>tours">Teatro</a>
-                                                </li>
-                    
-                                                <li class="dropdown-link">
-                                                    <a href="<?php echo INCLUDE_PATH; ?>tours">TurisMetrô</a>
-                                                </li>
-                                            </ul>
+							<li class="nav-link" style="--i: 1.1s">
+								<a href="<?php echo INCLUDE_PATH; ?>transfers">Transfers</i></a>
+							</li>
 
-                                        </div>
-                                    </li>
-                                    <div class="arrow"></div>
+							<li class="nav-link" style="--i: 1.1s">
+								<a href="<?php echo INCLUDE_PATH; ?>F1">GP São Paulo F1</i></a>
+							</li>
 
-                                    
-                                </ul>
-                            </div>
-                            
-                        </li>
+							<li class="nav-link" style="--i: 1.1s">
+								<a href="<?php echo INCLUDE_PATH; ?>shows">Shows</i></a>
+							</li>
 
-                        <li class="nav-link" style="--i: 1.1s">
-                            <a href="<?php echo INCLUDE_PATH; ?>tours">Tours</a>
-                        </li>
-
-                        <li class="nav-link" style="--i: 1.1s">
-                            <a href="<?php echo INCLUDE_PATH; ?>transfers">Transfers</i></a>
-                        </li>
-
-                        <li class="nav-link" style="--i: 1.1s">
-                            <a href="<?php echo INCLUDE_PATH; ?>F1">GP São Paulo F1</i></a>
-                        </li>
-
-                        <li class="nav-link" style="--i: 1.1s">
-                            <a href="<?php echo INCLUDE_PATH; ?>shows">Shows</i></a>
-                        </li>
-
-                        <li class="nav-link" style="--i: 1.1s">
-                        <a><p><i class="fa-solid fa-language"></i></p><i class="fas fa-caret-down"></i></a>
+							<li class="nav-link" style="--i: 1.1s">
+							<a><p><i class="fa-solid fa-language"></i></p><i class="fas fa-caret-down"></i></a>
         
                             <div class="dropdown">
                                 <ul>
@@ -280,7 +272,7 @@
 			
 
 			<?php
-				$porPagina = 10;
+				$porPagina = 18;
 				if(!isset($_POST['parametro'])){
 				if(@$categoria['nome'] == ''){
 					echo '';
@@ -390,96 +382,96 @@
 	</section><!--container-portal-->	
 
 	<footer id="footer">
-			<div class="footer-content">
-				<div class="itens-wrap">
-					<div class="container-content">
-						<ul class="list-unstyled">
-							<h3>São Paulo</h3>
+		<div class="footer-content">
+            <div class="itens-wrap">
+                <div class="container-content">
+                    <ul class="list-unstyled">
+                        <h3>São Paulo</h3>
 
-							<li>
-								<a href="https://checkpointtours.com.br/tours/o-que-fazer-sao-paulo-tours-de-meio-dia">Tour De Meio Dia</a>
-							</li>
+                        <li>
+                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-sao-paulo-tours-de-meio-dia">Tour De Meio Dia</a>
+                        </li>
 
-							<li>
-								 <a href="https://checkpointtours.com.br/tours/o-que-fazer-sao-paulo-tours-de-dia-inteiro-">Tour de Dia Inteiro</a>
-							</li>
+                        <li>
+                             <a href="https://checkpointtours.com.br/tours/o-que-fazer-sao-paulo-tours-de-dia-inteiro-">Tour de Dia Inteiro</a>
+                        </li>
 
-							<li>
-								<a href="#">City Tour Gastronômico</a>
-							</li>
-							<li>
-								<a href="https://checkpointtours.com.br/tours/o-que-fazer-sao-paulo-tours-de-meio-dia-tours-by-night">Vida Nortuna</a>
-							</li>
+                        <li>
+                            <a href="<?php echo INCLUDE_PATH; ?>tours">City Tour Gastronômico</a>
+                        </li>
+                        <li>
+                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-sao-paulo-vida-noturna-">Vida Noturna</a>
+                        </li>
 
-							<li>
-								<a href="#">Eventos da Cidade</a>
-							</li>
+                        <li>
+                            <a href="<?php echo INCLUDE_PATH; ?>tours">Eventos da Cidade</a>
+                        </li>
 
-							<li>
-								<a href="#">Parques Temáticos</a>
-							</li>
+                        <li>
+                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-sao-paulo-parques-tematicos-">Parques Temáticos</a>
+                        </li>
 
-							<li>
-								<a href="#">Traslados</a>
-							</li>
+                        <li>
+                            <a href="<?php echo INCLUDE_PATH; ?>transfers">Traslados</a>
+                        </li>
 
-							<li>
-								<a href="#">Porto de Santos</a>
-							</li>
+                        <li>
+                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-sao-paulo-porto-de-santos">Porto de Santos</a>
+                        </li>
 
-							<li>
-								<a href="<?php echo INCLUDE_PATH; ?>visitadenegocios">Visitas de Negócios</a>
-							</li>
+                        <li>
+                            <a href="<?php echo INCLUDE_PATH; ?>visitadenegocios">Visitas de Negócios</a>
+                        </li>
 
-							<li>
-								<a href="#">Hospedagem</a>
-							</li>
+                        <li>
+                            <a href="<?php echo INCLUDE_PATH; ?>tours">Hospedagem</a>
+                        </li>
 
-							<li>
-								<a href="#">Transportes</a>
-							</li>
+                        <li>
+                            <a href="<?php echo INCLUDE_PATH; ?>tours">Transportes</a>
+                        </li>
 
-							<li>
-								<a href="#">Ecoturismo</a>
-							</li>
+                        <li>
+                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-sao-paulo-eco-turismo-">Ecoturismo</a>
+                        </li>
 
-							<li>
-								<a href="#">Agroturismo</a>
-							</li>
-							<li>
-								<a href="#">Tours Natalinos</a>
-							</li>
+                        <li>
+                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-sao-paulo-agro-turismo-">Agroturismo</a>
+                        </li>
+                        <li>
+                            <a href="<?php echo INCLUDE_PATH; ?>tours">Tours Natalinos</a>
+                        </li>
 
-							<li>
-								<a href="#">Carnaval SP</a>
-							</li>
+                        <li>
+                            <a href="<?php echo INCLUDE_PATH; ?>tours">Carnaval SP</a>
+                        </li>
 
-							<li>
-								<a href="#">Campos do Jordão</a>
-							</li>
+                        <li>
+                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-em-sao-paulo-campos-do-jordao-">Campos do Jordão</a>
+                        </li>
 
-							<li>
-								<a href="https://checkpointtours.com.br/tours/o-que-fazer-sao-paulo-pacote-romantico">Pacote Romântico</a>
-							</li>
+                        <li>
+                            <a href="https://checkpointtours.com.br/tours/o-que-fazer-sao-paulo-pacote-romantico">Pacote Romântico</a>
+                        </li>
 
-							<li>
-								<a href="<?php echo INCLUDE_PATH; ?>F1">GP São Paulo F1</a>
-							</li>
+                        <li>
+                            <a href="<?php echo INCLUDE_PATH; ?>F1">GP São Paulo F1</a>
+                        </li>
 
-							<li>
-								<a href="<?php echo INCLUDE_PATH; ?>tours">Teatro</a>
-							</li>
+                        <li>
+                            <a href="<?php echo INCLUDE_PATH; ?>tours">Teatro</a>
+                        </li>
 
-							<li>
-								<a href="<?php echo INCLUDE_PATH; ?>tours">TurisMetrô</a>
-							</li>
-						</ul>
-					</div>
+                        <li>
+                            <a href="<?php echo INCLUDE_PATH; ?>tours">TurisMetrô</a>
+                        </li>
+                    </ul>
+                </div>
 
-					<div class="container-content">
-						<ul class="list-unstyled">
-							<h3>Outras Cidades</h3>
-                         <li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>oquefazersaopaulo">São Paulo/SP</a></li>
+                <div class="container-content">
+                    <ul class="list-unstyled">
+                        <h3>Outras Cidades</h3>
+                        <li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>oquefazersaopaulo">São Paulo/SP</a></li>
                         <li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>oquefazerriodejaneiro">Rio de Janeiro/RJ</a></li>
                         <li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>oquefazerfozdoiguacu">Foz do Iguaçu/PR</a></li>
                         <li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>oquefazernatal">Natal/RN</a></li>
@@ -487,70 +479,79 @@
                         <li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>oquefazersalvador">Salvador/BA</a></li>
                         <li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>oquefazermanaus">Manaus/AM</a></li>
                         <li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>oquefazerfortaleza">Fortaleza/CE</a></li>
-						</ul>
-					</div>
-		
-		
-					<div class="container-content">
-						<ul class="list-unstyled">
-							<h3>Empresa</h3>
-							<li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>sobrenos">Sobre nós</a></li>
-							<li><a class="text-muted" target="_blank" href="">Nossa Equipe</a></li>
-							<li><a class="text-muted" target="_blank" href="">Termos de uso do serviço</a></li>
-							<li><a class="text-muted" target="_blank" href="">Política de privacidade</a></li>
-							<li><a class="text-muted" target="_blank" href="">Política de cancelamento</a></li>
-							<li><a class="text-muted" target="_blank" href="">Blog</a></li>
-							<li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>contato">Contato</a></li>
-						</ul>
-					</div>
+                    </ul>
+                </div>
+    
+    
+                <div class="container-content">
+                    <ul class="list-unstyled">
+                        <h3>Empresa</h3>
+                        <li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>sobrenos">Sobre nós</a></li>
+                        <li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>sobrenos">Nossa Equipe</a></li>
+                        <li><a class="text-muted" target="_blank" href="">Termos de uso do serviço</a></li>
+                        <li><a class="text-muted" target="_blank" href="">Política de privacidade</a></li>
+                        <li><a class="text-muted" target="_blank" href="">Política de cancelamento</a></li>
+                        <li><a class="text-muted" target="_blank" href="">Blog</a></li>
+                        <li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>contato">Contato</a></li>
+                    </ul>
+                </div>
 
-					<div class="container-content">
-						<ul class="list-unstyled">
-							<h3>Canais</h3>
-							<li><a class="text-muted" target="_blank" href="">Previsão do Tempo</a></li>
-							<li><a class="text-muted" target="_blank" href="">Datas Comemorativas</a></li>
-							<li><a class="text-muted" target="_blank" href="">Dicas e Endereços</a></li>
-							<li><a class="text-muted" target="_blank" href="">Cotação do Dólar</a></li>
-						</ul>
-					</div>
-		
-					<div class="container-content">
-						<ul class="list-unstyled">
-							<h3>Formas de Pagamento</h3>
-							<li><a class="text-muted" target="_blank" href="">Boleto</a></li>
-							<li><a class="text-muted" target="_blank" href="">Pix</a></li>
-							<li><a class="text-muted" target="_blank" href="">Pay Pal</a></li>
-						</ul>
-					</div>
+                <div class="container-content">
+                    <ul class="list-unstyled">
+                        <h3>Canais</h3>
+                        <li><a class="text-muted" target="_blank" href="">Previsão do Tempo</a></li>
+                        <li><a class="text-muted" target="_blank" href="">Datas Comemorativas</a></li>
+                        <li><a class="text-muted" target="_blank" href="">Dicas e Endereços</a></li>
+                        <li><a class="text-muted" target="_blank" href="">Cotação do Dólar</a></li>
+                    </ul>
+                </div>
+    
+                <div class="container-content">
+                    <ul class="list-unstyled">
+                        <h3>Formas de Pagamento</h3>
+                        <li><a class="text-muted" target="_blank" href="">Boleto</a></li>
+                        <li><a class="text-muted" target="_blank" href="">Pix</a></li>
+                        <li><a class="text-muted" target="_blank" href="">Pay Pal</a></li>
+                    </ul>
+                </div>
 
-					<div class="container-content">
-						<h3><strong>CHECK POINT Receptive Service</strong></h3>
-							<p>Rua Jacques Du Cerceau, 84 - 03624-120 - São Paulo - SP - BRASIL</p>
+                <div class="container-content">
+                    <h3><strong>CHECK POINT Receptive Service</strong></h3>
+                        <p>Rua Jacques Du Cerceau, 84 - 03624-120 - São Paulo - SP - BRASIL</p>
 
-							<p>2ª a 6ª feira das 9hrs às 18hrs</p>
-							
-							<p>PABX: <strong>(11) 2791-1316 </strong> Após esse horário ligar para <strong>(11) 99187-1393</strong></p>
-				</div>
-				</div>
+                        <p>2ª a 6ª feira das 9hrs às 18hrs</p>
+                        
+                        <p>PABX: <strong>(11) 2791-1316 </strong> Após esse horário ligar para <strong>(11) 99187-1393</strong></p>
+            </div>
+            </div>
 
-				
-				<div class="imgs-footer">
-					
-					<img class="img-footer" src="<?php echo INCLUDE_PATH; ?>/images/footer-images/logo_ministerio_turismo.png" />
-					<img class="img-footer" src="<?php echo INCLUDE_PATH; ?>/images/footer-images/logo_sp_turismo.png" />
-					<img class="img-footer" src="<?php echo INCLUDE_PATH; ?>/images/footer-images/logo_sp.png" />
-					<img class="img-footer" src="<?php echo INCLUDE_PATH; ?>/images/footer-images/logo_sindetur.png" />
-					<img class="img-footer" src="<?php echo INCLUDE_PATH; ?>/images/footer-images/logo_abav.png" />
-					<img class="img-footer" src="<?php echo INCLUDE_PATH; ?>/images/footer-images/logo_convention_bureau.png" />
-					<img class="img-footer" src="<?php echo INCLUDE_PATH; ?>/images/footer-images/logo_brasil.png" />
-					<img class="img-footer" src="<?php echo INCLUDE_PATH; ?>/images/footer-images/logo_trip.png" />
+            
+            <div class="imgs-footer">
+                
+                <img class="img-footer" src="<?php echo INCLUDE_PATH; ?>/images/footer-images/logo_ministerio_turismo.png" />
+                <img class="img-footer" src="<?php echo INCLUDE_PATH; ?>/images/footer-images/logo_sp_turismo.png" />
+                <img class="img-footer" src="<?php echo INCLUDE_PATH; ?>/images/footer-images/logo_sp.png" />
+                <img class="img-footer" src="<?php echo INCLUDE_PATH; ?>/images/footer-images/logo_sindetur.png" />
+                <img class="img-footer" src="<?php echo INCLUDE_PATH; ?>/images/footer-images/logo_abav.png" />
+                <img class="img-footer" src="<?php echo INCLUDE_PATH; ?>/images/footer-images/logo_convention_bureau.png" />
+                <img class="img-footer" src="<?php echo INCLUDE_PATH; ?>/images/footer-images/logo_brasil.png" />
+                <img class="img-footer" src="<?php echo INCLUDE_PATH; ?>/images/footer-images/logo_trip.png" />
 
-				</div>
-				
-			</div>
-			<div class="container-bottom">
-				<p>© 2022, Check Point Tours. Todos os direitos reservados.</p>
-			</div>
+            </div>
+            
+        </div>
+        <div class="container-bottom">
+            <div class="container-content">
+                <ul class="list-unstyled" style="font-size:10px;">
+                    <h3>Atribuições</h3>
+                    <li><a href="https://www.flaticon.com/br/icones-gratis/brasil" title="brasil ícones">Brasil ícones criados por Freepik - Flaticon</a></li>
+                    <li><a href="https://www.flaticon.com/br/icones-gratis/estados-unidos" title="estados unidos ícones">Estados unidos ícones criados por Freepik - Flaticon</a></li>
+                    <li><a href="https://www.flaticon.com/br/icones-gratis/espanha" title="espanha ícones">Espanha ícones criados por Freepik - Flaticon</a></li>
+                </ul>
+            </div>
+
+<p>© 2022, Check Point Tours. Todos os direitos reservados.</p>
+        </div>
 	</footer>
 
 	<script>
@@ -582,14 +583,10 @@
 				<header>
 					<div class="container">
 						<input type="checkbox" name="" id="check">
-
-						<div class="logo-container">
-
-						<a href="<?php echo INCLUDE_PATH; ?>oquefazersaopaulo"><img style="width: 70%;" class="logo" src="<?php echo INCLUDE_PATH; ?>/logos/logo.png"></a>
-
-						<!-- <img  style="width: 55%;" class="logo" src="./logo2.jpg">-->
-						</div>
-
+							
+							<div class="logo-container">
+								<a href="<?php echo INCLUDE_PATH; ?>oquefazersaopaulo"><img style="width: 70%;" class="logo" src="<?php echo INCLUDE_PATH; ?>/logos/logo.png"></a>
+							</div>
 						<div class="nav-btn">
 							<div class="nav-links">
 
@@ -599,49 +596,41 @@
 									</li>
 
 									<li class="nav-link" style="--i: .6s">
-										<a href="#">São Paulo<i class="fas fa-caret-down"></i></a>
+										<a href="<?php echo INCLUDE_PATH; ?>oquefazersaopaulo">São Paulo<i class="fas fa-caret-down"></i></a>
 										
 
 										<div class="dropdown">
 											
 											<ul>
 												<li class="dropdown-link">
-													<a href="#">Home</a>
-												</li>
-					
-												<li class="dropdown-link">
-													<a href="#">A cidade</a>
-												</li>
-
-												<li class="dropdown-link">
 													<a href="https://checkpointtours.com.br/tours/o-que-fazer-sao-paulo-tours-de-meio-dia">Tour De Meio Dia</a>
 												</li>
 					
 												<li class="dropdown-link">
-													 <a href="https://checkpointtours.com.br/tours/o-que-fazer-sao-paulo-tours-de-dia-inteiro-">Tour de Dia Inteiro</a>
+													<a href="https://checkpointtours.com.br/tours/o-que-fazer-sao-paulo-tours-de-dia-inteiro-">Tour de Dia Inteiro</a>
 												</li>
 
 												<li class="dropdown-link">
-													<a href="#">City Tour Gastronômico</a>
+													<a href="https://checkpointtours.com.br/tours/o-que-fazer-sao-paulo-tours-de-meio-dia-city-tour-gastronomico-">City Tour Gastronômico</a>
 												</li>
 												<li class="dropdown-link">
-													<a href="https://checkpointtours.com.br/tours/o-que-fazer-sao-paulo-tours-de-meio-dia-tours-by-night">Vida Nortuna</a>
+													<a href="https://checkpointtours.com.br/tours/o-que-fazer-sao-paulo-tours-de-meio-dia-tours-by-night">Vida Noturna</a>
 												</li>
 					
 												<li class="dropdown-link">
-													<a href="#">Eventos da Cidade</a>
+													<a href="<?php echo INCLUDE_PATH; ?>tours">Eventos da Cidade</a>
 												</li>
 
 												<li class="dropdown-link">
-													<a href="#">Parques Temáticos</a>
+													<a href="https://checkpointtours.com.br/tours/o-que-fazer-em-sao-paulo-parques-tematicos-">Parques Temáticos</a>
 												</li>
 					
 												<li class="dropdown-link">
-													<a href="#">Traslados</a>
+													<a href="<?php echo INCLUDE_PATH; ?>transfers">Traslados</a>
 												</li>
 
 												<li class="dropdown-link">
-													<a href="#">Porto de Santos</a>
+													<a href="https://checkpointtours.com.br/tours/o-que-fazer-em-sao-paulo-porto-de-santos">Porto de Santos</a>
 												</li>
 
 												<li class="dropdown-link">
@@ -655,30 +644,30 @@
 														<ul>
 
 															<li class="dropdown-link">
-																<a href="#">Hospedagem</a>
+																<a href="<?php echo INCLUDE_PATH; ?>tours">Hospedagem</a>
 															</li>
 
 															<li class="dropdown-link">
-																<a href="#">Transportes</a>
+																<a href="<?php echo INCLUDE_PATH; ?>tours">Transportes</a>
 															</li>
 								
 															<li class="dropdown-link">
-																<a href="#">Ecoturismo</a>
+																<a href="https://checkpointtours.com.br/tours/o-que-fazer-em-sao-paulo-eco-turismo-">Ecoturismo</a>
 															</li>
 
 															<li class="dropdown-link">
-																<a href="#">Agroturismo</a>
+																<a href="https://checkpointtours.com.br/tours/o-que-fazer-em-sao-paulo-agro-turismo-">Agroturismo</a>
 															</li>
 															<li class="dropdown-link">
-																<a href="#">Tours Natalinos</a>
+																<a href="<?php echo INCLUDE_PATH; ?>tours">Tours Natalinos</a>
 															</li>
 								
 															<li class="dropdown-link">
-																<a href="#">Carnaval SP</a>
+																<a href="https://checkpointtours.com.br/tours/o-que-fazer-em-sao-paulo-carnaval-">Carnaval SP</a>
 															</li>
 
 															<li class="dropdown-link">
-																<a href="#">Campos do Jordão</a>
+																<a href="https://checkpointtours.com.br/tours/o-que-fazer-em-sao-paulo-campos-do-jordao-">Campos do Jordão</a>
 															</li>
 								
 															<li class="dropdown-link">
@@ -694,7 +683,7 @@
 															</li>
 								
 															<li class="dropdown-link">
-																<a href="<?php echo INCLUDE_PATH; ?>tours">TurisMetrô</a>
+																<a href="https://checkpointtours.com.br/tours/o-que-fazer-em-sao-paulo-turismetro-">TurisMetrô</a>
 															</li>
 														</ul>
 
@@ -765,167 +754,176 @@
 
 			document.getElementById("footer").innerHTML=`
 				<footer>
-						<div class="footer-content">
-							<div class="itens-wrap">
-								<div class="container-content">
-									<ul class="list-unstyled">
-										<h3>São Paulo</h3>
+					<div class="footer-content">
+						<div class="itens-wrap">
+							<div class="container-content">
+								<ul class="list-unstyled">
+									<h3>São Paulo</h3>
 
+									<li>
+										<a href="https://checkpointtours.com.br/tours/o-que-fazer-sao-paulo-tours-de-meio-dia">Tour De Meio Dia</a>
+									</li>
 
-										<li>
-											<a href="https://checkpointtours.com.br/tours/o-que-fazer-sao-paulo-tours-de-meio-dia">Tour De Meio Dia</a>
-										</li>
+									<li>
+										<a href="https://checkpointtours.com.br/tours/o-que-fazer-sao-paulo-tours-de-dia-inteiro-">Tour de Dia Inteiro</a>
+									</li>
 
-										<li>
-											 <a href="https://checkpointtours.com.br/tours/o-que-fazer-sao-paulo-tours-de-dia-inteiro-">Tour de Dia Inteiro</a>
-										</li>
+									<li>
+										<a href="<?php echo INCLUDE_PATH; ?>tours">City Tour Gastronômico</a>
+									</li>
+									<li>
+										<a href="https://checkpointtours.com.br/tours/o-que-fazer-em-sao-paulo-vida-noturna-">Vida Noturna</a>
+									</li>
 
-										<li>
-											<a href="#">City Tour Gastronômico</a>
-										</li>
-										<li>
-											<a href="https://checkpointtours.com.br/tours/o-que-fazer-sao-paulo-tours-de-meio-dia-tours-by-night">Vida Nortuna</a>
-										</li>
+									<li>
+										<a href="<?php echo INCLUDE_PATH; ?>tours">Eventos da Cidade</a>
+									</li>
 
-										<li>
-											<a href="#">Eventos da Cidade</a>
-										</li>
+									<li>
+										<a href="https://checkpointtours.com.br/tours/o-que-fazer-em-sao-paulo-parques-tematicos-">Parques Temáticos</a>
+									</li>
 
-										<li>
-											<a href="#">Parques Temáticos</a>
-										</li>
+									<li>
+										<a href="<?php echo INCLUDE_PATH; ?>transfers">Traslados</a>
+									</li>
 
-										<li>
-											<a href="#">Traslados</a>
-										</li>
+									<li>
+										<a href="https://checkpointtours.com.br/tours/o-que-fazer-em-sao-paulo-porto-de-santos">Porto de Santos</a>
+									</li>
 
-										<li>
-											<a href="#">Porto de Santos</a>
-										</li>
+									<li>
+										<a href="<?php echo INCLUDE_PATH; ?>visitadenegocios">Visitas de Negócios</a>
+									</li>
 
-										<li>
-											<a href="<?php echo INCLUDE_PATH; ?>visitadenegocios">Visitas de Negócios</a>
-										</li>
+									<li>
+										<a href="<?php echo INCLUDE_PATH; ?>tours">Hospedagem</a>
+									</li>
 
-										<li>
-											<a href="#">Hospedagem</a>
-										</li>
+									<li>
+										<a href="<?php echo INCLUDE_PATH; ?>tours">Transportes</a>
+									</li>
 
-										<li>
-											<a href="#">Transportes</a>
-										</li>
+									<li>
+										<a href="https://checkpointtours.com.br/tours/o-que-fazer-em-sao-paulo-eco-turismo-">Ecoturismo</a>
+									</li>
 
-										<li>
-											<a href="#">Ecoturismo</a>
-										</li>
+									<li>
+										<a href="https://checkpointtours.com.br/tours/o-que-fazer-em-sao-paulo-agro-turismo-">Agroturismo</a>
+									</li>
+									<li>
+										<a href="<?php echo INCLUDE_PATH; ?>tours">Tours Natalinos</a>
+									</li>
 
-										<li>
-											<a href="#">Agroturismo</a>
-										</li>
-										<li>
-											<a href="#">Tours Natalinos</a>
-										</li>
+									<li>
+										<a href="<?php echo INCLUDE_PATH; ?>tours">Carnaval SP</a>
+									</li>
 
-										<li>
-											<a href="#">Carnaval SP</a>
-										</li>
+									<li>
+										<a href="https://checkpointtours.com.br/tours/o-que-fazer-em-sao-paulo-campos-do-jordao-">Campos do Jordão</a>
+									</li>
 
-										<li>
-											<a href="#">Campos do Jordão</a>
-										</li>
+									<li>
+										<a href="https://checkpointtours.com.br/tours/o-que-fazer-sao-paulo-pacote-romantico">Pacote Romântico</a>
+									</li>
 
-										<li>
-											<a href="https://checkpointtours.com.br/tours/o-que-fazer-sao-paulo-pacote-romantico">Pacote Romântico</a>
-										</li>
+									<li>
+										<a href="<?php echo INCLUDE_PATH; ?>F1">GP São Paulo F1</a>
+									</li>
 
-										<li>
-											<a href="<?php echo INCLUDE_PATH; ?>F1">GP São Paulo F1</a>
-										</li>
+									<li>
+										<a href="<?php echo INCLUDE_PATH; ?>tours">Teatro</a>
+									</li>
 
-										<li>
-											<a href="<?php echo INCLUDE_PATH; ?>tours">Teatro</a>
-										</li>
-
-										<li>
-											<a href="<?php echo INCLUDE_PATH; ?>tours">TurisMetrô</a>
-										</li>
-									</ul>
-								</div>
-
-								<div class="container-content">
-									<ul class="list-unstyled">
-										<h3>Outras Cidades</h3>
-										<li><a class="text-muted" target="_blank" href="">Rio de Janeiro</a></li>
-										<li><a class="text-muted" target="_blank" href="">Foz do Iguaçu</a></li>
-										<li><a class="text-muted" target="_blank" href="">Natal / RN</a></li>
-										<li><a class="text-muted" target="_blank" href="">Florianópolis / SC</a></li>
-										<li><a class="text-muted" target="_blank" href="">Salvador / BA</a></li>
-										<li><a class="text-muted" target="_blank" href="">Manaus / AM</a></li>
-										<li><a class="text-muted" target="_blank" href="">Fortaleza / CE</a></li>
-									</ul>
-								</div>
-					
-					
-								<div class="container-content">
-									<ul class="list-unstyled">
-										<h3>Empresa</h3>
-										<li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>sobrenos">Sobre nós</a></li>
-										<li><a class="text-muted" target="_blank" href="">Nossa Equipe</a></li>
-										<li><a class="text-muted" target="_blank" href="">Termos de uso do serviço</a></li>
-										<li><a class="text-muted" target="_blank" href="">Política de privacidade</a></li>
-										<li><a class="text-muted" target="_blank" href="">Política de cancelamento</a></li>
-										<li><a class="text-muted" target="_blank" href="">Blog</a></li>
-										<li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>contato">Contato</a></li>
-									</ul>
-								</div>
-
-								<div class="container-content">
-									<ul class="list-unstyled">
-										<h3>Canais</h3>
-										<li><a class="text-muted" target="_blank" href="">Previsão do Tempo</a></li>
-										<li><a class="text-muted" target="_blank" href="">Datas Comemorativas</a></li>
-										<li><a class="text-muted" target="_blank" href="">Dicas e Endereços</a></li>
-										<li><a class="text-muted" target="_blank" href="">Cotação do Dólar</a></li>
-									</ul>
-								</div>
-					
-								<div class="container-content">
-									<ul class="list-unstyled">
-										<h3>Formas de Pagamento</h3>
-										<li><a class="text-muted" target="_blank" href="">Boleto</a></li>
-										<li><a class="text-muted" target="_blank" href="">Pix</a></li>
-										<li><a class="text-muted" target="_blank" href="">Pay Pal</a></li>
-									</ul>
-								</div>
-
-								<div class="container-content">
-									<h3><strong>CHECK POINT Receptive Service</strong></h3>
-										<p>Rua Jacques Du Cerceau, 84 - 03624-120 - São Paulo - SP - BRASIL</p>
-
-										<p>2ª a 6ª feira das 9hrs às 18hrs</p>
-										
-										<p>PABX: <strong>(11) 2791-1316 </strong> Após esse horário ligar para <strong>(11) 99187-1393</strong></p>
-							</div>
+									<li>
+										<a href="<?php echo INCLUDE_PATH; ?>tours">TurisMetrô</a>
+									</li>
+								</ul>
 							</div>
 
-							
-							<div class="imgs-footer">
-								
-								<img class="img-footer" src="<?php echo INCLUDE_PATH; ?>/images/footer-images/logo_ministerio_turismo.png" />
-								<img class="img-footer" src="<?php echo INCLUDE_PATH; ?>/images/footer-images/logo_sp_turismo.png" />
-								<img class="img-footer" src="<?php echo INCLUDE_PATH; ?>/images/footer-images/logo_sp.png" />
-								<img class="img-footer" src="<?php echo INCLUDE_PATH; ?>/images/footer-images/logo_sindetur.png" />
-								<img class="img-footer" src="<?php echo INCLUDE_PATH; ?>/images/footer-images/logo_abav.png" />
-								<img class="img-footer" src="<?php echo INCLUDE_PATH; ?>/images/footer-images/logo_convention_bureau.png" />
-								<img class="img-footer" src="<?php echo INCLUDE_PATH; ?>/images/footer-images/logo_brasil.png" />
-								<img class="img-footer" src="<?php echo INCLUDE_PATH; ?>/images/footer-images/logo_trip.png" />
-
+							<div class="container-content">
+								<ul class="list-unstyled">
+									<h3>Outras Cidades</h3>
+									<li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>oquefazersaopaulo">São Paulo/SP</a></li>
+									<li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>oquefazerriodejaneiro">Rio de Janeiro/RJ</a></li>
+									<li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>oquefazerfozdoiguacu">Foz do Iguaçu/PR</a></li>
+									<li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>oquefazernatal">Natal/RN</a></li>
+									<li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>oquefazerflorianopolis">Florianópolis/SC</a></li>
+									<li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>oquefazersalvador">Salvador/BA</a></li>
+									<li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>oquefazermanaus">Manaus/AM</a></li>
+									<li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>oquefazerfortaleza">Fortaleza/CE</a></li>
+								</ul>
 							</div>
-							
+				
+				
+							<div class="container-content">
+								<ul class="list-unstyled">
+									<h3>Empresa</h3>
+									<li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>sobrenos">Sobre nós</a></li>
+									<li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>sobrenos">Nossa Equipe</a></li>
+									<li><a class="text-muted" target="_blank" href="">Termos de uso do serviço</a></li>
+									<li><a class="text-muted" target="_blank" href="">Política de privacidade</a></li>
+									<li><a class="text-muted" target="_blank" href="">Política de cancelamento</a></li>
+									<li><a class="text-muted" target="_blank" href="">Blog</a></li>
+									<li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>contato">Contato</a></li>
+								</ul>
+							</div>
+
+							<div class="container-content">
+								<ul class="list-unstyled">
+									<h3>Canais</h3>
+									<li><a class="text-muted" target="_blank" href="">Previsão do Tempo</a></li>
+									<li><a class="text-muted" target="_blank" href="">Datas Comemorativas</a></li>
+									<li><a class="text-muted" target="_blank" href="">Dicas e Endereços</a></li>
+									<li><a class="text-muted" target="_blank" href="">Cotação do Dólar</a></li>
+								</ul>
+							</div>
+				
+							<div class="container-content">
+								<ul class="list-unstyled">
+									<h3>Formas de Pagamento</h3>
+									<li><a class="text-muted" target="_blank" href="">Boleto</a></li>
+									<li><a class="text-muted" target="_blank" href="">Pix</a></li>
+									<li><a class="text-muted" target="_blank" href="">Pay Pal</a></li>
+								</ul>
+							</div>
+
+							<div class="container-content">
+								<h3><strong>CHECK POINT Receptive Service</strong></h3>
+									<p>Rua Jacques Du Cerceau, 84 - 03624-120 - São Paulo - SP - BRASIL</p>
+
+									<p>2ª a 6ª feira das 9hrs às 18hrs</p>
+									
+									<p>PABX: <strong>(11) 2791-1316 </strong> Após esse horário ligar para <strong>(11) 99187-1393</strong></p>
 						</div>
-						<div class="container-bottom">
-							<p>© 2022, Check Point Tours. Todos os direitos reservados.</p>
 						</div>
+
+						
+						<div class="imgs-footer">
+							
+							<img class="img-footer" src="<?php echo INCLUDE_PATH; ?>/images/footer-images/logo_ministerio_turismo.png" />
+							<img class="img-footer" src="<?php echo INCLUDE_PATH; ?>/images/footer-images/logo_sp_turismo.png" />
+							<img class="img-footer" src="<?php echo INCLUDE_PATH; ?>/images/footer-images/logo_sp.png" />
+							<img class="img-footer" src="<?php echo INCLUDE_PATH; ?>/images/footer-images/logo_sindetur.png" />
+							<img class="img-footer" src="<?php echo INCLUDE_PATH; ?>/images/footer-images/logo_abav.png" />
+							<img class="img-footer" src="<?php echo INCLUDE_PATH; ?>/images/footer-images/logo_convention_bureau.png" />
+							<img class="img-footer" src="<?php echo INCLUDE_PATH; ?>/images/footer-images/logo_brasil.png" />
+							<img class="img-footer" src="<?php echo INCLUDE_PATH; ?>/images/footer-images/logo_trip.png" />
+
+						</div>
+						
+					</div>
+					<div class="container-bottom">
+						<div class="container-content">
+                <ul class="list-unstyled" style="font-size:10px;">
+                    <h3>Atribuições</h3>
+                    <li><a href="https://www.flaticon.com/br/icones-gratis/brasil" title="brasil ícones">Brasil ícones criados por Freepik - Flaticon</a></li>
+                    <li><a href="https://www.flaticon.com/br/icones-gratis/estados-unidos" title="estados unidos ícones">Estados unidos ícones criados por Freepik - Flaticon</a></li>
+                    <li><a href="https://www.flaticon.com/br/icones-gratis/espanha" title="espanha ícones">Espanha ícones criados por Freepik - Flaticon</a></li>
+                </ul>
+            </div>
+
+<p>© 2022, Check Point Tours. Todos os direitos reservados.</p>
+					</div>
 				</footer>
 			`;
 		}
@@ -961,7 +959,6 @@
 
 						<a href="<?php echo INCLUDE_PATH; ?>en-US/oquefazersaopaulo"><img style="width: 70%;" class="logo" src="<?php echo INCLUDE_PATH; ?>/logos/logo.png"></a>
 
-						<!-- <img  style="width: 55%;" class="logo" src="./logo2.jpg">-->
 						</div>
 
 						<div class="nav-btn">
@@ -973,7 +970,7 @@
 									</li>
 
 									<li class="nav-link" style="--i: .6s">
-										<a href="#">São Paulo<i class="fas fa-caret-down"></i></a>
+										<a href="<?php echo INCLUDE_PATH; ?>en-US/oquefazersaopaulo">São Paulo<i class="fas fa-caret-down"></i></a>
 										
 
 										<div class="dropdown">
@@ -981,10 +978,6 @@
 											<ul>
 												<li class="dropdown-link">
 													<a href="en-US/oquefazersaopaulo">Home</a>
-												</li>
-					
-												<li class="dropdown-link">
-													<a href="#">The city</a>
 												</li>
 
 												<li class="dropdown-link">
@@ -996,18 +989,18 @@
 												</li>
 
 												<li class="dropdown-link">
-													<a href="#">Gastronomic City Tour</a>
+													<a href="<?php echo INCLUDE_PATH; ?>tours">Gastronomic City Tour</a>
 												</li>
 												<li class="dropdown-link">
 													<a href="https://checkpointtours.com.br/tours/o-que-fazer-sao-paulo-tours-de-meio-dia-tours-by-night">Night life</a>
 												</li>
 					
 												<li class="dropdown-link">
-													<a href="#">City Events</a>
+													<a href="<?php echo INCLUDE_PATH; ?>tours">City Events</a>
 												</li>
 
 												<li class="dropdown-link">
-													<a href="#">Thematic parks</a>
+													<a href="https://checkpointtours.com.br/tours/o-que-fazer-em-sao-paulo-parques-tematicos-">Thematic parks</a>
 												</li>
 					
 												<li class="dropdown-link">
@@ -1015,7 +1008,7 @@
 												</li>
 
 												<li class="dropdown-link">
-													<a href="#">Port of Santos</a>
+													<a href="https://checkpointtours.com.br/tours/o-que-fazer-em-sao-paulo-porto-de-santos">Port of Santos</a>
 												</li>
 
 												<li class="dropdown-link">
@@ -1029,30 +1022,30 @@
 														<ul>
 
 															<li class="dropdown-link">
-																<a href="#">accommodation</a>
+																<a href="<?php echo INCLUDE_PATH; ?>tours">accommodation</a>
 															</li>
 
 															<li class="dropdown-link">
-																<a href="#">transport</a>
+																<a href="<?php echo INCLUDE_PATH; ?>tours">transport</a>
 															</li>
 								
 															<li class="dropdown-link">
-																<a href="#">ecotourism</a>
+																<a href="https://checkpointtours.com.br/tours/o-que-fazer-em-sao-paulo-eco-turismo-">ecotourism</a>
 															</li>
 
 															<li class="dropdown-link">
-																<a href="#">agritourism</a>
+																<a href="https://checkpointtours.com.br/tours/o-que-fazer-em-sao-paulo-agro-turismo-">agritourism</a>
 															</li>
 															<li class="dropdown-link">
-																<a href="#">Christmas tours</a>
+																<a href="<?php echo INCLUDE_PATH; ?>tours">Christmas tours</a>
 															</li>
 								
 															<li class="dropdown-link">
-																<a href="#">Carnival SP</a>
+																<a href="https://checkpointtours.com.br/tours/o-que-fazer-em-sao-paulo-carnaval-">Carnival SP</a>
 															</li>
 
 															<li class="dropdown-link">
-																<a href="#">Campos do Jordão</a>
+																<a href="https://checkpointtours.com.br/tours/o-que-fazer-em-sao-paulo-campos-do-jordao-">Campos do Jordão</a>
 															</li>
 								
 															<li class="dropdown-link">
@@ -1064,19 +1057,17 @@
 															</li>
 
 															<li class="dropdown-link">
-																<a href="#">theater</a>
+																<a href="<?php echo INCLUDE_PATH; ?>tours">theater</a>
 															</li>
 								
 															<li class="dropdown-link">
-																<a href="<?php echo INCLUDE_PATH; ?>tours">TurisMetrô</a>
+																<a href="https://checkpointtours.com.br/tours/o-que-fazer-em-sao-paulo-turismetro-">TurisMetrô</a>
 															</li>
 														</ul>
 
 													</div>
 												</li>
 												<div class="arrow"></div>
-
-												
 											</ul>
 										</div>
 										
@@ -1145,86 +1136,86 @@
 								<ul class="list-unstyled">
 									<h3>São Paulo</h3>
 
-									<li>
-										<a href="#">The city</a>
+									<li class="">
+										<a href="en-US/oquefazersaopaulo">Home</a>
 									</li>
 
-									<li>
+									<li class="">
 										<a href="https://checkpointtours.com.br/tours/o-que-fazer-sao-paulo-tours-de-meio-dia">half day tour</a>
 									</li>
 
-									<li>
+									<li class="">
 										<a href="https://checkpointtours.com.br/tours/o-que-fazer-sao-paulo-tours-de-dia-inteiro-">full day tour</a>
 									</li>
 
-									<li>
-										<a href="#">Gastronomic City Tour</a>
+									<li class="">
+										<a href="<?php echo INCLUDE_PATH; ?>tours">Gastronomic City Tour</a>
 									</li>
-									<li>
+									<li class="">
 										<a href="https://checkpointtours.com.br/tours/o-que-fazer-sao-paulo-tours-de-meio-dia-tours-by-night">Night life</a>
 									</li>
 
-									<li>
-										<a href="#">City Events</a>
+									<li class="">
+										<a href="<?php echo INCLUDE_PATH; ?>tours">City Events</a>
 									</li>
 
-									<li>
-										<a href="#">Thematic parks</a>
+									<li class="">
+										<a href="https://checkpointtours.com.br/tours/o-que-fazer-em-sao-paulo-parques-tematicos-">Thematic parks</a>
 									</li>
 
-									<li>
+									<li class="">
 										<a href="<?php echo INCLUDE_PATH; ?>en-US/transfers">Transfers</a>
 									</li>
 
-									<li>
-										<a href="#">Port of Santos</a>
+									<li class="">
+										<a href="https://checkpointtours.com.br/tours/o-que-fazer-em-sao-paulo-porto-de-santos">Port of Santos</a>
 									</li>
 
-									<li>
+									<li class="">
 										<a href="<?php echo INCLUDE_PATH; ?>visitadenegocios">Business Visits</a>
 									</li>
 
-									<li>
-										<a href="#">accommodation</a>
+									<li class="">
+										<a href="<?php echo INCLUDE_PATH; ?>tours">accommodation</a>
 									</li>
 
-									<li>
-										<a href="#">transport</a>
+									<li class="">
+										<a href="<?php echo INCLUDE_PATH; ?>tours">transport</a>
 									</li>
 
-									<li>
-										<a href="#">ecotourism</a>
+									<li class="">
+										<a href="https://checkpointtours.com.br/tours/o-que-fazer-em-sao-paulo-eco-turismo-">ecotourism</a>
 									</li>
 
-									<li>
-										<a href="#">agritourism</a>
+									<li class="">
+										<a href="https://checkpointtours.com.br/tours/o-que-fazer-em-sao-paulo-agro-turismo-">agritourism</a>
 									</li>
-									<li>
-										<a href="#">Christmas tours</a>
-									</li>
-
-									<li>
-										<a href="#">Carnival SP</a>
+									<li class="">
+										<a href="<?php echo INCLUDE_PATH; ?>tours">Christmas tours</a>
 									</li>
 
-									<li>
-										<a href="#">Campos do Jordão</a>
+									<li class="">
+										<a href="https://checkpointtours.com.br/tours/o-que-fazer-em-sao-paulo-carnaval-">Carnival SP</a>
 									</li>
 
-									<li>
+									<li class="">
+										<a href="https://checkpointtours.com.br/tours/o-que-fazer-em-sao-paulo-campos-do-jordao-">Campos do Jordão</a>
+									</li>
+
+									<li class="">
 										<a href="https://checkpointtours.com.br/tours/o-que-fazer-sao-paulo-pacote-romantico">Romantic Package</a>
 									</li>
 
-									<li>
+									<li class="">
 										<a href="<?php echo INCLUDE_PATH; ?>en-US/F1">GP São Paulo F1</a>
 									</li>
 
-									<li>
-										<a href="#">theater</a>
+									<li class="">
+										<a href="<?php echo INCLUDE_PATH; ?>tours">theater</a>
 									</li>
 
-									<li>
-										<a href="<?php echo INCLUDE_PATH; ?>tours">TurisMetrô</a>
+									<li class="">
+										<a href="https://checkpointtours.com.br/tours/o-que-fazer-em-sao-paulo-turismetro-">TurisMetrô</a>
 									</li>
 								</ul>
 							</div>
@@ -1232,17 +1223,18 @@
 							<div class="container-content">
 								<ul class="list-unstyled">
 									<h3>Other cities</h3>
-									<li><a class="text-muted" target="_blank" href="">Rio de Janeiro</a></li>
-									<li><a class="text-muted" target="_blank" href="">Foz do Iguaçu</a></li>
-									<li><a class="text-muted" target="_blank" href="">Natal / RN</a></li>
-									<li><a class="text-muted" target="_blank" href="">Florianópolis / SC</a></li>
-									<li><a class="text-muted" target="_blank" href="">Salvador / BA</a></li>
-									<li><a class="text-muted" target="_blank" href="">Manaus / AM</a></li>
-									<li><a class="text-muted" target="_blank" href="">Fortaleza / CE</a></li>
+									<li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>en-US/oquefazersaopaulo">São Paulo/SP</a></li>
+									<li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>en-US/oquefazerriodejaneiro">Rio de Janeiro/RJ</a></li>
+									<li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>en-US/oquefazerfozdoiguacu">Foz do Iguaçu/PR</a></li>
+									<li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>en-US/oquefazernatal">Natal/RN</a></li>
+									<li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>en-US/oquefazerflorianopolis">Florianópolis/SC</a></li>
+									<li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>en-US/oquefazersalvador">Salvador/BA</a></li>
+									<li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>en-US/oquefazermanaus">Manaus/AM</a></li>
+									<li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>en-US/oquefazerfortaleza">Fortaleza/CE</a></li>
 								</ul>
 							</div>
-				
-				
+
+
 							<div class="container-content">
 								<ul class="list-unstyled">
 									<h3>Company</h3>
@@ -1265,7 +1257,7 @@
 									<li><a class="text-muted" target="_blank" href="">Dollar quotation</a></li>
 								</ul>
 							</div>
-				
+
 							<div class="container-content">
 								<ul class="list-unstyled">
 									<h3>Payment methods</h3>
@@ -1301,7 +1293,16 @@
 						
 					</div>
 					<div class="container-bottom">
-						<p>© 2022, Check Point Tours. All rights reserved.</p>
+						<div class="container-content">
+                <ul class="list-unstyled" style="font-size:10px;">
+                    <h3>Assignments</h3>
+                    <li><a href="https://www.flaticon.com/br/icones-gratis/brasil" title="brasil ícones">Brasil ícones criados por Freepik - Flaticon</a></li>
+                    <li><a href="https://www.flaticon.com/br/icones-gratis/estados-unidos" title="estados unidos ícones">Estados unidos ícones criados por Freepik - Flaticon</a></li>
+                    <li><a href="https://www.flaticon.com/br/icones-gratis/espanha" title="espanha ícones">Espanha ícones criados por Freepik - Flaticon</a></li>
+                </ul>
+            </div>
+
+<p>© 2022, Check Point Tours. All rights reserved.</p>
 					</div>
 				</footer>
 			`;
@@ -1331,148 +1332,145 @@
 
 			document.getElementById("header").innerHTML=`
 				<header>
-                    <div class="container">
-                        <input type="checkbox" name="" id="check">
+					<div class="container">
+						<input type="checkbox" name="" id="check">
 
-                        <div class="logo-container">
+						<div class="logo-container">
 
-                        <a href="<?php echo INCLUDE_PATH; ?>oquefazersaopaulo"><img style="width: 70%;" class="logo" src="<?php echo INCLUDE_PATH; ?>./logos/logo.png"></a>
+						<a href="<?php echo INCLUDE_PATH; ?>es-ES/oquefazersaopaulo"><img style="width: 70%;" class="logo" src="<?php echo INCLUDE_PATH; ?>./logos/logo.png"></a>
 
-                        <!-- <img  style="width: 55%;" class="logo" src="./logo2.jpg">-->
-                        </div>
+						</div>
 
-                        <div class="nav-btn">
-                            <div class="nav-links">
+						<div class="nav-btn">
+							<div class="nav-links">
 
-                                <ul>
-                                    <li class="nav-link" style="--i: .6s">
-                                        <a href="<?php echo INCLUDE_PATH; ?>oquefazersaopaulo">Home</a>
-                                    </li>
+								<ul>
+									<li class="nav-link" style="--i: .6s">
+										<a href="<?php echo INCLUDE_PATH; ?>es-ES/oquefazersaopaulo">Home</a>
+									</li>
 
-                                    <li class="nav-link" style="--i: .6s">
-                                        <a href="#">São Paulo<i class="fas fa-caret-down"></i></a>
-                                        
+									<li class="nav-link" style="--i: .6s">
+										<a href="es-ES/oquefazersaopaulo">São Paulo<i class="fas fa-caret-down"></i></a>
+										
 
-                                        <div class="dropdown">
-                                            
-                                            <ul>
-                                                <li class="dropdown-link">
-                                                    <a href="#">Home</a>
-                                                </li>
-                    
-                                                <li class="dropdown-link">
-                                                     <a href="https://checkpointtours.com.br/tours/o-que-fazer-sao-paulo-tours-de-meio-dia">tour de medio dia</a>
-                                                </li>
-                    
-                                                <li class="dropdown-link">
-                                                    <a href="https://checkpointtours.com.br/tours/o-que-fazer-sao-paulo-tours-de-dia-inteiro-">tour de día completo</a>
-                                                </li>
+										<div class="dropdown">
+											
+											<ul>
+												<li class="dropdown-link">
+													<a href="<?php echo INCLUDE_PATH; ?>es-ES/oquefazersaopaulo">Home</a>
+												</li>
 
-                                                <li class="dropdown-link">
-                                                    <a href="#">City Tour Gastronómico</a>
-                                                </li>
-                                                <li class="dropdown-link">
-                                                    <a href="https://checkpointtours.com.br/tours/o-que-fazer-sao-paulo-tours-de-meio-dia-tours-by-night">Vida nocturna</a>
-                                                </li>
-                    
-                                                <li class="dropdown-link">
-                                                    <a href="#">Eventos de la ciudad</a>
-                                                </li>
+												<li class="dropdown-link">
+													<a href="https://checkpointtours.com.br/tours/o-que-fazer-sao-paulo-tours-de-meio-dia">tour de medio dia</a>
+												</li>
+					
+												<li class="dropdown-link">
+													<a href="https://checkpointtours.com.br/tours/o-que-fazer-sao-paulo-tours-de-dia-inteiro-">tour de día completo</a>
+												</li>
 
-                                                <li class="dropdown-link">
-                                                    <a href="#">parques temáticos</a>
-                                                </li>
-                    
-                                                <li class="dropdown-link">
-                                                    <a href="#">transferencias</a>
-                                                </li>
+												<li class="dropdown-link">
+													<a href="https://checkpointtours.com.br/tours/o-que-fazer-sao-paulo-tours-de-meio-dia-city-tour-gastronomico-">City Tour Gastronómico</a>
+												</li>
+												<li class="dropdown-link">
+													<a href="https://checkpointtours.com.br/tours/o-que-fazer-sao-paulo-tours-de-meio-dia-tours-by-night">Vida nocturna</a>
+												</li>
+					
+												<li class="dropdown-link">
+													<a href="<?php echo INCLUDE_PATH; ?>tours">Eventos de la ciudad</a>
+												</li>
 
-                                                <li class="dropdown-link">
-                                                    <a href="#">Puerto de Santos</a>
-                                                </li>
+												<li class="dropdown-link">
+													<a href="https://checkpointtours.com.br/tours/o-que-fazer-em-sao-paulo-parques-tematicos-">parques temáticos</a>
+												</li>
+					
+												<li class="dropdown-link">
+													<a href="<?php echo INCLUDE_PATH; ?>transfers">transferencias</a>
+												</li>
 
-                                                <li class="dropdown-link">
-                                                    <a href="<?php echo INCLUDE_PATH; ?>visitadenegocios">Visitas de Negocios</a>
-                                                </li>
+												<li class="dropdown-link">
+													<a href="https://checkpointtours.com.br/tours/o-que-fazer-em-sao-paulo-porto-de-santos">Puerto de Santos</a>
+												</li>
 
-                                                <li class="dropdown-link">
-                                                    <a href="#">más<i class="fas fa-caret-down"></i></a>
+												<li class="dropdown-link">
+													<a href="<?php echo INCLUDE_PATH; ?>visitadenegocios">Visitas de Negocios</a>
+												</li>
 
-                                                    <div class="dropdown second">
-                                                        <ul>
+												<li class="dropdown-link">
+													<a href="#">más<i class="fas fa-caret-down"></i></a>
 
-                                                            <li class="dropdown-link">
-                                                                <a href="#">alojamiento</a>
-                                                            </li>
+													<div class="dropdown second">
+														<ul>
 
-                                                            <li class="dropdown-link">
-                                                                <a href="#">Transportes</a>
-                                                            </li>
-                                
-                                                            <li class="dropdown-link">
-                                                                <a href="#">Ecoturismo</a>
-                                                            </li>
+															<li class="dropdown-link">
+																<a href="<?php echo INCLUDE_PATH; ?>tours">alojamiento</a>
+															</li>
 
-                                                            <li class="dropdown-link">
-                                                                <a href="#">Agroturismo</a>
-                                                            </li>
-                                                            <li class="dropdown-link">
-                                                                <a href="#">Giras navideñas</a>
-                                                            </li>
-                                
-                                                            <li class="dropdown-link">
-                                                                <a href="#">Carnaval SP</a>
-                                                            </li>
+															<li class="dropdown-link">
+																<a href="<?php echo INCLUDE_PATH; ?>tours">Transportes</a>
+															</li>
+								
+															<li class="dropdown-link">
+																<a href="https://checkpointtours.com.br/tours/o-que-fazer-em-sao-paulo-eco-turismo-">Ecoturismo</a>
+															</li>
 
-                                                            <li class="dropdown-link">
-                                                                <a href="#">Campos do Jordão</a>
-                                                            </li>
-                                
-                                                            <li class="dropdown-link">
-                                                                <a href="https://checkpointtours.com.br/tours/o-que-fazer-sao-paulo-pacote-romantico">Paquete Romántico</a>
-                                                            </li>
+															<li class="dropdown-link">
+																<a href="https://checkpointtours.com.br/tours/o-que-fazer-em-sao-paulo-agro-turismo-">Agroturismo</a>
+															</li>
+															<li class="dropdown-link">
+																<a href="<?php echo INCLUDE_PATH; ?>tours">Giras navideñas</a>
+															</li>
+								
+															<li class="dropdown-link">
+																<a href="https://checkpointtours.com.br/tours/o-que-fazer-em-sao-paulo-carnaval-">Carnaval SP</a>
+															</li>
 
-                                                            <li class="dropdown-link">
-                                                                <a href="<?php echo INCLUDE_PATH; ?>F1">GP São Paulo F1</a>
-                                                            </li>
+															<li class="dropdown-link">
+																<a href="https://checkpointtours.com.br/tours/o-que-fazer-em-sao-paulo-campos-do-jordao-">Campos do Jordão</a>
+															</li>
+								
+															<li class="dropdown-link">
+																<a href="https://checkpointtours.com.br/tours/o-que-fazer-sao-paulo-pacote-romantico">Paquete Romántico</a>
+															</li>
 
-                                                            <li class="dropdown-link">
-                                                                <a href="<?php echo INCLUDE_PATH; ?>tours">Teatro</a>
-                                                            </li>
-                                
-                                                            <li class="dropdown-link">
-                                                                <a href="<?php echo INCLUDE_PATH; ?>tours">TurisMetrô</a>
-                                                            </li>
-                                                        </ul>
+															<li class="dropdown-link">
+																<a href="<?php echo INCLUDE_PATH; ?>es-ES/F1">GP São Paulo F1</a>
+															</li>
 
-                                                    </div>
-                                                </li>
-                                                <div class="arrow"></div>
+															<li class="dropdown-link">
+																<a href="<?php echo INCLUDE_PATH; ?>tours">Teatro</a>
+															</li>
+								
+															<li class="dropdown-link">
+																<a href="https://checkpointtours.com.br/tours/o-que-fazer-em-sao-paulo-turismetro-">TurisMetrô</a>
+															</li>
+														</ul>
 
-                                                
-                                            </ul>
-                                        </div>
-                                        
-                                    </li>
+													</div>
+												</li>
+												<div class="arrow"></div>
+											</ul>
+										</div>
+										
+									</li>
 
-                                    <li class="nav-link" style="--i: 1.1s">
-                                        <a href="<?php echo INCLUDE_PATH; ?>tours">Tours</a>
-                                    </li>
+									<li class="nav-link" style="--i: 1.1s">
+										<a href="<?php echo INCLUDE_PATH; ?>tours">Tours</a>
+									</li>
 
-                                    <li class="nav-link" style="--i: 1.1s">
-                                        <a href="<?php echo INCLUDE_PATH; ?>transfers">Transfers</i></a>
-                                    </li>
+									<li class="nav-link" style="--i: 1.1s">
+										<a href="<?php echo INCLUDE_PATH; ?>es-ES/transfers">Transfers</i></a>
+									</li>
 
-                                    <li class="nav-link" style="--i: 1.1s">
-                                        <a href="<?php echo INCLUDE_PATH; ?>F1">GP São Paulo F1</i></a>
-                                    </li>
+									<li class="nav-link" style="--i: 1.1s">
+										<a href="<?php echo INCLUDE_PATH; ?>es-ES/F1">GP São Paulo F1</i></a>
+									</li>
 
-                                    <li class="nav-link" style="--i: 1.1s">
-                                        <a href="<?php echo INCLUDE_PATH; ?>shows">Shows</i></a>
-                                    </li>
+									<li class="nav-link" style="--i: 1.1s">
+										<a href="<?php echo INCLUDE_PATH; ?>shows">Shows</i></a>
+									</li>
 
-                                    <li class="nav-link" style="--i: 1.1s">
-                                    <a><p><i class="fa-solid fa-language"></i></p><i class="fas fa-caret-down"></i></a>
+									<li class="nav-link" style="--i: 1.1s">
+									<a><p><i class="fa-solid fa-language"></i></p><i class="fas fa-caret-down"></i></a>
                     
                                         <div class="dropdown">
 											<ul>
@@ -1512,147 +1510,150 @@
 
 			document.getElementById("footer").innerHTML=`
 				<footer>
-                    <div class="footer-content">
-                        <div class="itens-wrap">
-                            <div class="container-content">
-                                <ul class="list-unstyled">
-                                    <h3>São Paulo</h3>
+					<div class="footer-content">
+						<div class="itens-wrap">
+							<div class="container-content">
+								<ul class="list-unstyled">
+								<h3>São Paulo</h3>
 
-                                        
+									<li class="">
+										<a href="<?php echo INCLUDE_PATH; ?>es-ES/oquefazersaopaulo">Home</a>
+									</li>
 
-                                    <li>
-                                         <a href="https://checkpointtours.com.br/tours/o-que-fazer-sao-paulo-tours-de-meio-dia">tour de medio dia</a>
-                                    </li>
-        
-                                    <li>
-                                        <a href="https://checkpointtours.com.br/tours/o-que-fazer-sao-paulo-tours-de-dia-inteiro-">tour de día completo</a>
-                                    </li>
+									<li class="">
+										<a href="https://checkpointtours.com.br/tours/o-que-fazer-sao-paulo-tours-de-meio-dia">tour de medio dia</a>
+									</li>
 
-                                    <li>
-                                        <a href="#">City Tour Gastronómico</a>
-                                    </li>
-                                    <li>
-                                        <a href="https://checkpointtours.com.br/tours/o-que-fazer-sao-paulo-tours-de-meio-dia-tours-by-night">Vida nocturna</a>
-                                    </li>
-        
-                                    <li>
-                                        <a href="#">Eventos de la ciudad</a>
-                                    </li>
+									<li class="">
+										<a href="https://checkpointtours.com.br/tours/o-que-fazer-sao-paulo-tours-de-dia-inteiro-">tour de día completo</a>
+									</li>
 
-                                    <li>
-                                        <a href="#">parques temáticos</a>
-                                    </li>
-        
-                                    <li>
-                                        <a href="#">transferencias</a>
-                                    </li>
+									<li class="">
+										<a href="https://checkpointtours.com.br/tours/o-que-fazer-sao-paulo-tours-de-meio-dia-city-tour-gastronomico-">City Tour Gastronómico</a>
+									</li>
+									<li class="">
+										<a href="https://checkpointtours.com.br/tours/o-que-fazer-sao-paulo-tours-de-meio-dia-tours-by-night">Vida nocturna</a>
+									</li>
 
-                                    <li>
-                                        <a href="#">Puerto de Santos</a>
-                                    </li>
+									<li class="">
+										<a href="<?php echo INCLUDE_PATH; ?>tours">Eventos de la ciudad</a>
+									</li>
 
-                                    <li>
-                                        <a href="<?php echo INCLUDE_PATH; ?>visitadenegocios">Visitas de Negocios</a>
-                                    </li>
+									<li class="">
+										<a href="https://checkpointtours.com.br/tours/o-que-fazer-em-sao-paulo-parques-tematicos-">parques temáticos</a>
+									</li>
 
-                                    <li>
-                                        <a href="#">alojamiento</a>
-                                    </li>
+									<li class="">
+										<a href="<?php echo INCLUDE_PATH; ?>transfers">transferencias</a>
+									</li>
 
-                                    <li>
-                                        <a href="#">Transportes</a>
-                                    </li>
-        
-                                    <li>
-                                        <a href="#">Ecoturismo</a>
-                                    </li>
+									<li class="">
+										<a href="https://checkpointtours.com.br/tours/o-que-fazer-em-sao-paulo-porto-de-santos">Puerto de Santos</a>
+									</li>
 
-                                    <li>
-                                        <a href="#">Agroturismo</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Giras navideñas</a>
-                                    </li>
-        
-                                    <li>
-                                        <a href="#">Carnaval SP</a>
-                                    </li>
+									<li class="">
+										<a href="<?php echo INCLUDE_PATH; ?>visitadenegocios">Visitas de Negocios</a>
+									</li>
 
-                                    <li>
-                                        <a href="#">Campos do Jordão</a>
-                                    </li>
-        
-                                    <li>
-                                        <a href="https://checkpointtours.com.br/tours/o-que-fazer-sao-paulo-pacote-romantico">Paquete Romántico</a>
-                                    </li>
+									<li class="">
+										<a href="<?php echo INCLUDE_PATH; ?>tours">alojamiento</a>
+									</li>
 
-                                    <li>
-                                        <a href="<?php echo INCLUDE_PATH; ?>F1">GP São Paulo F1</a>
-                                    </li>
+									<li class="">
+										<a href="<?php echo INCLUDE_PATH; ?>tours">Transportes</a>
+									</li>
 
-                                    <li>
-                                        <a href="<?php echo INCLUDE_PATH; ?>tours">Teatro</a>
-                                    </li>
-        
-                                    <li>
-                                        <a href="<?php echo INCLUDE_PATH; ?>tours">TurisMetrô</a>
-                                    </li>
-                                </ul>
-                            </div>
+									<li class="">
+										<a href="https://checkpointtours.com.br/tours/o-que-fazer-em-sao-paulo-eco-turismo-">Ecoturismo</a>
+									</li>
 
-                            <div class="container-content">
-                                <ul class="list-unstyled">
-                                    <h3>Otras ciudades</h3>
-                                    <li><a class="text-muted" target="_blank" href="">Rio de Janeiro</a></li>
-                                    <li><a class="text-muted" target="_blank" href="">Foz do Iguaçu</a></li>
-                                    <li><a class="text-muted" target="_blank" href="">Natal / RN</a></li>
-                                    <li><a class="text-muted" target="_blank" href="">Florianópolis / SC</a></li>
-                                    <li><a class="text-muted" target="_blank" href="">Salvador / BA</a></li>
-                                    <li><a class="text-muted" target="_blank" href="">Manaus / AM</a></li>
-                                    <li><a class="text-muted" target="_blank" href="">Fortaleza / CE</a></li>
-                                </ul>
-                            </div>
-                
-                
-                            <div class="container-content">
-                                <ul class="list-unstyled">
-                                    <h3>Empresa</h3>
-                                    <li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>sobrenos">Sobre nosotros</a></a></li>
-                                    <li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>sobrenos">Nuestro equipo</a></li>
-                                    <li><a class="text-muted" target="_blank" href="">Condiciones de uso del servicio</a></li>
-                                    <li><a class="text-muted" target="_blank" href="">Política de privacidad</a></li>
-                                    <li><a class="text-muted" target="_blank" href="">política de cancelación</a></li>
-                                    <li><a class="text-muted" target="_blank" href="">Blog</a></li>
-                                    <li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>es-ES/contato">Contacto</a></li>
-                                </ul>
-                            </div>
+									<li class="">
+										<a href="https://checkpointtours.com.br/tours/o-que-fazer-em-sao-paulo-agro-turismo-">Agroturismo</a>
+									</li>
+									<li class="">
+										<a href="<?php echo INCLUDE_PATH; ?>tours">Giras navideñas</a>
+									</li>
 
-                            <div class="container-content">
-                                <ul class="list-unstyled">
-                                    <h3>Canales</h3>
-                                    <li><a class="text-muted" target="_blank" href="">Pronóstico del tiempo</a></li>
-                                    <li><a class="text-muted" target="_blank" href="">Fechas conmemorativas</a></li>
-                                    <li><a class="text-muted" target="_blank" href="">Consejos y direcciones</a></li>
-                                    <li><a class="text-muted" target="_blank" href="">Cotación del dolar</a></li>
-                                </ul>
-                            </div>
-                
-                            <div class="container-content">
-                                <ul class="list-unstyled">
-                                    <h3>Formas de pago</h3>
-                                    <li><a class="text-muted" target="_blank" href="">Boleto</a></li>
-                                    <li><a class="text-muted" target="_blank" href="">Pix</a></li>
-                                    <li><a class="text-muted" target="_blank" href="">Pay Pal</a></li>
-                                </ul>
-                            </div>
+									<li class="">
+										<a href="https://checkpointtours.com.br/tours/o-que-fazer-em-sao-paulo-carnaval-">Carnaval SP</a>
+									</li>
 
-                            <div class="container-content">
-                                <h3><strong>CHECK POINT Receptive Service</strong></h3>
-                                    <p>La carretera Jacques Du Cerceau, 84 - 03624-120 - São Paulo - SP - BRASIL</p>
+									<li class="">
+										<a href="https://checkpointtours.com.br/tours/o-que-fazer-em-sao-paulo-campos-do-jordao-">Campos do Jordão</a>
+									</li>
 
-                                    <p>Lunes a Viernes de 9 am a 6 pm</p>
-                                    
-                                    <p>PABX: <strong>(11) 2791-1316 </strong> Después de este tiempo, llame <strong>(11) 99187-1393</strong></p>
+									<li class="">
+										<a href="https://checkpointtours.com.br/tours/o-que-fazer-sao-paulo-pacote-romantico">Paquete Romántico</a>
+									</li>
+
+									<li class="">
+										<a href="<?php echo INCLUDE_PATH; ?>es-ES/F1">GP São Paulo F1</a>
+									</li>
+
+									<li class="">
+										<a href="<?php echo INCLUDE_PATH; ?>tours">Teatro</a>
+									</li>
+
+									<li class="">
+										<a href="https://checkpointtours.com.br/tours/o-que-fazer-em-sao-paulo-turismetro-">TurisMetrô</a>
+									</li>
+								</ul>
+							</div>
+
+							<div class="container-content">
+								<ul class="list-unstyled">
+									<h3>Otras ciudades</h3>
+									<li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>es-ES/oquefazersaopaulo">São Paulo/SP</a></li>
+									<li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>es-ES/oquefazerriodejaneiro">Rio de Janeiro/RJ</a></li>
+									<li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>es-ES/oquefazerfozdoiguacu">Foz do Iguaçu/PR</a></li>
+									<li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>es-ES/oquefazernatal">Natal/RN</a></li>
+									<li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>es-ES/oquefazerflorianopolis">Florianópolis/SC</a></li>
+									<li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>es-ES/oquefazersalvador">Salvador/BA</a></li>
+									<li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>es-ES/oquefazermanaus">Manaus/AM</a></li>
+									<li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>es-ES/oquefazerfortaleza">Fortaleza/CE</a></li>
+								</ul>
+							</div>
+
+
+							<div class="container-content">
+								<ul class="list-unstyled">
+									<h3>Empresa</h3>
+									<li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>sobrenos">Sobre nosotros</a></a></li>
+									<li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>sobrenos">Nuestro equipo</a></li>
+									<li><a class="text-muted" target="_blank" href="">Condiciones de uso del servicio</a></li>
+									<li><a class="text-muted" target="_blank" href="">Política de privacidad</a></li>
+									<li><a class="text-muted" target="_blank" href="">política de cancelación</a></li>
+									<li><a class="text-muted" target="_blank" href="">Blog</a></li>
+									<li><a class="text-muted" target="_blank" href="<?php echo INCLUDE_PATH; ?>es-ES/contato">Contacto</a></li>
+								</ul>
+							</div>
+
+							<div class="container-content">
+								<ul class="list-unstyled">
+									<h3>Canales</h3>
+									<li><a class="text-muted" target="_blank" href="">Pronóstico del tiempo</a></li>
+									<li><a class="text-muted" target="_blank" href="">Fechas conmemorativas</a></li>
+									<li><a class="text-muted" target="_blank" href="">Consejos y direcciones</a></li>
+									<li><a class="text-muted" target="_blank" href="">Cotación del dolar</a></li>
+								</ul>
+							</div>
+				
+							<div class="container-content">
+								<ul class="list-unstyled">
+									<h3>Formas de pago</h3>
+									<li><a class="text-muted" target="_blank" href="">Boleto</a></li>
+									<li><a class="text-muted" target="_blank" href="">Pix</a></li>
+									<li><a class="text-muted" target="_blank" href="">Pay Pal</a></li>
+								</ul>
+							</div>
+
+							<div class="container-content">
+								<h3><strong>CHECK POINT Receptive Service</strong></h3>
+									<p>La carretera Jacques Du Cerceau, 84 - 03624-120 - São Paulo - SP - BRASIL</p>
+
+									<p>Lunes a Viernes de 9 am a 6 pm</p>
+									
+									<p>PABX: <strong>(11) 2791-1316 </strong> Después de este tiempo, llame <strong>(11) 99187-1393</strong></p>
 						</div>
 						</div>
 
@@ -1672,7 +1673,16 @@
 						
 					</div>
 					<div class="container-bottom">
-						<p>© 2022, Check Point Tours. Todos los derechos reservados.</p>
+						<div class="container-content">
+                <ul class="list-unstyled" style="font-size:10px;">
+                    <h3>Tareas</h3>
+                    <li><a href="https://www.flaticon.com/br/icones-gratis/brasil" title="brasil ícones">Brasil ícones criados por Freepik - Flaticon</a></li>
+                    <li><a href="https://www.flaticon.com/br/icones-gratis/estados-unidos" title="estados unidos ícones">Estados unidos ícones criados por Freepik - Flaticon</a></li>
+                    <li><a href="https://www.flaticon.com/br/icones-gratis/espanha" title="espanha ícones">Espanha ícones criados por Freepik - Flaticon</a></li>
+                </ul>
+            </div>
+
+<p>© 2022, Check Point Tours. Todos los derechos reservados.</p>
 					</div>
 				</footer>
 			`;
