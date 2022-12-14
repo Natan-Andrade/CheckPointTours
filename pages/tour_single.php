@@ -235,7 +235,7 @@
                         
                 
                         <h1 id="titulo"><?php echo $post['titulo']; ?></h1>
-                        <h2 class="duracao"><?php echo substr(strip_tags($post['duracao']),0,2).'h';?></h2>
+                        <h2 class="duracao"><?php echo $post['duracao']; ?></h2>
 
                             <div id="conteudo"><?php echo $post['conteudo']; ?></div>
                             <div id="intinerario"><?php echo $post['intinerario']; ?></div>
@@ -280,21 +280,19 @@
 
                         <div style="display: none;">
                             <input type="select" id="titulo" name="<?php echo $post['titulo']; ?>">
-                            <input type="select" name="<?php echo 'Duração ',substr(strip_tags($post['duracao']),0,2).'h';?>">
-                            <!--<input type="select" name="<?php //echo 'A partir de R$',$post['preco'],',00';?>">-->
+                            <input type="select" name="<?php echo $post['duracao'];?>">
                         </div>
 
                         <!--<div>
                             <label for="data" id="t-data">Escolha uma data:</label>
-                            
-                        <div id="datepicker">
-                            <input type="text" id="data" name="data_principal" class="form-control" style="display: none;">
+                                
+                            <div id="datepicker">
+                                <input type="text" id="data" name="data_principal" class="form-control" style="display: none;">
+                            </div>
                         </div>-->
 
-                        
-
                         <!--<div>
-                        <label for="festa" id="t-horario">horário de saída:</label>
+                            <label for="festa" id="t-horario">horário de saída:</label>
                             <input type="select" id="horario" required name="horário" class="timepicker">
                         </div>-->
 
@@ -317,19 +315,19 @@
                         </div>
                         
                         <div>
-                            <label id="t-email">Telefone:</label>
+                            <label id="tel">Telefone:</label>
                             <input type="text" id="telefone" required name="Telefone" >
                         </div>
 
                         <div  class="preco">
-                            <!--<label for="preço"><strong>BRL:</strong><?php echo $post['preco'],',00';?></label>-->
+                            <label for="preço"><?php echo 'A partir de R$',$post['preco'],',00';?></label>
                         </div>
 
                         <div class="button-main">
-                            <a id="ancora" class="ancora" href="#form" >Consulte nossos valores</a>
+                            <a id="ancora" class="ancora" href="#form">Consulte nossos valores</a>
                         </div>
 
-                        <button id="t-button1" class="button" type="submit" >Consulte nossos valores</button>
+                        <button id="t-button1" class="button" type="submit">Consulte nossos valores</button>
 
                         <a class="button_reservar"  href="https://wa.me/551127911316?text="
                             
@@ -515,14 +513,6 @@
                     </ul>
                 </div>
 
-                <div class="container-content">
-                    <ul class="list-unstyled">
-                        <h3>Atribuições</h3>
-                        <li><a href="https://www.flaticon.com/br/icones-gratis/brasil" title="brasil ícones">Brasil ícones criados por Freepik - Flaticon</a></li>
-                        <li><a href="https://www.flaticon.com/br/icones-gratis/estados-unidos" title="estados unidos ícones">Estados unidos ícones criados por Freepik - Flaticon</a></li>
-                        <li><a href="https://www.flaticon.com/br/icones-gratis/espanha" title="espanha ícones">Espanha ícones criados por Freepik - Flaticon</a></li>
-                    </ul>
-                </div>
 
                 <div class="container-content">
                     <h3><strong>CHECK POINT Receptive Service</strong></h3>
@@ -1785,7 +1775,7 @@
 
 	<script type="text/javascript">
 		$('#datepicker').datepicker({
-			format: "dd/mm/yyyy",
+			format: "yyyy/mm/dd",
 			startDate: '<?php echo $post['data_init']; ?>',                               
 			endDate: '<?php echo $post['data_end']; ?>',
 			language: "pt-BR",

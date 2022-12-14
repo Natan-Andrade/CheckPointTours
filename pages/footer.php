@@ -133,15 +133,6 @@
                 </div>
 
                 <div class="container-content">
-                    <ul class="list-unstyled">
-                        <h3>Atribuições</h3>
-                        <li><a href="https://www.flaticon.com/br/icones-gratis/brasil" title="brasil ícones">Brasil ícones criados por Freepik - Flaticon</a></li>
-                        <li><a href="https://www.flaticon.com/br/icones-gratis/estados-unidos" title="estados unidos ícones">Estados unidos ícones criados por Freepik - Flaticon</a></li>
-                        <li><a href="https://www.flaticon.com/br/icones-gratis/espanha" title="espanha ícones">Espanha ícones criados por Freepik - Flaticon</a></li>
-                    </ul>
-                </div>
-
-                <div class="container-content">
                     <h3><strong>CHECK POINT Receptive Service</strong></h3>
                         <p>Rua Jacques Du Cerceau, 84 - 03624-120 - São Paulo - SP - BRASIL</p>
 

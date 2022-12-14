@@ -205,6 +205,11 @@
 		<div class="form-group">
 			<label>Mapa:</label>
 			<input type="text" name="mapa" required value="<?php echo $slide['mapa']; ?>">
+			<label>Cole aqui o código HTML do trajeto copiado do Google Maps e exclua o que não estiver entre as aspas.</label>
+			<br>
+			<label>Exemplo(O que não está em negrito deve ser apagado):</label>
+			<br>
+			<label>< iframe src="<strong>https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657</strong>" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">< /iframe></label>
 		</div><!--form-group-->
 
 		<div class="form-group">
@@ -281,22 +286,22 @@
 		
 		<div class="form-group">
 			<label>Data de início:</label>
-			<input type="text" placeholder="dd/mm/yyyy" name="data_init" required value="<?php echo $slide['data_init']; ?>">
+			<input type="date" name="data_init" required value="<?php echo $slide['data_init']; ?>">
 		</div><!--form-group-->
 
 		<div class="form-group">
 			<label>Data de término:</label>
-			<input type="text" placeholder="dd/mm/yyyy" name="data_end" required value="<?php echo $slide['data_end']; ?>">
+			<input type="date" name="data_end" required value="<?php echo $slide['data_end']; ?>">
 		</div><!--form-group-->
 
 		<div class="form-group">
 			<label>Duração:</label>
-			<input type="number" name="duracao" required value="<?php echo $slide['duracao']; ?>">
+			<input type="text" placeholder="Ex 3:30 ou 3h" name="duracao" required value="<?php echo $slide['duracao']; ?>">
 		</div><!--form-group-->
 
 		<div class="form-group">
 			<label>Mínimo de pessoas:</label>
-			<input type="number" name="pessoas_init" required value="<?php echo $slide['pessoas_init']; ?>">
+			<input type="number" min="1" name="pessoas_init" required value="<?php echo $slide['pessoas_init']; ?>">
 		</div><!--form-group-->
 
 		<div class="form-group">
@@ -306,18 +311,22 @@
 
 		<div class="form-group">
 			<label>Horário de início:</label>
-			<input type="text" name="horario_init" required value="<?php echo $slide['horario_init']; ?>">
+			<input type="time" name="horario_init" required value="<?php echo $slide['horario_init']; ?>">
+			<label>Use somente horários inteiros, com os minutos em zero. (ex. 10:00)</label>
 		</div><!--form-group-->
 
 		<div class="form-group">
 			<label>Horário de término:</label>
-			<input type="text" name="horario_end" required value="<?php echo $slide['horario_end']; ?>">
+			<input type="time" name="horario_end" required value="<?php echo $slide['horario_end']; ?>">
+			<label>Use somente horários inteiros, com os minutos em zero. (ex. 22:00)</label>
 		</div><!--form-group-->
 		
 
 		<div class="form-group">
 			<label>Preço:</label>
-			<input type="number" name="preco" required value="<?php echo $slide['preco']; ?>">
+			<input type="number" placeholder="Ex. 300" name="preco" required value="<?php echo $slide['preco']; ?>">
+			<label>Digite somente o valor sem vírgula.</label>
+			<label>Ex. RS:<strong>200</strong>,00</label>
 		</div><!--form-group-->
 
 		<div class="form-group">

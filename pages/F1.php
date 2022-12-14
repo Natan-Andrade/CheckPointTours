@@ -16,9 +16,7 @@
     <?php include('header.php'); ?>
 
 
-        <nav class="full-item" style="margin-top: 80px; background-image: url(pages/assets/F1/5.jpg);">
-            <?php include('f1-painel.php'); ?>
-        </nav>
+        <?php include('f1-painel.php'); ?>
 
         <section class="F1">
             <div class="box-align">

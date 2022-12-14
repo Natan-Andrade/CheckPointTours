@@ -192,16 +192,16 @@
 			<textarea name="intinerario"><?php recoverPost('intinerario'); ?></textarea>
 		</div>
 
-		<!--<div class="form-group">
+		<div class="form-group">
 			<label>Link mapa:</label>
 			<textarea class="text" name="mapa"><?php recoverPost('mapa'); ?></textarea>
-		</div>-->
-		
-		<div class="form-group">
-		    <label>Link mapa:</label>
-		    <input type="hidden" name="mapa" value=".">
+			<label>Cole aqui o código HTML do trajeto copiado do Google Maps e exclua o que não estiver entre as aspas.</label>
+			<br>
+			<label>Exemplo(O que não está em negrito deve ser apagado):</label>
+			<br>
+			<label>< iframe src="<strong>https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657</strong>" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">< /iframe></label>
 		</div>
-
+		
 		<div class="form-group">
 			<label>intinerario (Espanhol):</label>
 			<textarea name="esp_intinerario"><?php recoverPost('esp_intinerario'); ?></textarea>
@@ -214,20 +214,17 @@
 
 		<div class="form-group">
 			<label>Recolha</label>
-			<!--<textarea name="recolha"><?php recoverPost('recolha'); ?></textarea>-->
-		    <input type="hidden" name="recolha" value=".">
+			<textarea name="recolha"><?php recoverPost('recolha'); ?></textarea>
 		</div>
 
 		<div class="form-group">
 			<label>Recolha (Espanhol):</label>
-			<!--<textarea name="recolha"><?php recoverPost('esp_recolha'); ?></textarea>-->
-		    <input type="hidden" name="esp_recolha" value=".">
+			<textarea name="esp_recolha"><?php recoverPost('esp_recolha'); ?></textarea>
 		</div>
 
 		<div class="form-group">
 		    <label>Recolha (Inglês):</label>
-			<!--<textarea name="recolha"><?php recoverPost('esp_recolha'); ?></textarea>-->
-		    <input type="hidden" name="eng_recolha" value=".">
+			<textarea name="eng_recolha"><?php recoverPost('eng_recolha'); ?></textarea>
 		</div>
 
 		<div class="form-group">
@@ -278,42 +275,47 @@
 
 		<div class="form-group">
 			<label>Data de início:</label>
-			<input type="text" placeholder="dd/mm/yyyy" name="data_init"><?php recoverPost('data_init'); ?>
+			<input type="date" name="data_init"><?php recoverPost('data_init'); ?>
 		</div>
 
 		<div class="form-group">
 			<label>Data de término</label>
-			<input type="text" placeholder="dd/mm/yyyy" name="data_end"><?php recoverPost('data_end'); ?>
+			<input type="date" name="data_end"><?php recoverPost('data_end'); ?>
 		</div>
 
 		<div class="form-group">
 			<label>Duração:</label>
-			<input type="number" name="duracao" value="<?php recoverPost('duracao'); ?>">
+			<input type="text" placeholder="Ex 3:30 ou 3h" name="duracao" value="<?php recoverPost('duracao'); ?>">
 		</div><!--form-group-->
 
 		<div class="form-group">
 			<label>Mínimo de pessoas:</label>
-			<input type="hidden" name="pessoas_init" value="1">
+			<input type="number" min="1" name="pessoas_init" value="<?php recoverPost('pessoas_init'); ?>">
 		</div><!--form-group-->
 
 		<div class="form-group">
 			<label>Máximo de pessoas:</label>
-			<input type="hidden" name="pessoas_end" value="10">
+			<input type="number" name="pessoas_end" value="<?php recoverPost('pessoas_end'); ?>">
 		</div><!--form-group-->
 
 		<div class="form-group">
-			<label>Horário mínimo:</label>
-			<input type="hidden" name="horario_init" value="1">
+			<label>Horário de início:</label>
+			<input type="time" name="horario_init" value="<?php recoverPost('horario_init'); ?>">
+			<label>Use somente horários inteiros, com os minutos em zero. (ex. 10:00)</label>
 		</div><!--form-group-->
 
 		<div class="form-group">
-			<label>Horário máximo:</label>
-			<input type="hidden" name="horario_end" value="2">
+			<label>Horário de término:</label>
+			<input type="time" name="horario_end" value="<?php recoverPost('horario_end'); ?>">
+			<label>Use somente horários inteiros, com os minutos em zero. (ex. 22:00)</label>
+
 		</div><!--form-group-->
 
 		<div class="form-group">
 			<label>Preço:</label>
-			<input type="hidden" name="preco" value="1">
+			<input type="number" placeholder="Ex. 300" name="preco" value="<?php recoverPost('preco'); ?>">
+			<label>Digite somente o valor sem vírgula.</label>
+			<label>Ex. RS:<strong>200</strong>,00</label>
 		</div><!--form-group-->
 
 		<div class="form-group">

@@ -69,6 +69,7 @@
 ?>
 <div class="box-content">
 	<h2><i class="fa fa-id-card-o" aria-hidden="true"></i> Banners Cadastrados</h2>
+	<label>Altere as imagens conforme o nome das cidades clicando em "Editar"</label>
 	<div class="wraper-table">
 	<table>
 		<tr>
